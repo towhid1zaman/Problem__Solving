@@ -2179,6 +2179,22 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF40832338": {
+    "contest_id": 617,
+    "language": "GNU C++17",
+    "path": "codeforces\\617\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Elephant",
+    "problem_url": "https://codeforces.com/contest/617/problem/A",
+    "submission_id": "CF40832338",
+    "submission_url": "https://codeforces.com/contest/617/submission/40832338",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jul/27/2018 12:18"
+  },
   "CF40894477": {
     "contest_id": 318,
     "language": "GNU C++17",
