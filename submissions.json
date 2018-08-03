@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF41144291": {
+    "contest_id": 785,
+    "language": "GNU C++17",
+    "path": "codeforces\\785\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Anton and Polyhedrons",
+    "problem_url": "https://codeforces.com/contest/785/problem/A",
+    "submission_id": "CF41144291",
+    "submission_url": "https://codeforces.com/contest/785/submission/41144291",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Aug/03/2018 11:43"
+  },
   "CF41194437": {
     "contest_id": 1016,
     "language": "GNU C++17",
