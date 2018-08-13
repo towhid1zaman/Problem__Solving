@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF41565511": {
+    "contest_id": 141,
+    "language": "GNU C++17",
+    "path": "codeforces\\141\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Amusing Joke",
+    "problem_url": "https://codeforces.com/contest/141/problem/A",
+    "submission_id": "CF41565511",
+    "submission_url": "https://codeforces.com/contest/141/submission/41565511",
+    "tags": [
+      "implementation",
+      "sortings",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Aug/13/2018 23:12"
+  },
   "CF41596747": {
     "contest_id": 379,
     "language": "GNU C++17",
