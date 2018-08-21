@@ -30,7 +30,9 @@ int main()
 
     else
     {
+
         f0(n)if((O[i]&1)==0) cout<<i+1<<endl;
+
     }
     return 0;
 }
