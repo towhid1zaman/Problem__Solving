@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF41953725": {
+    "contest_id": 304,
+    "language": "GNU C++17",
+    "path": "codeforces\\304\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Pythagorean Theorem II",
+    "problem_url": "https://codeforces.com/contest/304/problem/A",
+    "submission_id": "CF41953725",
+    "submission_url": "https://codeforces.com/contest/304/submission/41953725",
+    "tags": [
+      "brute force",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Aug/22/2018 10:38"
+  },
   "CF41969013": {
     "contest_id": 750,
     "language": "GNU C++17",
