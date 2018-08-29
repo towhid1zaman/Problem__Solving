@@ -20,7 +20,6 @@ int toLlint(string s){long long int sm;stringstream ss(s);ss>>sm;return sm;}
 int main()
 {
   	Towhid;
-  	/*
     int n;
     cin>>n;
     if(n%2==1)
@@ -29,16 +28,7 @@ int main()
     }
     else
         cout<<"Mahmoud"<<endl;
-*/
 
-            string s;
-            cin>>s;
-                int len= s.length();
-                if(s[len-1] == '1' or s[len-1]=='3' or s[len-1]=='5' or s[len-1]=='7' or s[len-1]=='9')
-                {
-                    cout<<"Ehab"<<endl;
-                }
-                else
-                            cout<<"Mahmoud"<<endl;
+
     return 0;
 }
