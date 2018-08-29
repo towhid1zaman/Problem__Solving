@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF42243425": {
+    "contest_id": 638,
+    "language": "GNU C++17",
+    "path": "codeforces\\638\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Home Numbers",
+    "problem_url": "https://codeforces.com/contest/638/problem/A",
+    "submission_id": "CF42243425",
+    "submission_url": "https://codeforces.com/contest/638/submission/42243425",
+    "tags": [
+      "*special problem",
+      "constructive algorithms",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Aug/29/2018 19:50"
+  },
   "CF42318549": {
     "contest_id": 102,
     "language": "GNU C++17",
