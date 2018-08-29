@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF42238048": {
+    "contest_id": 476,
+    "language": "GNU C++17",
+    "path": "codeforces\\476\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Dreamoon and Stairs",
+    "problem_url": "https://codeforces.com/contest/476/problem/A",
+    "submission_id": "CF42238048",
+    "submission_url": "https://codeforces.com/contest/476/submission/42238048",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Aug/29/2018 16:55"
+  },
   "CF42242224": {
     "contest_id": 959,
     "language": "GNU C++17",
