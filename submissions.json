@@ -3414,6 +3414,22 @@
     ],
     "timestamp": "Sep/02/2018 14:58"
   },
+  "CF42880420": {
+    "contest_id": 208,
+    "language": "Java 8",
+    "path": "codeforces\\208\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Dubstep",
+    "problem_url": "https://codeforces.com/contest/208/problem/A",
+    "submission_id": "CF42880420",
+    "submission_url": "https://codeforces.com/contest/208/submission/42880420",
+    "tags": [
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Sep/15/2018 12:24"
+  },
   "CF42881650": {
     "contest_id": 664,
     "language": "Clang++17 Diagnostics",
