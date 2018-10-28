@@ -7,30 +7,30 @@ using namespace std;
 #define mem(a) memset(a,0,sizeof(a))
 #define memn(a) memset(a,-1,sizeof(a))
 #define pb push_back
-#define nl '\n'
 const double pi= acos(-1);
 #define NFS ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 int main()
 {
 
 	NFS
-	ll n,k,maxx;
-	cin>>n;
-	vector<int>v(n);
-        for(int i = 0; i<n; i++)
+	int k,n,muxx,sum=0;
+    cin>>n;
+    int s[n];
+        for(int i = 0; i<n;i++)
         {
-            cin>>v[i];
+            cin>>s[i];
+            sum+=s[i];
         }
-        k = *max_element(v.begin(),v.end());
-        ll sum = accumulate(v.begin(), v.end(),0);
-       while(true)
+        sort(s,s+n);
+        k = s[n-1];
+        while(1)
         {
-            maxx= n*k - sum;
-                if(maxx>sum)
+            muxx= n*k - sum;
+            if(muxx>sum)
                     break;
-                else
-                    k++;
-                    continue;
+            else
+                k++;
+            continue;
         }
         cout<<k<<endl;
 
