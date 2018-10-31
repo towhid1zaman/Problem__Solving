@@ -14,16 +14,15 @@ int main()
 {
 
 	NFS
-	ll n,k,maxx,sum= 0;
+	ll n,k,maxx;
 	cin>>n;
 	vector<int>v(n);
         for(int i = 0; i<n; i++)
         {
             cin>>v[i];
-            sum+=v[i];
         }
         k = *max_element(v.begin(),v.end());
-        //ll sum = accumulate(v.begin(), v.end(),0);
+        ll sum = accumulate(v.begin(), v.end(),0);
        while(true)
         {
             maxx= n*k - sum;

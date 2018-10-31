@@ -3414,6 +3414,23 @@
     ],
     "timestamp": "Sep/02/2018 14:58"
   },
+  "CF45127749": {
+    "contest_id": 1043,
+    "language": "GNU C++17",
+    "path": "codeforces\\1043\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Elections",
+    "problem_url": "https://codeforces.com/contest/1043/problem/A",
+    "submission_id": "CF45127749",
+    "submission_url": "https://codeforces.com/contest/1043/submission/45127749",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Oct/31/2018 14:51"
+  },
   "CF45127845": {
     "contest_id": 1043,
     "language": "GNU C++17",
