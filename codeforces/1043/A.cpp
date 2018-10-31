@@ -22,10 +22,8 @@ int main()
             cin>>v[i];
             sum+=v[i];
         }
-        //k = *max_element(v.begin(),v.end());
+        k = *max_element(v.begin(),v.end());
         //ll sum = accumulate(v.begin(), v.end(),0);
-        sort(v.begin(), v.end());
-        k = v[v.size()-1];
        while(true)
         {
             maxx= n*k - sum;
