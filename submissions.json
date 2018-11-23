@@ -3430,6 +3430,24 @@
     ],
     "timestamp": "Nov/16/2018 22:46"
   },
+  "CF46128703": {
+    "contest_id": 1061,
+    "language": "GNU C++17",
+    "path": "codeforces\\1061\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Coins",
+    "problem_url": "https://codeforces.com/contest/1061/problem/A",
+    "submission_id": "CF46128703",
+    "submission_url": "https://codeforces.com/contest/1061/submission/46128703",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Nov/24/2018 03:16"
+  },
   "CF46182724": {
     "contest_id": 1080,
     "language": "GNU C++14",
