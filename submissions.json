@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF47270287": {
+    "contest_id": 610,
+    "language": "GNU C++14",
+    "path": "codeforces\\610\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Vika and Squares",
+    "problem_url": "https://codeforces.com/contest/610/problem/B",
+    "submission_id": "CF47270287",
+    "submission_url": "https://codeforces.com/contest/610/submission/47270287",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Dec/19/2018 22:19"
+  },
   "CF47598809": {
     "contest_id": 1095,
     "language": "GNU C++14",
