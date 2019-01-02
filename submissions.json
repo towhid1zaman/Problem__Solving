@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF47854283": {
+    "contest_id": 1064,
+    "language": "GNU C++14",
+    "path": "codeforces\\1064\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Make a triangle!",
+    "problem_url": "https://codeforces.com/contest/1064/problem/A",
+    "submission_id": "CF47854283",
+    "submission_url": "https://codeforces.com/contest/1064/submission/47854283",
+    "tags": [
+      "brute force",
+      "geometry",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jan/03/2019 02:05"
+  },
   "CF48042081": {
     "contest_id": 732,
     "language": "GNU C++14",
