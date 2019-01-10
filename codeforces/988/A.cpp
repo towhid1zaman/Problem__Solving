@@ -7,22 +7,22 @@ int main()
         ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 
 
-        int n,k;
+        int n,k,x;
         cin>>n>>k;
-         map<int,int>mp;
+         //map<int,int>mp;
          vector<int>v;
+         
             for(int i = 0; i<n;i++)
             {
-                int x;
                 cin>>x;
-                    if(mp[x]==0)
+                    if(a[x]==0)
                     {
                           v.push_back(i+1);
-                           mp[x] = 1;
+                           a[x] ++;
                     }
 
             }
-                if(v.size()<k) cout<<"NO"<<endl;
+                if(v.size()<k)cout<<"NO"<<endl;
                 else
                 {
                     cout<<"YES"<<endl;
