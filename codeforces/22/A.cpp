@@ -6,23 +6,16 @@ int main()
     int n;
     cin>>n;
     int x;
-    set<int> s;
-    for(int i=0;i<n;i++)
+    vector<int>v(n);
+    for(int i = 0; i<n;i++)
     {
-        cin>>x;
-        s.insert(x);
+        cin>>v[i];
     }
-        set<int>::iterator it;
-                if(s.size()==1)
-                {
-                    cout<<"NO"<<endl;
-                }
-                else
-                {
-                    it = s.begin();
-                    it++;
-                    cout<<(*it)<<endl;
-                }
+    sort(v.begin(),v.end());
+    v.erase(unique(v.begin(),v.end()),v.end());
+    if(v.size()==1) cout<<"NO"<<endl;
+    else
+        cout<<v[1]<<endl;
+
                         return 0;
 }
-
