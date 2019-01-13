@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF48324832": {
+    "contest_id": 832,
+    "language": "GNU C++14",
+    "path": "codeforces\\832\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Sasha and Sticks",
+    "problem_url": "https://codeforces.com/contest/832/problem/A",
+    "submission_id": "CF48324832",
+    "submission_url": "https://codeforces.com/contest/832/submission/48324832",
+    "tags": [
+      "games",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jan/13/2019 17:18"
+  },
   "CF48329851": {
     "contest_id": 935,
     "language": "GNU C++14",
