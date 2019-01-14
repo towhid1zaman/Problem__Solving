@@ -1,19 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long LL;
+int solve(string a, string b, int m,int n)
+{
+    if(n==0)
+        return 1;
+    if(m==0)
+        return 0;
+    if(a[m-1]==b[n-1])
+        return solve(a,b,m-1,n-1)+solve(a,b,m-1,n);
+    else
+        return solve(a,b,m-1,n);
+}
 	int main()
 	{
 		ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-			string s;
-			int ans = 0;
-                cin>>s;
-                int len = s.length();
-                    for(int i = 0; i<len;i++)
-                        for(int j=i+1; j<len;j++)
-                            for(int k = j+1; k<len; k++)
-                                if(s[i]=='Q' and s[j]=='A' and s[k]=='Q')
-                                    ans++;
-                cout<<ans<<endl;
+			string a;
+			cin>>a;
+			string b = "QAQ";
+
+                    cout<<solve(a,b,a.length(),3)<<endl;
 		return 0;
 	}
 
