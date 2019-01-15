@@ -2179,6 +2179,22 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF48429779": {
+    "contest_id": 1100,
+    "language": "GNU C++14",
+    "path": "codeforces\\1100\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Roman and Browser",
+    "problem_url": "https://codeforces.com/contest/1100/problem/A",
+    "submission_id": "CF48429779",
+    "submission_url": "https://codeforces.com/contest/1100/submission/48429779",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jan/15/2019 22:44"
+  },
   "CF48433615": {
     "contest_id": 1003,
     "language": "GNU C++14",
