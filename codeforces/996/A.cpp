@@ -1,24 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long LL;
-    int main()
-    {
-       ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-
+int main()
+{
+  	ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 
         int n;
-        int data[5] = {1,5,10,20,100};
-          cin>>n;
-        int ans  = 0;
-                for(int i = 4; i>=0; i--)
-                {
-                    while(n>=data[i])
-                    {
-                        n-=data[i];
-                        ans++;
-                    }
-                }
-                cout<<ans;
+        cin>>n;
+        int ans = 0;
+            ans+=n/100;
+            n%=100;
+            ans+=n/20;
+            n%=20;
+            ans+=n/10;
+            n%=10;
+            ans+=n/5;
+            n%=5;
+            ans+=n;
+            cout<<ans<<endl;
 
-                return 0;
-    }
+    return 0;
+}
