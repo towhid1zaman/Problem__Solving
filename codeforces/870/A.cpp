@@ -6,25 +6,43 @@ void solve()
 {
     int n,m;
     cin>>n>>m;
-    vector<int>vn(n),vm(m);
+    vector<int>vn(n),vm(m),v;
         for(int i = 0; i<n; i++)cin>>vn[i];
         for(int i = 0; i<m; i++)cin>>vm[i];
-        int res=100000;
+        sort(vn.begin(),vn.end());
+        sort(vm.begin(),vm.end());
+        int a = vn[0];
+        int b = vm[0];
+        int cnt = 0;
         for(int i = 0; i<n;i++)
         {
             for(int j = 0; j<m;j++)
             {
-                if(vn[i]==vm[j]){
-                        res = min(res,vn[i]);
-                }
-                else
+                if(vn[i]==vm[j])
                 {
-                    res = min(res,vn[i] * 10 + vm[j]);
-                    res = min(res,vm[j] * 10 + vn[i]);
+                    cnt++;
+                    v.push_back(vn[i]);
                 }
+
             }
         }
-        cout<<res<<endl;
+        //cout<<cnt<<endl;
+        if(cnt==0)
+        {
+            if(a>b)
+            {
+                cout<<b<<a<<endl;
+            }
+            else if(a<b){
+                cout<<a<<b<<endl;
+            }
+        }
+      else if(cnt>0)
+        {
+            int x = *min_element(v.begin(),v.end());
+            cout<<x<<endl;
+        }
+
 }
 int main()
 {

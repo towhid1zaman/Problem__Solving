@@ -1148,7 +1148,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 122 | [A - Die Roll](https://codeforces.com/contest/9/problem/A) | [GNU C++14](./codeforces/9/A.cpp) | `math` `probabilities` `*800` | Jan/30/2019 01:00 | 
 121 | [A - Alyona and Numbers](https://codeforces.com/contest/682/problem/A) | [GNU C++14](./codeforces/682/A.cpp) | `constructive algorithms` `math` `number theory` `*1100` | Jan/29/2019 02:16 | 
 120 | [A - Two Substrings](https://codeforces.com/contest/550/problem/A) | [GNU C++14](./codeforces/550/A.cpp) | `brute force` `dp` `greedy` `implementation` `strings` `*1500` | Jan/28/2019 18:13 | 
-119 | [A - Search for Pretty Integers](https://codeforces.com/contest/870/problem/A) | [GNU C++14](./codeforces/870/A.cpp) | `brute force` `implementation` `*900` | Jan/28/2019 16:38 | 
+119 | [A - Search for Pretty Integers](https://codeforces.com/contest/870/problem/A) | [GNU C++14](./codeforces/870/A.cpp) | `brute force` `implementation` `*900` | Jan/28/2019 17:05 | 
 118 | [A - k-Factorization](https://codeforces.com/contest/797/problem/A) | [GNU C++14](./codeforces/797/A.cpp) | `implementation` `math` `number theory` `*1100` | Jan/27/2019 12:11 | 
 117 | [A - Digits Sequence Dividing](https://codeforces.com/contest/1107/problem/A) | [GNU C++14](./codeforces/1107/A.cpp) | `greedy` `strings` `*900` | Jan/27/2019 00:46 | 
 116 | [B - Digital root](https://codeforces.com/contest/1107/problem/B) | [GNU C++14](./codeforces/1107/B.cpp) | `math` `number theory` `*1000` | Jan/26/2019 23:48 | 
