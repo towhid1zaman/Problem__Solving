@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF49222673": {
+    "contest_id": 320,
+    "language": "GNU C++14",
+    "path": "codeforces\\320\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Magic Numbers",
+    "problem_url": "https://codeforces.com/contest/320/problem/A",
+    "submission_id": "CF49222673",
+    "submission_url": "https://codeforces.com/contest/320/submission/49222673",
+    "tags": [
+      "brute force",
+      "greedy",
+      "*900"
+    ],
+    "timestamp": "Jan/31/2019 02:05"
+  },
   "CF49282127": {
     "contest_id": 1106,
     "language": "GNU C++14",
