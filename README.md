@@ -1124,7 +1124,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 142 | [B - Hungry Sequence](https://codeforces.com/contest/327/problem/B) | [GNU C++14](./codeforces/327/B.cpp) | `math` `*1200` | Feb/16/2019 21:52 | 
 141 | [A - Valera and X](https://codeforces.com/contest/404/problem/A) | [GNU C++14](./codeforces/404/A.cpp) | `implementation` `*1000` | Feb/16/2019 16:17 | 
 140 | [B - Soldier and Badges](https://codeforces.com/contest/546/problem/B) | [GNU C++14](./codeforces/546/B.cpp) | `brute force` `greedy` `implementation` `sortings` `*1200` | Feb/16/2019 14:09 | 
-139 | [A - Holidays](https://codeforces.com/contest/670/problem/A) | [GNU C++14](./codeforces/670/A.cpp) | `brute force` `constructive algorithms` `greedy` `math` `*900` | Feb/15/2019 23:34 | 
+139 | [A - Holidays](https://codeforces.com/contest/670/problem/A) | [GNU C++14](./codeforces/670/A.cpp) | `brute force` `constructive algorithms` `greedy` `math` `*900` | Feb/15/2019 23:43 | 
 138 | [B - Game of Robots](https://codeforces.com/contest/670/problem/B) | [GNU C++14](./codeforces/670/B.cpp) | `implementation` `*1000` | Feb/15/2019 20:49 | 
 137 | [B - Lovely Palindromes](https://codeforces.com/contest/688/problem/B) | [GNU C++14](./codeforces/688/B.cpp) | `constructive algorithms` `math` `*1000` | Feb/15/2019 16:03 | 
 136 | [B - Books](https://codeforces.com/contest/279/problem/B) | [GNU C++14](./codeforces/279/B.cpp) | `binary search` `brute force` `implementation` `two pointers` `*1400` | Feb/15/2019 15:14 | 

@@ -8,14 +8,10 @@ int main()
             cin>>n;
             int a=0,b=0;
             for(int i = 0; i<n;i++){
-                if(i%7<=1){
-                    a++;
-                }
-                if(i%7>=5){
-                    b++;
-                }
+                    if(i%7==5 or i%7==6)a++;
+                    if(i%7==1 or i%7==0)b++;
             }
-            cout<<min(a,b)<<" "<<max(a,b)<<endl;
+            cout<<a<<" "<<b<<endl;
 
 
 
