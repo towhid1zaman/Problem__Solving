@@ -8,20 +8,28 @@ int main()
         LL n,t;
         cin>>n>>t;
         vector<LL>a(n);
-        for(int i = 0; i<n;i++)cin>>a[i];
-        int r = 0;
-        int ans = 0;
-        int sum = 0;
-        for(int i = 0; i<n;i++)
-        {
-            while(r<n and sum+a[r] <= t){
-                sum+=a[r];
-                r++;
-            }
-            ans = max(ans,r-i);
-            sum-=a[i];
+        for(int i = 0; i<n;i++){
+            cin>>a[i];
         }
-        cout<<ans<<endl;
+        //sort(a.begin(),a.end());
+        LL ans = 0;
+        int cnt = 0;
+        int j = 0;
+        int res = 0;
+            for(int i = 0; i<n;){
+                    if(t >= ans+ a[i]){
+                            ans+=a[i];
+                        cnt++;
+                        i++;
+                    }
+                    else{
+                            cnt--;
+                        ans-=a[j];
+                    j++;
+                    }
+                    res = max(res,cnt);
+            }
+                cout<<res<<endl;
         return 0;
 }
 
