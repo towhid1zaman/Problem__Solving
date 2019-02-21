@@ -7,11 +7,14 @@ int main()
             int n;
             string s;
             cin>>n>>s;
-            //vector<int>d;
+            vector<int>d;
             for(int i = 1; i<=n;i++){
                 if(n%i==0){
-                   reverse(s.begin(),s.begin()+i);
+                   d.push_back(i);
                 }
+            }
+            for(int i = 0; i<d.size();i++){
+                reverse(s.begin(),s.begin()+d[i]);
             }
             cout<<s<<endl;
 

@@ -1116,7 +1116,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 148 | [A - Tetris](https://codeforces.com/contest/961/problem/A) | [GNU C++14](./codeforces/961/A.cpp) | `implementation` `*900` | Feb/22/2019 01:10 | 
 147 | [B - String Typing](https://codeforces.com/contest/954/problem/B) | [GNU C++14](./codeforces/954/B.cpp) | `implementation` `strings` `*1400` | Feb/21/2019 14:01 | 
 146 | [A - Diagonal Walking](https://codeforces.com/contest/954/problem/A) | [GNU C++14](./codeforces/954/A.cpp) | `implementation` `*800` | Feb/21/2019 12:58 | 
-145 | [B - Reversing Encryption](https://codeforces.com/contest/999/problem/B) | [GNU C++14](./codeforces/999/B.cpp) | `implementation` `*900` | Feb/21/2019 12:08 | 
+145 | [B - Reversing Encryption](https://codeforces.com/contest/999/problem/B) | [GNU C++14](./codeforces/999/B.cpp) | `implementation` `*900` | Feb/21/2019 12:16 | 
 144 | [A - Mishka and Contest](https://codeforces.com/contest/999/problem/A) | [GNU C++14](./codeforces/999/A.cpp) | `brute force` `implementation` `*800` | Feb/21/2019 11:53 | 
 143 | [A - Gennady and a Card Game](https://codeforces.com/contest/1097/problem/A) | [GNU C++14](./codeforces/1097/A.cpp) | `brute force` `implementation` `*800` | Feb/20/2019 21:10 | 
 142 | [B - Hungry Sequence](https://codeforces.com/contest/327/problem/B) | [GNU C++14](./codeforces/327/B.cpp) | `math` `*1200` | Feb/16/2019 21:52 | 
