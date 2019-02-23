@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF50402140": {
+    "contest_id": 805,
+    "language": "GNU C++11",
+    "path": "codeforces\\805\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Fake NP",
+    "problem_url": "https://codeforces.com/contest/805/problem/A",
+    "submission_id": "CF50402140",
+    "submission_url": "https://codeforces.com/contest/805/submission/50402140",
+    "tags": [
+      "greedy",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Feb/24/2019 00:42"
+  },
   "CF50406640": {
     "contest_id": 805,
     "language": "GNU C++11",
