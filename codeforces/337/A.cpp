@@ -41,7 +41,7 @@ int main()
  	//freopen("output.txt", "w", stdout);
     int n = in();
     int k = in();
-    int mix =1005;
+    int mix =50000000;
     vector<int>v(k);
     for(int i = 0; i<k;i++)
     {
