@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF50699544": {
+    "contest_id": 712,
+    "language": "GNU C++14",
+    "path": "codeforces\\712\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Memory and Trident",
+    "problem_url": "https://codeforces.com/contest/712/problem/B",
+    "submission_id": "CF50699544",
+    "submission_url": "https://codeforces.com/contest/712/submission/50699544",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Mar/03/2019 02:05"
+  },
   "CF50798918": {
     "contest_id": 459,
     "language": "GNU C++14",
