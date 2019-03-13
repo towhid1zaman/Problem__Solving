@@ -8,18 +8,29 @@ int main()
         cin>>a>>b;
         int n;
         cin>>n;
-          cout<<a<<" "<<b<<endl;
+          queue<string> m,r;
           for(int i = 0; i<n;i++){
-            string m,r;
-            cin>>m>>r;
-            if(m==a){
-                a=r;
-            }else b = r;
-            cout<<a<<" "<<b<<endl;
+            string c,d;
+            cin>>c>>d;
+            m.push(c);
+            r.push(d);
           }
+            cout<<a<<" "<<b<<endl;
+                for(int i = 0; i<n;i++){
+                    if(m.front()==a){
+                        a = r.front();
+                        m.pop();
+                        r.pop();
+                    }
+                    else{
+                        b = r.front();
+                        m.pop();
+                        r.pop();
+                    }
+                    cout<<a<<" "<<b<<endl;
+                }
      return 0;
 }
-
 
 
 
