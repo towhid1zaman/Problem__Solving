@@ -16,19 +16,11 @@ int main()
         v.push_back(x);
         u.push_back(x);
       }
-      //cout<<endl;
-//      for(int i = 0; i<v.size();i++){
-//        cout<<v[i]<<endl;
-//      }
-
       sort(u.begin(),u.end());
       for(int i = 1; i<n+1;i++){
         v[i] = v[i-1] + v[i];
-       // cout<<v[i]<<" ";
         u[i] +=u[i-1];
-        //cout<<u[i]<<" ";
       }
-      //cout<<endl<<endl;
     int t,l,r;
     int m;cin>>m;
     for(int i = 0; i<m; i++){
@@ -40,7 +32,5 @@ int main()
             cout<<u[r] - u[l-1]<<endl;
         }
     }
-
-
      return 0;
 }
