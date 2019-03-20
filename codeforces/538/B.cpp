@@ -17,7 +17,7 @@ int main()
                 N -= m;
             }
             cout << a.size() <<endl;
-            sort(a.begin(),a.end());
+        //    sort(all(a));
             for(int i = 0; i<a.size();i++){
                 cout<<a[i]<<" ";
             }cout<<endl;
