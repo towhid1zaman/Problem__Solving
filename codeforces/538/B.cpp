@@ -4,42 +4,25 @@ typedef long long LL;
 int main()
 {
      ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-            string s;
-            cin>>s;
-            int n = s.length();
-            int res = 0;
-            for(int i = 0; i<n; i++){
-                    //cout<<res<<endl;
-                res = max(res, (int)(s[i]-'0'));
-            }
-            //cout<<endl;
-            cout<<res<<endl;
-            while(res--)
-            {
-                bool f = false;
-                for(int i = 0; i<n;i++)
-                {
-                    if(s[i]=='0')
-                    {
-                        if(f==true)
-                            cout<<0;
-                    }
-                    else
-                    {
-                        f = true;
-                        cout<<1;
-                        //cout<<endl<<"before -ve "<<s[i]<<endl;
-                        s[i]--;
-                        //cout<<"after -ve "<<s[i]<<endl;
-                    }
+            int N;
+            cin >> N;
+           vector<int>a;
+            while (N) {
+                int n = N, m = 0, p = 1;
+                while (n) {
+                    if (n % 10) m += p;
+                    n /= 10; p *= 10;
                 }
-                cout<<" ";
+                a.push_back(m);
+                N -= m;
             }
-            cout<<endl;
-
+            cout << a.size() <<endl;
+            sort(a.begin(),a.end());
+            for(int i = 0; i<a.size();i++){
+                cout<<a[i]<<" ";
+            }cout<<endl;
         return 0;
 }
-
 
 
 
