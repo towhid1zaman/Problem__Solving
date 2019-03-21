@@ -8,6 +8,7 @@ int main()
             int n,m;
             cin>>n>>m;
             //vector<int>v;
+
             memset(v,0,sizeof(v));
             for(int i  = 0; i<m;i++){
                 int x,y;
@@ -26,6 +27,7 @@ int main()
             for(int i = 1; i<=n;i++)
             {
                 if(star==i)continue;
+                else
                     cout<<star<<" "<<i<<endl;
             }
 
