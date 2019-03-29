@@ -5717,6 +5717,22 @@
     ],
     "timestamp": "Mar/21/2019 15:57"
   },
+  "CF51982791": {
+    "contest_id": 869,
+    "language": "GNU C++14",
+    "path": "codeforces\\869\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "The Eternal Immortality",
+    "problem_url": "https://codeforces.com/contest/869/problem/B",
+    "submission_id": "CF51982791",
+    "submission_url": "https://codeforces.com/contest/869/submission/51982791",
+    "tags": [
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Mar/29/2019 23:05"
+  },
   "CF52046748": {
     "contest_id": 1143,
     "language": "GNU C++14",
