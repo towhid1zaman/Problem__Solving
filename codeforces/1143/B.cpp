@@ -23,38 +23,30 @@ typedef long long LL;
 #define SORT(v) sort(v.begin(),v.end())
 #define REV(v) reverse(v.begin(),v.end())
 #define f(i,a,b) for(int i = a; i<=b;i++)
-
-LL  power(LL  a, LL  b)
-{
-    int  ans = 1;
-    for(int  i = 1; i<=b;i++){
-        ans*=a;
-    }
-    return ans;
-}
+LL N, F[27][2];
 int main()
 {
-    string s;
-    LL len,d=1,ans;
-	cin>>s;
-	//cout<<s<<nl;
-	 len = s.length();
-	 ans=power(9,len-1);
-	for(int i = 0; i<len;i++)
-    {
-        ans = max(ans, d*power(9,len-i-1) * (s[i] - '1'));
-        /// here,
-        /// d means products of all the previous digit
-        ///power (9,n-i-1) means product of succeeding all numbers as 9
-        ///s[i]-1 means we have to reduce the current digit
-        d*=(s[i]-'0');
-    }
+     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+      cin>>N;
+      LL t = 1, cnt  =1;
+      while(t<=N) t*=10,cnt++;
+      cnt--; t= N; F[0][0] = 1;
+      for(LL i = 1; i<=cnt;i++)
+      {
+          if(t%10)F[i][0] = max(F[i-1][0] *(t%10),F[i-1][1]*(t%10-1));
+          F[i][1] = max(F[i-1][0]*9,F[i-1][1]*9);
+          t = t/10;
+      }
 
-	LL res = max(ans,d);
-	cout<<res<<endl;
+        LL res  = max(F[cnt][0], F[cnt-1][1]);
+
+        cout<<res<<endl;
 
 
-	return 0;
+
+
+     return 0;
 }
+
 
 
