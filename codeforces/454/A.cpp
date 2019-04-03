@@ -2,13 +2,11 @@
 using namespace std;
 typedef long long LL;
 
-
 #define pb push_back
 #define lcm(a,b) a * (b / gcd(a, b))
 #define gcd(a,b) __gcd(a,b)
 #define nl "\n"
 #define inf 2e16
-#define MAX (int)2e5+5
 #define pi	acos(-1.0)
 #define ff first
 #define ss second
@@ -25,33 +23,34 @@ typedef long long LL;
 #define SORT(v) sort(v.begin(),v.end())
 #define REV(v) reverse(v.begin(),v.end())
 #define f(i,a,b) for(int i = a; i<=b;i++)
-#define IOS ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 int main()
 {
-   IOS
+     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+
         int n;
         R(n);
-        int space = n / 2;
-        for(int i = 0; i<n;i++){
-            int D = n - (space*2);
-                for(int j = 0; j<space;j++){
-                    cout<<"*";
-                }
-                for(int j = 0; j<D;j++){
+        int l  = n/2;
+        int r = n/2;
+        for(int i = 0; i<n;i++)
+        {
+            for(int j = 0; j<n;j++)
+            {
+                if(j>=l and j<=r){
                     cout<<"D";
                 }
-                for(int j = 0; j<space;j++){
+                else
                     cout<<"*";
-                }
-                cout<<nl;
-                if(i<n/2){
-                    space--;
-                }
-                else space++;
+            }
+            if(i<n/2){
+                l--;
+                r++;
+            }
+            else  if(i>=n/2){
+                l++;
+                r--;
+            }
+            cout<<nl;
         }
-
-
-
 
 
 
@@ -59,7 +58,5 @@ int main()
 
      return 0;
 }
-
-
 
 
