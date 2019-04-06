@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF52426821": {
+    "contest_id": 908,
+    "language": "GNU C++14",
+    "path": "codeforces\\908\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "New Year and Counting Cards",
+    "problem_url": "https://codeforces.com/contest/908/problem/A",
+    "submission_id": "CF52426821",
+    "submission_url": "https://codeforces.com/contest/908/submission/52426821",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Apr/07/2019 01:44"
+  },
   "CF52504210": {
     "contest_id": 268,
     "language": "GNU C++14",
