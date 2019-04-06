@@ -35,8 +35,7 @@ int main()
 {
     IOS
 
-//            10
-//            5 5 6 3 3 3 2 8 9 10
+
         int n;
         cin>>n;
         vector<int>v(n);
@@ -46,13 +45,14 @@ int main()
         {
             cin>>v[i];
             mp[v[i] ] ++;
-            //cout<<"MP  "<<mp[v[i] ]<<nl;
             if(mp[v[i]] > mx){
                 mx  = mp[v[i] ];
             }
-           // cout<<"MX " <<mx<<nl;
         }
         cout<<mx<<" "<<mp.size()<<nl;
+
+
+
 
 
 
