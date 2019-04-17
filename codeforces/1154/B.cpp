@@ -45,7 +45,6 @@ int main()
                     cin>>V[i];
                     s.insert(V[i]);
                 }
-
                 set<int>::iterator it;
                 vector<int>ans;
                 for(it = s.begin(); it!=s.end();it++)
