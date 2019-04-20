@@ -39,7 +39,21 @@ int main()
     IOS
         string s;
         cin>>s;
-        cout<<min((int)s.size(), 2*(int)count(s.begin(),s.end(),'a')-1);
+        int a=0,b=0;
+        for(int i=0;i<s.length();i++)
+        {
+             if(s[i]=='a')
+                a++;
+            else b++;
+        }
+        if(a>b){
+        cout<<s.length()<<nl;
+        }
+        else{
+            b=a-1;
+            cout<<b+a<<nl;;
+        }
+
 
 
      return 0;
