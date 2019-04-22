@@ -37,26 +37,43 @@ typedef vector<LL> vl;
 int main()
 {
     IOS
-        map<string,string>res;
-        res["purple"] = "Power";
-        res["green"] = "Time";
-        res["blue"] = "Space";
-        res["orange"] = "Soul";
-        res["red"] = "Reality";
-        res["yellow"] = "Mind";
         int n;
+        string s[6] = {"purple","green","blue","orange","red","yellow"};
+        string g[6] = {"Power","Time","Space", "Soul","Reality","Mind"};
         cin>>n;
         vector<string>v(n);
-        for(int i  = 0; i<n;i++)
-        {
+        for(int i = 0;i<n;i++){
             cin>>v[i];
-            res.erase(v[i]);
         }
-        map<string,string>::iterator it;
+//        if(v.size()==0){
+//                cout<<6;
+//            for(int i = 0;i<6;i++){
+//                cout<<g[i]<<nl;
+//            }
+//            return 0;
+//        }
+        vector<string>res;
+        for(int i = 0; i<n;i++){
+            for(int j = 0; j<6;j++){
+                if(v[i] == s[j]){
+                        s[ j ] = "f";
+                        continue;
+                }
+            }
+        }
+        for(int i = 0; i<6;i++){
+                if(s[i]=="f"){
+                    continue;
+                }
+                else res.pb(g[i]);
+
+        }
         cout<<res.size()<<nl;
-        for(it = res.begin(); it != res.end(); it++){
-            cout<<(*it).second<<nl;
+        for(int i = 0;i<res.size();i++){
+            cout<<res[i]<<nl;
         }
+
+
 
 
 
