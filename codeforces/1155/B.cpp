@@ -43,16 +43,22 @@ int main()
         cin>>n;
         string s;
         cin>>s;
-        int x = 0;
-        n-=10;
+        int x = abs(n-11)/2;
+        int y = x;
+        string ans = "";
         for(int i = 0; i<n;i++){
-            if(s[i]=='8')
-                x++;
-            else
-                x--;
+            if(s[i]=='8'){
+                if(x>0)x--;
+                else ans+=s[i];
+            }
+            else{
+                if(y>0)y--;
+                else ans+=s[i];
+            }
 
         }
-        if(x>0)cout<<"Yes"<<nl;
+        //cout<<ans<<nl;
+        if(ans[0]=='8')cout<<"Yes"<<nl;
         else cout<<"No"<<nl;
 
 
