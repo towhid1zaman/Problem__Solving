@@ -54,8 +54,31 @@ int main()
                 return 0;
             }
             SORT(v);
-            int x = (n-1)/2;
-            cout<<v[x]<<nl;
+            int x = n-1;
+            int f = x/2;
+            int s = x/2;
+            vector<int>res;
+            for(int i = 0; i<f;i++){
+               v[i] = 0;
+            }
+            int p = 0;
+            for(int i = n-1;;i--)
+            {
+                v[i] = 0;
+                p++;
+                if(p==s){
+                    break;
+                }
+            }
+            for(int i = 0; i<n;i++){
+                if(v[i] !=0){
+                    res.pb(v[i]);
+                }
+            }
+            cout<<minv(res)<<endl;
+
+
+
 
 
 
