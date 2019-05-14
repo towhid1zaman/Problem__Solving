@@ -60,14 +60,10 @@ int main()
             m[res[i] ]++;
 
         }
-                vector<int>maxi;
-                for(auto it = m.begin(); it !=m.end(); it++){
-                    maxi.pb((*it).second);
-                }
-                //int mx = max_element(m.begin(),m.end(),pred)->second;
+
+                int mx = max_element(m.begin(),m.end(),pred)->second;
               //  cout<<mx<<endl;
-                    int mx = maxv(maxi);
-                    //cout<<mx<<nl;
+
 
 
 //
