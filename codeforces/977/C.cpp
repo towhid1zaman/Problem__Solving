@@ -43,18 +43,24 @@ int main()
 //        for(int i = 0; i<n;i++){
 //            cout<<v[i]<<" ";
 //        }cout<<nl;
+        int res;
         if(k==0){
-                if(v[0]>1){
-                    cout<<1<<nl;
-                }
-                else cout<<-1<<nl;
-                return 0;
+                    res = v[0] - 1;
         }
-                if(v[k-1]== v[k]){
-                    cout<<-1<<nl;
+        else
+            res = v[k-1];
+
+            int cnt = 0;
+            for(int i = 0; i<n;i++){
+                if(v[i] <= res){
+                    cnt ++;
                 }
-                else
-                    cout<<v[k-1]<<nl;
+            }
+            if(res<1 or cnt !=k){
+                cout<<-1<<nl;
+            }
+            else
+                cout<<res<<nl;
 
 
 
