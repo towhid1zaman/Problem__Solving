@@ -27,16 +27,18 @@ int main()
         int n;
         cin>>n;
         vector<int>v(n);
-        int total = 0, ans =0,e=0,o=0;
+        int total = 0, ans =0;
 
         for(int i= 0 ;i<n;i++){
             cin>>v[i];
             total+=v[i];
-            if(v[i]%2)o++;
-            else e++;
         }
-        if(total%2==0)cout<<e<<nl;
-        else cout<<o<<nl;
+        for(int i= 0 ; i<n;i++){
+            if((total-v[i])%2==0){
+                ans++;
+            }
+        }
+        cout<<ans<<nl;
 
 
 
