@@ -2179,6 +2179,26 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF54269927": {
+    "contest_id": 570,
+    "language": "GNU C++14",
+    "path": "codeforces\\570\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Simple Game",
+    "problem_url": "https://codeforces.com/contest/570/problem/B",
+    "submission_id": "CF54269927",
+    "submission_url": "https://codeforces.com/contest/570/submission/54269927",
+    "tags": [
+      "constructive algorithms",
+      "games",
+      "greedy",
+      "implementation",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "May/17/2019 14:17"
+  },
   "CF54414528": {
     "contest_id": 797,
     "language": "GNU C++14",
