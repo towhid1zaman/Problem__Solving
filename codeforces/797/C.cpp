@@ -55,12 +55,8 @@ int main()
 //                cout<<nl;
 
             }
-
-            while(t.size()>0)
-            {
-                u.pb(t.back());
-                t.pop_back();
-            }
+            REV(t);
+            u+=t;
             cout<<u<<nl;
 
 return 0;
