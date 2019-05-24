@@ -25,39 +25,35 @@ typedef long long LL;
 #define Sl(x) scanf("%lld",&x)
 #define P(x) printf("%d\n",x)
 #define Pl(x) printf("%lld\n",x)
-int findlucky(int n)
-{
-    int cnt = 0;
-    while(n !=0)
-    {
-        if(n%10==4 or n%10==7)
-        {
-            cnt++;
-        }
-        n/=10;
-    }
-    return cnt;
-}
 
 int main(){f();
        	  //freopen("input.txt", "r", stdin);
 	//freopen("output.txt", "w", stdout);
-
-	int n,k;
-	cin>>n>>k;
-	int res = 0;
-	for(int i = 0; i<n;i++)
-    {
-        int x;
-        cin>>x;
-        if(findlucky(x)<=k)
+		int n;
+		cin>>n;
+		int k;
+		cin>>k;
+		string s;
+		int res = 0;
+		for(int  i = 0; i<n;i++)
         {
-            res++;
+            cin>>s;
+            int cnt = 0;
+            for(int j = 0; j<s.length();j++)
+            {
+                if(s[j]=='4' or s[j]=='7')
+                {
+                    cnt++;
+                }
+            }
+            if(cnt<=k)
+            {
+                res++;
+            }
         }
-    }
-    cout<<res<<nl;
+        cout<<res<<nl;
+
 
 
 return 0;
 }
-
