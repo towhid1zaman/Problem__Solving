@@ -6342,6 +6342,25 @@
     ],
     "timestamp": "May/24/2019 15:52"
   },
+  "CF54569173": {
+    "contest_id": 721,
+    "language": "GNU C++14",
+    "path": "codeforces\\721\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Passwords",
+    "problem_url": "https://codeforces.com/contest/721/problem/B",
+    "submission_id": "CF54569173",
+    "submission_url": "https://codeforces.com/contest/721/submission/54569173",
+    "tags": [
+      "implementation",
+      "math",
+      "sortings",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "May/25/2019 00:13"
+  },
   "CF54586695": {
     "contest_id": 581,
     "language": "GNU C++14",
