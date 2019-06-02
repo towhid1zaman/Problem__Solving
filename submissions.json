@@ -2179,6 +2179,22 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF54983899": {
+    "contest_id": 1177,
+    "language": "GNU C++14",
+    "path": "codeforces\\1177\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Digits Sequence (Easy Edition)",
+    "problem_url": "https://codeforces.com/contest/1177/problem/A",
+    "submission_id": "CF54983899",
+    "submission_url": "https://codeforces.com/contest/1177/submission/54983899",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jun/02/2019 20:37"
+  },
   "CF54985123": {
     "contest_id": 1177,
     "language": "GNU C++14",
