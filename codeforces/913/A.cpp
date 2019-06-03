@@ -41,7 +41,8 @@ int main(){f();
             cout<<m<<nl;
         }
         else{
-            cout<<m%(1<<n)<<nl;
+            int x = pow(2,n);
+            cout<<m%x<<nl;
         }
 
 
