@@ -24,35 +24,28 @@ typedef long long LL;
 #define unq(v) srt(v),(v).erase(unique((v).begin(),(v).end()),(v).end())
 #define MOD 1000000007   // (int)1e9+7
 
-int v[1000];
-int main(){f();
-                /// khub vallagche eta solve kore :D
-            int n,m;
-            cin>>n>>m;
 
-            queue<int>q;
-            for(int i = 1; i<=n;i++)
+int main(){f();
+        int n,m;
+        cin>>n;
+        cin>>m;
+        vector<int>v(n);
+        for(int i = 1;i<=n;i++)
             {
                 cin>>v[i];
-                q.push(i);
             }
-            int ans;
-            while(!q.empty())
+        int ans=1;
+        int mx = 0;
+        for(int i = 1; i<=n;i++)
             {
-                int x = q.front();
-                v[x]-=m;
-                if(v[x]>0){
-                    q.push(x);
-                }
-                  q.pop();
-                if(q.empty()){
-                    ans = x;
-                }
+               if((v[i]-1)/m+1>=mx){
+                    mx = (v[i]-1)/m+1;
+                    ans =i;
+               }
             }
-            cout<<ans<<nl;
+        cout<<ans<<nl;
 
 
 
 return 0;
 }
-
