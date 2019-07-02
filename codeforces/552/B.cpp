@@ -23,9 +23,13 @@ typedef long long LL;
 #define f() {ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);}
 #define unq(v) srt(v),(v).erase(unique((v).begin(),(v).end()),(v).end())
 #define MOD 1000000007   // (int)1e9+7
-LL NofDigit(LL n)
-{
-    LL ans = 0;
+
+
+int main(){f();
+
+		LL n;
+		cin>>n;
+		LL ans = 0;
 		LL p = 9,c=1;
 		while(n>0)
         {
@@ -35,14 +39,7 @@ LL NofDigit(LL n)
             p*=10;
             c++;
         }
-        return ans;
-}
-
-int main(){f();
-
-		LL n;
-		cin>>n;
-        cout<<NofDigit(n)<<nl;
+        cout<<ans<<nl;
 
 
 
