@@ -26,37 +26,16 @@ typedef long long LL;
 
 
 int main(){f();
-            /*
-            now using binary search,
-            if K is equal to the mid position of the sequence then n will be
-            the answer otherwise if K is greater, then K must be present in the right half of the sequence,
-            so we will change our left limit to mid+1,
-            else if K is smaller, we will change our right limit to mid-1 and in each iteration we will decrease n by one.
-                */
+
 		LL n,k;
 		cin>>n>>k;
-		LL z = pow(2,n)-1;
-		LL x = 1;
-		if(k%2==1)
+		LL ans  = 0;
+		while(k%2==0)
         {
-            cout<<1<<nl;
-            return 0;
+            k/=2;
+            ans++;
         }
-        LL ans=0;
-        while(true){
-            LL y = (x+z)/2;
-            if(k==y){
-                ans = n;
-                break;
-            }
-            else if(y>k){
-                    z = y-1;
-            }
-            else{
-                x = y+1;
-            }
-            n--;
-        }
+        ans++;
         cout<<ans<<endl;
 
 
