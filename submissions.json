@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF56606653": {
+    "contest_id": 439,
+    "language": "GNU C++14",
+    "path": "codeforces\\439\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Devu, the Singer and Churu, the Joker",
+    "problem_url": "https://codeforces.com/contest/439/problem/A",
+    "submission_id": "CF56606653",
+    "submission_url": "https://codeforces.com/contest/439/submission/56606653",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Jul/06/2019 11:07"
+  },
   "CF56607669": {
     "contest_id": 1189,
     "language": "GNU C++14",
