@@ -50,10 +50,10 @@ int main(){f();
         int x;
         cin>>x;
         int res=0;
+        /// __builtin_popcount(int) function is used to count the number of one’s(set bits) in an integer.
         for(int i = 0; i<m;i++)
         {
-            int bit = countsetbit(v[i]^x);
-            if(bit<=k){
+            if(__builtin_popcount(v[i]^x)<=k){
                 res++;
             }
         }
