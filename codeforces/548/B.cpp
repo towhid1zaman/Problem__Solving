@@ -54,19 +54,17 @@ int main(){
         --a,--b;
         if(mat[a][b])mat[a][b]=0;
             else mat[a][b]=1;
-        int cnt = 0,ans=0;
-        for(int i = 0; i<m;i++)
-        {
-            if(mat[a][i])cnt++;
-            else
-                cnt=0;
-            ans = max(cnt,ans);
-        }
-        res[a] = ans;
-        int result = 0;
+        int cnt ,result=0;
         for(int i = 0; i<n;i++)
         {
-            result = max(res[i],result);
+            cnt =0;
+            for(int j = 0; j<m;j++)
+            {
+                if(mat[i][j])cnt++;
+                    else
+                        cnt=0;
+                    result = max(cnt,result);
+            }
         }
         cout<<result<<endl;
     }
