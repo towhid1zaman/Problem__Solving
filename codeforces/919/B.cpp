@@ -22,7 +22,7 @@ typedef vector<pii>vip;
 
 const int mod = 1000000007; // (int)1e9+7
 const int N = int(3e5) + 99;
-const int x = 20000000;
+
 int sum(int n)
 {
    return n == 0 ? 0 : n%10 + sum(n/10) ;
@@ -31,15 +31,15 @@ int main(){
 	IO
     int n;
     cin>>n;
-    vector<int>ans;
-    for(int i = 1; i<x;i++)
+    int ans =1;
+    while(n)
     {
-        if(sum(i)==10)
-        {
-            ans.push_back(i);
+        if(sum(ans)==10){
+            n--;
         }
+        ans++;
     }
-    cout<<ans[n-1]<<endl;
+    cout<<ans-1<<endl;
 
 return 0;
 }
