@@ -7755,6 +7755,23 @@
     ],
     "timestamp": "Aug/05/2019 01:42"
   },
+  "CF58340162": {
+    "contest_id": 1201,
+    "language": "GNU C++14",
+    "path": "codeforces\\1201\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Important Exam",
+    "problem_url": "https://codeforces.com/contest/1201/problem/A",
+    "submission_id": "CF58340162",
+    "submission_url": "https://codeforces.com/contest/1201/submission/58340162",
+    "tags": [
+      "implementation",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Aug/05/2019 18:56"
+  },
   "CF58356452": {
     "contest_id": 1131,
     "language": "GNU C++14",

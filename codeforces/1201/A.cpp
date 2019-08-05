@@ -14,7 +14,7 @@ typedef vector<pii>vip;
 #define sp(x,k) cout<<setprecision(k)<<fixed<<x<<endl;
 #define rep(i, n) for(int i = 0; i < (n); ++i)
 #define rep1(i, n) for(int i = 1; i <= (n); ++i)
-#define rep2(i,a,b) for(int i =(a); i <(b); ++i)
+#define rep2(i,a,b) for(int i =(a); i <=(b); ++i)
 #define minv(v) *min_element(v.begin(),v.end())
 #define maxv(v) *max_element(v.begin(),v.end())
 #define each(it,s) for(auto it = s.begin(); it != s.end(); ++it)
@@ -27,28 +27,48 @@ typedef vector<pii>vip;
 const int mod = 1000000007; // (int)1e9+7
 const int N = int(3e5) + 99;
 
+
 int main(){
 	IO
-	int n,m;
+    int n,m;
     cin>>n>>m;
-    string uttor[1111];
-    rep1(i,n){
-        cin>>uttor[i];
+    string s[n+1];
+    int q[m+1];
+    for(int i = 0; i<n;i++)
+    {
+        cin>>s[i];
     }
-    ll ans=0;
-    rep1(j,m){
-            ll man;
-            cin>>man;
-            map <char,ll> mp;
-            ll   mx=0;
-            for(ll i=1;i<=n;i++){
-                mp[uttor[i][j-1]]++;
-                mx=max(mp[uttor[i][j-1]],mx);
-            }
-            ans+=mx*man;
+    for(int i = 0; i<m;i++)
+    {
+        cin>>q[i];
+    }
+    int c[27];
+    int ans = 0;
+    for(int i = 0; i<m;i++)
+    {
+        for(int j = 0; j<26;j++)
+        {
+            c[j] = 0;
         }
+        for(int j = 0; j<n;j++)
+        {
+            c[s[j][i]-'A']++;
+        }
+        int mx = 0;
+        for(int j=0;j<26;j++)
+        {
+            mx = max(mx,c[j]);
+        }
+        ans +=(q[i]*mx);
+    }
     cout<<ans<<endl;
+
+
+
+
+
+
+
 return 0;
 }
-
 
