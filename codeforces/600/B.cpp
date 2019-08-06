@@ -26,6 +26,22 @@ typedef vector<pii>vip;
 #define pll(n) printf("%lld\n",n)
 const int mod = 1000000007; // (int)1e9+7
 const int N = int(3e5) + 99;
+int bs(vector<int>&num,int target)
+{
+  int left = 0, right = num.size() - 1;
+  int ans = -1;
+ while(left<=right){
+  int mid = left+(right-left)/2;
+  if(num[mid]<=target){
+        ans=mid;
+        left = mid+1;
+	}
+  else{
+         right = mid - 1;
+      }
+  }
+    return ans;
+}
 int main(){
 	IO
 	int n,m,x;
@@ -41,10 +57,9 @@ int main(){
     for(int i = 0;i<m;i++)
     {
         cin>>x;
-        ///simply using upper bound and find out <= index
-        int  ind= upper_bound(a.begin(), a.end(), x) - a.begin();
+        int  ind=bs(a,x);
         //cout<<ind<<endl;
-        ans.pb(ind);
+        ans.pb(ind+1);
     }
 	for(auto &x:ans){
         cout<<x<<" ";
