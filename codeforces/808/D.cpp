@@ -43,7 +43,7 @@ int main(){
         cout<<"NO"<<endl;
         return 0;
     }
-  map<ll,int>first,second;
+    map<ll,ll>first,second;
     first[v[0]] = 1;
 
     for(int i = 1; i<n;i++)
@@ -60,7 +60,7 @@ int main(){
             cout<<"YES"<<endl;
             return 0;
         }
-        if(s<sum/2)
+        else if(s<sum/2)
         {
             ll x = sum/2 - s;
             if(second[x]>0)
