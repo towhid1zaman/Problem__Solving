@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF58533088": {
+    "contest_id": 1011,
+    "language": "GNU C++14",
+    "path": "codeforces\\1011\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Planning The Expedition",
+    "problem_url": "https://codeforces.com/contest/1011/problem/B",
+    "submission_id": "CF58533088",
+    "submission_url": "https://codeforces.com/contest/1011/submission/58533088",
+    "tags": [
+      "binary search",
+      "brute force",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Aug/10/2019 16:31"
+  },
   "CF58626925": {
     "contest_id": 1200,
     "language": "GNU C++14",
