@@ -27,32 +27,37 @@ typedef vector<pii>vip;
 #define pll(n) printf("%lld\n",n)
 const int mod = 1000000007; // (int)1e9+7
 const int N = int(3e5) + 99;
-ll cntdivi(ll n) {
-    ll divisor = 0;
-    for (ll i = 1; i * i <= n; i++) {
-            if (i * i == n) {
-                    divisor += 1;
-                }
-                else if (n % i == 0) {
-                divisor += 2;
-            }
-        }
-return divisor;
-}
+
 int main(){
 		IO
-        ll n;
+        ll n,i;
         cin>>n;
-        vll v(n);
-        cin>>v[0];
-        ll gcd = v[0];
-        for(ll i = 1; i<n;i++)
+        vll a(n);
+
+        cin>>a[0];
+
+        ll gcd=a[0];
+
+        rep(i,n-1)
         {
-            cin>>v[i];
-            gcd = __gcd(gcd,v[i]);
+            cin>>a[i];
+            gcd=__gcd(gcd,a[i]);
         }
-        //cout<<gcd<<endl;
-        cout<<cntdivi(gcd)<<endl;
+
+        ll ans=0;
+
+        for(i=1;i<=sqrt(gcd);i++)
+        {
+            if(gcd%i==0)
+            {
+                ans++;
+                if(gcd/i!=i)  ans++;
+            }
+        }
+
+        cout<<ans<<endl;
+
 return 0;
 }
+
 
