@@ -28,15 +28,10 @@ int main(){
     cerr.tie(nullptr);
     int b,g,n;
     cin>>b>>g>>n;
-    int ans = 0;
-    rep(i,0,n){
-        int girl = i;
-        int boy = n-i;
-        if(girl<=g and boy<=b){
-            ans++;
-        }
-    }
+    int ans=0;
+    rep(i,0,b)rep(j,0,g)if(i+j==n)ans++;
     cout<<ans<<endl;
+
 
 
 
