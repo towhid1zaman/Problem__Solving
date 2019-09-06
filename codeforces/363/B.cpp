@@ -28,18 +28,29 @@ int main(){
     cerr.tie(nullptr);
     int n,k,x=0;
     cin>>n>>k;
-    vector<int>a(n),prefix(n);
+    vector<int>a,prefix;
         for(int i = 0; i<n;i++)
         {
-            cin >>a[i];
-            prefix[i+1] = prefix[i] + a[i];
+            int x;
+            cin>>x;
+            a.push_back(x);
+            if(i>0)
+            {
+                prefix.push_back(prefix[i-1]+a[i]);
+            }
+            else{
+                prefix.push_back(a[i]);
+            }
         }
         int sum = 0,f=0;
-        int ans = prefix[k];
+        int ans = 1e9;
         for(int i = 0; i<=n-k ;i++){
-            if(prefix[i+k]-prefix[i]<ans){
+            sum =  prefix[i+k-1] - f;
+            f = prefix[i];
+            if(sum<ans)
+            {
                 x = i;
-                ans = prefix[i+k]-prefix[i];
+                ans = sum;
             }
         }
 
