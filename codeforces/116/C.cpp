@@ -28,20 +28,34 @@ int main(){
     cerr.tie(nullptr);
     int n;
     cin>>n;
-    for(int i = 0; i<n;i++){
+    set<int>s;
+    map<int,bool>m;
+    for(int i = 1;i<=n;i++){
         cin>>v[i];
     }
-    int temp,ans,mx = 0;
-    for(int i = 0; i<n;i++){
-        temp = v[i];
-        ans = 0;
-        while(temp>=0){
-            temp=v[temp-1];
-            ans++;
+    int cnt = 0;
+    m.clear();
+    m[-1]=true;
+    int k;
+    while(true){
+        k=0;
+        cnt++;
+        s.clear();
+        for(int i = 1; i<=n;i++){
+            if(m.find(i)==m.end() and m.find(v[i]) !=m.end() ){
+                k =1;
+                s.insert(i);
+            }
+
         }
-        mx = max(ans,mx);
+        each(it,s){
+            m[*it] = true;
+        }
+        if(!k)break;
     }
-    cout<<mx+1<<endl;
+    cout<<cnt - 1<<endl;
+
+
 
 
 
