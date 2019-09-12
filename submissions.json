@@ -8592,6 +8592,22 @@
     ],
     "timestamp": "Sep/11/2019 16:25"
   },
+  "CF60429116": {
+    "contest_id": 699,
+    "language": "GNU C++14",
+    "path": "codeforces\\699\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Launch of Collider",
+    "problem_url": "https://codeforces.com/contest/699/problem/A",
+    "submission_id": "CF60429116",
+    "submission_url": "https://codeforces.com/contest/699/submission/60429116",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Sep/12/2019 14:52"
+  },
   "CF60456180": {
     "contest_id": 699,
     "language": "GNU C++14",
