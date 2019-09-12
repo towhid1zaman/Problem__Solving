@@ -19,59 +19,46 @@ typedef vector<pii>vip;
 #define mp make_pair
 const int mod = 1000000007; // (int)1e9+7
 const int N = 3000;
-
-int v[N];
+int n, m, s;
+int hor[N], wer[N];
+char tab[N][N];
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
     cerr.tie(nullptr);
-    int n,m;
-    cin>>n>>m;
-    string s[n];
-    int fata1=0;
-    int fata2=0;
-    bool f = false;
-    int cnt = 0;
-//    map<int,int>row;
-//    map<int,int>colmn;
-    int row[N];
-    int colmn[N];
-    for(int i = 0; i<n;i++){
-        cin>>s[i];
-        for(int j = 0; j<s[i].length();j++){
-            if(s[i][j]=='*'){
-                    cnt++;
-                    row[i]++;
-                    colmn[j]++;
-        }
-    }
-    }
-//    cout<<cnt<<endl;
-//    rep(i,0,n){
-//        cout<<row[i]<<" ";
-//    }
-//    cout<<endl;
-//    rep(i,0,m){
-//        cout<<colmn[i]<<" ";
-//    }
-    for(int i = 0; i<n;i++){
-        for(int j = 0; j<m;j++){
-            int cur = row[i] + colmn[j] - (s[i][j]=='*');
-            if(cur==cnt){
-                fata1 = i;
-                fata2 = j;
-                f = true;
-                break;
-            }
-        }
-    }
-    if(f){
-        cout<<"YES"<<endl;
-        cout<<++fata1<<" "<<++fata2<<endl;
-    }
-    else
-        cout<<"NO"<<endl;
+    cin >> n >> m;
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= m; j++) {
+			char t;
+			cin >> t;
+
+			if (t == '*') {
+				s++;
+				hor[i]++;
+				wer[j]++;
+			}
+			tab[i][j] = t;
+		}
+	}
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= m; j++) {
+			int curr = hor[i] + wer[j] - (tab[i][j] == '*');
+
+			if (curr == s) {
+				cout << "YES" << endl;
+				cout << i << ' ' << j;
+				return 0;
+			}
+		}
+	}
+	cout << "NO";
+
+
+
+
 
 
 
