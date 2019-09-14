@@ -20,11 +20,7 @@ typedef vector<pii>vip;
 const int mod = 1000000007; // (int)1e9+7
 const int N = int(3e5) + 99;
 
-ll md(ll x){
-    x%=mod;
-    if(x>=0)return x;
-    else return x+mod;
-}
+
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -34,15 +30,16 @@ int main(){
     cin>>x>>y;
     ll n;
     cin>>n;
-    /// 6 cycles Fi = Fi-1 + Fi+1 => Fi+1 = Fi-1 - Fi;
-    ll f[6];
-    f[1]=x;
-    f[2]=y;
-    f[3] = f[2] - f[1];
-    f[4] = f[3] - f[2];
-    f[5] = f[4] - f[3];
-    f[0]=f[5]-f[4];
-    ll ans = md(f[n%6]);
+    n%=6;
+    ll ans;
+    if(n==0)ans = x- y;
+    else if(n==1)ans = x;
+    else if(n==2)ans = y;
+    else if(n==3)ans = y-x;
+    else if(n==4)ans = -x;
+    else if(n==5)ans = -y;
+
+    ans = (ans+mod+mod)%mod;
     cout<<ans<<endl;
 
 
