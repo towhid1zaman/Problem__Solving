@@ -27,9 +27,10 @@ int main(){
     cerr.tie(nullptr);
     ll n,q;
     cin>>n>>q;
-    vll v(n+1,0);
+    vll v(n);
     vll point(n+2,0);
-    for(int i = 1; i<n+1;i++){
+
+    for(int i = 0; i<n;i++){
         cin>>v[i];
     }
     ll l,r;
@@ -39,17 +40,16 @@ int main(){
             point[r+1]-=1;
     }
     ///prefix
-    for(int i = 1; i<n+1;i++){
+    for(int i = 1; i<n+2;i++){
         point[i] += point[i-1];
     }
 //    for(auto x: point){
 //        cout<<x<<" ";
 //    }cout<<endl;
     ll ans = 0;
-    sort(point.begin()+1,point.end()-1);
-    sort(v.begin()+1,v.end());
-    for(int i=1; i<n+1;i++){
-        ans+=point[i]*v[i];
+    sort(all(v)),sort(all(point));
+    for(int i= n-1; i>=0;i--){
+        ans+=point[i+2]*v[i];
     }
     cout<<ans<<endl;
 
