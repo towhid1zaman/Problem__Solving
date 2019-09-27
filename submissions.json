@@ -8900,6 +8900,23 @@
     ],
     "timestamp": "Sep/24/2019 16:19"
   },
+  "CF61389817": {
+    "contest_id": 651,
+    "language": "GNU C++14",
+    "path": "codeforces\\651\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Beautiful Paintings",
+    "problem_url": "https://codeforces.com/contest/651/problem/B",
+    "submission_id": "CF61389817",
+    "submission_url": "https://codeforces.com/contest/651/submission/61389817",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Sep/28/2019 02:47"
+  },
   "CF61454790": {
     "contest_id": 588,
     "language": "GNU C++14",
