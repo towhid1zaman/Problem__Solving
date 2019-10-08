@@ -1,36 +1,68 @@
-#include<bits/stdc++.h>
+#include "bits/stdc++.h"
 using namespace std;
-typedef long long LL;
-int main()
-{
-     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-      int n;
-      cin>>n;
-      vector<LL>v;
-      vector<LL>u;
-      v.push_back(0);
-      u.push_back(0);
-      for(int i = 0; i<n;i++){
-        LL x;
-        cin>>x;
-        v.push_back(x);
-        u.push_back(x);
-      }
-      sort(u.begin(),u.end());
-      for(int i = 1; i<n+1;i++){
-        v[i] = v[i-1] + v[i];
-        u[i] +=u[i-1];
-      }
-    int t,l,r;
-    int m;cin>>m;
-    for(int i = 0; i<m; i++){
-        cin>>t>>l>>r;
-        if(t==1){
-            cout<<v[r] - v[l-1]<<endl;;
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<ll> vll;
+typedef pair <int, int> pii;
+typedef vector<pii>vip;
+#define all(v) (v).begin(),(v).end()
+#define sp(x,k) cout<<setprecision(k)<<fixed<<x<<endl;
+#define rep(i,a,b) for(int i =(a); i <=(b); ++i)
+#define minv(v) *min_element(v.begin(),v.end())
+#define maxv(v) *max_element(v.begin(),v.end())
+#define each(it,s) for(auto it = s.begin(); it != s.end(); ++it)
+#define unq(v) sort(all(v)),(v).erase(unique((v).begin(),(v).end()),(v).end())
+#define endl "\n"
+#define F first
+#define S second
+#define pb push_back
+#define mp make_pair
+const int mod = 1000000007; // (int)1e9+7
+const int N = 200010;
+
+ll a[N];
+ll b[N];
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    cerr.tie(nullptr);
+    ll n;
+    cin>>n;
+    for(int i = 1; i<=n;i++){
+        cin>>a[i];
+        b[i] = a[i];
+        a[i]+=a[i-1];
+    }
+//    for(int i = 1; i<=n;i++){
+//            //cout<<"OK"<<endl;
+//        cout<<b[i]<<" ";
+//    }
+//    cout<<endl;
+    sort(b,b+n+1);
+    for(int i = 2; i<=n;i++){
+        b[i]+=b[i-1];
+    }
+//    for(int i= 1; i<=n;i++){
+//        cout<<b[i]<<" ";
+//    }
+//  cout<<endl;
+    ll q;
+    cin>>q;
+    while(q--){
+        ll type,l,r;
+        cin>>type>>l>>r;
+        if(type==1){
+                cout<<a[r]-a[l-1]<<endl;
         }
-        else if(t==2){
-            cout<<u[r] - u[l-1]<<endl;
+        else if(type==2){
+            cout<<b[r]-b[l-1]<<endl;
         }
     }
-     return 0;
+
+
+return 0;
 }
+
+
+
