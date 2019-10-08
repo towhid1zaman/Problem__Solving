@@ -1,6 +1,6 @@
 #include "bits/stdc++.h"
 using namespace std;
-typedef long long ll;
+typedef unsigned long long ll;
 typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef pair <int, int> pii;
@@ -27,28 +27,42 @@ int main(){
     cerr.tie(nullptr);
     int q;
     cin>>q;
+    ll h,n;
     while(q--)
     {
-        ll res = 0;
-        ll h,n;
         cin>>h>>n;
-        vll v(n+5);
-        for(int i = 1; i<=n;i++){
-            cin>>v[i];
+        vll v;
+        map<ll,ll>mup;
+        rep(i,1,n){
+           ll x;
+            cin>>x;
+           mup[x]=1;
+           v.push_back(x);
         }
-        v[n+1] = 0;
-        for(int i = 2; i<=n;i++){
-            if(v[i]-1>v[i+1])res++;
-            else i++;
-
+        ll chek = h;
+        ll result = 0;
+        mup[0]=1,mup[-1]=1,mup[-2]=1;
+        rep(i,0,n-1)
+        {
+            if(v[i]>=chek){
+                continue;
+            }
+            else if(v[i]+1==chek){
+                if(mup[chek-2]==0)
+                result++;
+                chek-=2;
+            }
+            else{
+                chek = v[i]+1;
+                if(mup[chek-2]==0)
+                result++;
+                chek-=2;
+            }
         }
-        cout<<res<<endl;
+        cout<<result<<endl;
     }
-
-
-
-
 return 0;
 }
+
 
 
