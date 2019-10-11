@@ -27,22 +27,15 @@ int main(){
     cerr.tie(nullptr);
     int n;
     cin>>n;
-    int v[n+1];
+    vi v;
     for(int i = 1;i<=n;i++){
-        v[i] = i;
+        v.pb(i);
     }
-    int x =n;
-    while(true)
-    {
-        if(x==1)break;
-        swap(v[x-1],v[x]);
-        x-=1;
-    }
-//    cout<<v[v.size()-1]<<" ";
-//    sort(all(v));
-    for(int i = 1; i<=n;i++){
+    cout<<v[v.size()-1]<<" ";
+    sort(all(v));
+    for(int i = 0; i<v.size()-1;i++ ){
         cout<<v[i]<<" ";
-    }
+    }cout<<endl;
 
 
 
