@@ -28,24 +28,24 @@ void solve()
         if((s[i] - '0')%2)odd.push_back(s[i]);
         else even.push_back(s[i]);
     }
-//    string ans;
-//    int i = 0;
-//    int j = 0;
-//    while(i<odd.size() or j<even.size()){
-//        if(i==odd.size()){
-//            ans+=even[j++];
-//        }
-//        else if(j==even.size()){
-//            ans+=odd[i++];
-//        }
-//        else if(odd[i]<even[j]){
-//            ans+=odd[i++];
-//        }
-//        else ans+=even[j++];
-//    }
-//    cout<<ans<<endl;
-    merge(odd.begin(),odd.end(),even.begin(),even.end(),s.begin());
-    cout<<s<<endl;
+    string ans;
+    int i = 0;
+    int j = 0;
+    while(i<odd.size() or j<even.size()){
+        if(i==odd.size()){
+            ans+=even[j++];
+        }
+        else if(j==even.size()){
+            ans+=odd[i++];
+        }
+        else if(odd[i]<even[j]){
+            ans+=odd[i++];
+        }
+        else ans+=even[j++];
+    }
+    cout<<ans<<endl;
+//    merge(odd.begin(),odd.end(),even.begin(),even.end(),s.begin());
+//    cout<<s<<endl;
 }
 int main(){
     ios_base::sync_with_stdio(false);
