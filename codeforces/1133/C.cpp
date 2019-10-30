@@ -29,17 +29,20 @@ int main(){
     int n;
     cin>>n;
     vll v(n);
+    map<int,int>cnt;
+    set<int>s;
     for(int i = 0; i<n;i++){
         cin>>v[i];
+        cnt[v[i]]++;
+        s.insert(v[i]);
     }
-    sort(all(v));
     int ans = 0;
-    int j = 0;
-    for(int i = 0; i<n;i++){
-        if(v[i]-v[j]<=5){
-            ans = max(ans,i-j+1);
+    for(auto a: s){
+        int res = cnt[a];
+        for(int i = 1; i<=5;i++){
+            res+=cnt[a+i];
         }
-        else j++;
+        ans = max(ans,res);
     }
     cout<<ans<<endl;
 
