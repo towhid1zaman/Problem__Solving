@@ -44,7 +44,7 @@ int main(){
     ll cursum=0;
     rep(i,0,n-1){
         prefix.insert(v[i]);
-        suffix.erase(suffix.lower_bound(v[i]));
+        suffix.erase(suffix.find(v[i]));
         cursum+=v[i];
         if(cursum==target){
             cout<<"YES"<<endl;

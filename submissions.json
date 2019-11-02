@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF64064940": {
+    "contest_id": 808,
+    "language": "GNU C++14",
+    "path": "codeforces\\808\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Array Division",
+    "problem_url": "https://codeforces.com/contest/808/problem/D",
+    "submission_id": "CF64064940",
+    "submission_url": "https://codeforces.com/contest/808/submission/64064940",
+    "tags": [
+      "binary search",
+      "data structures",
+      "implementation",
+      "*1900"
+    ],
+    "timestamp": "Nov/02/2019 11:24"
+  },
   "CF64068675": {
     "contest_id": 808,
     "language": "GNU C++14",
