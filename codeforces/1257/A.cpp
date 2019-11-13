@@ -24,10 +24,11 @@ void solve()
 {
     int n,x,a,b;
     cin>>n>>x>>a>>b;
-    if(a>b)swap(a,b);
-    while(x>0 and b<n)b++,x--;
-    while(x>0 and a>1)a--,x--;
-    cout<<b-a<<endl;
+    if((abs(a-b) + x)>n-1)
+    {
+        cout<<min(n-1,x+abs(a-b))<<endl;
+    }
+    else cout<<abs(a-b) + x<<endl;
 }
 int main(){
     ios_base::sync_with_stdio(false);
