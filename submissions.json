@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF65940573": {
+    "contest_id": 1260,
+    "language": "GNU C++14",
+    "path": "codeforces\\1260\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Obtain Two Zeroes",
+    "problem_url": "https://codeforces.com/contest/1260/problem/B",
+    "submission_id": "CF65940573",
+    "submission_url": "https://codeforces.com/contest/1260/submission/65940573",
+    "tags": [
+      "binary search",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Nov/29/2019 11:56"
+  },
   "CF66192673": {
     "contest_id": 560,
     "language": "GNU C++14",
