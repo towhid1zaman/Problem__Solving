@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF66195039": {
+    "contest_id": 560,
+    "language": "GNU C++14",
+    "path": "codeforces\\560\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Gerald is into Art",
+    "problem_url": "https://codeforces.com/contest/560/problem/B",
+    "submission_id": "CF66195039",
+    "submission_url": "https://codeforces.com/contest/560/submission/66195039",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Dec/03/2019 00:04"
+  },
   "CF66195660": {
     "contest_id": 560,
     "language": "GNU C++14",
