@@ -2179,6 +2179,22 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF66195660": {
+    "contest_id": 560,
+    "language": "GNU C++14",
+    "path": "codeforces\\560\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Gerald's Hexagon",
+    "problem_url": "https://codeforces.com/contest/560/problem/C",
+    "submission_id": "CF66195660",
+    "submission_url": "https://codeforces.com/contest/560/submission/66195660",
+    "tags": [
+      "geometry",
+      "*1600"
+    ],
+    "timestamp": "Dec/03/2019 00:20"
+  },
   "CF66196332": {
     "contest_id": 560,
     "language": "GNU C++14",
