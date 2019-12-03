@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF66242918": {
+    "contest_id": 596,
+    "language": "GNU C++14",
+    "path": "codeforces\\596\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Wilbur and Array",
+    "problem_url": "https://codeforces.com/contest/596/problem/B",
+    "submission_id": "CF66242918",
+    "submission_url": "https://codeforces.com/contest/596/submission/66242918",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Dec/04/2019 00:57"
+  },
   "CF66289140": {
     "contest_id": 611,
     "language": "GNU C++14",
