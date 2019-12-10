@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF66576695": {
+    "contest_id": 1265,
+    "language": "GNU C++14",
+    "path": "codeforces\\1265\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Beautiful Regional Contest",
+    "problem_url": "https://codeforces.com/contest/1265/problem/C",
+    "submission_id": "CF66576695",
+    "submission_url": "https://codeforces.com/contest/1265/submission/66576695",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Dec/10/2019 13:39"
+  },
   "CF66579883": {
     "contest_id": 353,
     "language": "GNU C++14",
