@@ -38,15 +38,18 @@ int dfs(int v,int cur = 0, int dad = -1)
     if(m<cur){
         return 0;
     }
-    if(adj[v].size()==1 and dad!=-1){
-        return 1;
+    if(m<cur){
+        cout<<"0k"<<endl;
     }
-    int res = 0;
+   // cout<<"U and adj[u].size() "<<v<<" "<<adj[v].size()<<endl;
+    int res = (adj[v].size()==1 and dad!=-1);
+    //cout<<"res "<<res<<endl;
     for(auto u: adj[v]){
         if(u!=dad){
             res+=dfs(u,cur,v);
         }
     }
+   // cout<<"after gone "<<res<<endl;
     return res;
 }
 int main(){
