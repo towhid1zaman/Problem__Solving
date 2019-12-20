@@ -18,10 +18,8 @@ typedef vector<int> vi;typedef vector<ll> vll;
 #define ss second
 #define pb push_back
 
-int dx8[] = {0, 0, 1, 1, 1, -1, -1, -1};
-int dy8[] = {1,-1, 1, -1, 0, 0, -1, 1};
-int dx4[] = {0, 0, 1, -1};
-int dy4[] = {1, -1, 0, 0};
+int dx[] = {1, -1, 0, 0};
+int dy[] = {0, 0, 1, -1};
 
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
@@ -39,8 +37,8 @@ void dfs(int x,int y){
     vis[x][y] = true;
     ct++;
     for(int i = 0; i<4;i++){
-        int nx = x + dx4[i];
-        int ny = y + dy4[i];
+        int nx = x + dx[i];
+        int ny = y + dy[i];
         if(nx<1 or nx>n or ny<1 or ny>m or vis[nx][ny]==true or maze[nx][ny] == '#') continue;
         dfs(nx,ny);
     }
