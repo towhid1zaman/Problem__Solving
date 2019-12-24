@@ -1,6 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
-typedef long long ll;typedef unsigned long long ull;
+typedef long long ll;
+typedef unsigned long long ull;
 typedef vector<int> vi;typedef vector<ll> vll;
 #define fill(a) memset(a, 0, sizeof (a))
 #define all(v) (v).begin(),(v).end()
@@ -18,53 +19,56 @@ typedef vector<int> vi;typedef vector<ll> vll;
 #define ss second
 #define pb push_back
 
-int dx4[ ] = {0,0,1,-1};
-int dy4[ ] = {1,-1,0,0};
-int dx8[ ] = {0,0,1,1,1,-1,-1,-1};
-int dy8[ ] = {1,-1,1,-1,0,0,-1,1};
+int dx4[] = {0,0,1,-1};
+int dy4[] = {1,-1,0,0};
+int dx8[] = {0,0,1,1,1,-1,-1,-1};
+int dy8[] = {1,-1,1,-1,0,0,-1,1};
 
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int maxn = 200100;
-
+ll lol(vector<ll>&v,ll chek,ll t){
+         for(int i=chek-1;i>=0;i-=2)
+         {
+            t-=v[i];
+         }
+         return t>=0;
+}
 int main(){
-
         _ios;
+
         int T;
         cin>>T;
         while(T--){
-          int n,p,k;
-          cin>>n>>p>>k;
-          int v[n+1];
-          for(int i = 1; i<=n;i++){
-            cin>>v[i];
-          }
-          sort(v+1,v+n+1);
-          int evenSum=0,oddSum=0,maxProduct=0;
-          for(int i = 1; i<=n;i++){
-            int x = v[i];
-            if(i%2==0){
-              evenSum+=x;
-              if(evenSum<=p){
-                maxProduct = max(maxProduct,i);
+            ll n,p,k;
+            cin>>n>>p>>k;
+            vll v(n);
+            rep(i,0,n-1){
+              cin>>v[i];
+             }
+             sort(all(v));
+             ll  res = 0;
+             ll left=1;
+             ll right =n;
+             while(left<=right)
+             {
+              ll mid = (left+right)/2;
+              if(lol(v,mid,p)){
+               res=max(res,mid);
+               left =mid + 1;
+              }
+              else{
+               right = mid-1;
               }
             }
-            else{
-              oddSum+=x;
-              if(oddSum<=p){
-                maxProduct = max(maxProduct,i);
-              }
-            }
-          }
-          cout<<maxProduct<<endl;
+             cout<<res<<endl;
         }
-        
-        
 
 
 
 return 0;
 }
+
 
 
 
