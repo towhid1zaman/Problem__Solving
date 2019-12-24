@@ -34,19 +34,43 @@ int main(){
         int n;
         cin>>n;
         fill(v);
-        int tot = 0;
         for(int i = 1 ; i<=n;i++){
             cin>>v[i];
-            tot+=v[i];
         }
         int s,t;
         cin>>s>>t;
-        if(s>t)swap(s,t);
-        int res = 0;
-        for(int i = s; i<t;i++){
-            res+=v[i];
+        if(s==t){
+            cout<<0<<endl;
+            return 0;
         }
-        cout<<min(res,tot-res)<<endl;
+        int s1 = 0;
+        int s2 = 0;
+        if(s>t){
+            swap(s,t);
+        }
+        for(int i = s; i<t;i++){
+            s1+=v[i];
+        }
+         if(t==n and s==1){
+                s2+=v[t];
+                cout<<min(s1,s2)<<endl;
+                return 0;
+            }
+        while(true){
+            if(t>n and s==1)break;
+            if(t>n){
+                t = 1;
+            }
+
+            if(t==s-1){
+                s2+=v[t];
+                break;
+            }
+            s2+=v[t];
+            t++;
+        }
+        //cout<<s1<<' '<<s2<<endl;
+        cout<<min(s1,s2)<<endl;
 
 return 0;
 }
