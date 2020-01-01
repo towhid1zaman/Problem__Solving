@@ -36,17 +36,10 @@ int main(){
         rep(z,1,T){
                 int n,m,x=-1;
                 cin>>n>>m;
-                if(n<m){
-                    cout<<n+1<<endl;
-                    for(int i = 0; i<n+1;i++){
-                        cout<<i<<" "<<n-i<<endl;
-                    }
-                }
-                else{
-                    cout<<m+1<<endl;
-                    for(int i = 0; i<m+1;i++){
-                        cout<<m-i<<" "<<i<<endl;
-                    }
+                int res = min(n,m);
+                cout<<res+1<<endl;
+                while( x<res){
+                    cout<<++x<<" "<<res-x-1<<endl;
                 }
 
         }
