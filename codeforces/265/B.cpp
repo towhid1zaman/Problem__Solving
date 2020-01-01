@@ -38,21 +38,10 @@ int main(){
         rep(z,1,T){
                 cin>>h[z];
         }
-        int now=0;
-        rep(z,1,T){
-            //climb to the top
-            sec+=h[z]-now;
-            now = h[z];
-            //eat
-            sec+=1;
-            //jump on
-            if(z<T){
-                if(now>h[z+1]){
-                    sec += now - h[z+1];
-                    now = h[z+1];
-                }
-                sec+=1;
-            }
+        sec+=h[1]+T;
+        rep(i,2,T){
+            sec++;
+            sec+=abs(h[i-1] - h[i]);
         }
         cout<<sec<<endl;
 
