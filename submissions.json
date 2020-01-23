@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF69405016": {
+    "contest_id": 1167,
+    "language": "GNU C++14",
+    "path": "codeforces\\1167\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "News Distribution",
+    "problem_url": "https://codeforces.com/contest/1167/problem/C",
+    "submission_id": "CF69405016",
+    "submission_url": "https://codeforces.com/contest/1167/submission/69405016",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "*1400"
+    ],
+    "timestamp": "Jan/23/2020 16:31"
+  },
   "CF69422109": {
     "contest_id": 456,
     "language": "GNU C++14",
