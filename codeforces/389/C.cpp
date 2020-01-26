@@ -26,17 +26,45 @@ const int maxn = 1000100;
 
 int box[maxn];
 int n;
+vector<int>v[maxn];
+int  chek(int k){
+    for(int i = 0; i<k;i++)v[i].clear();
+    int cur = 0;
+    for(int i = 1; i<=n;i++){
+        v[cur].push_back(box[i]);
+        cur++;
+        cur%=k;
+    }
+
+    for(int i = 0;i<k;i++){
+        int above = v[i].size();
+        for(auto it: v[i]){
+            above--;
+            if(it<above)return 0;
+        }
+    }
+    return 1;
+}
+int binarySearch(int low, int high){
+    while(low<high){
+        int mid = (low+high)>>1;
+        if(chek(mid))
+            high = mid;
+        else low = mid+1;
+    }
+
+    return low;
+}
 int main(){
         _ios;
 
         cin>>n;
-        rep(i,n)cin>>box[i];
-        sort(box,box+n);
-        int ans = 0;
-        rep(i,n){
-            if((box[i]+1)*ans<=i)ans++;
-        }
+        rep1(i,1,n)cin>>box[i];
+        sort(box+1,box+n+1);
+        reverse(box+1,box+n+1);
+        int ans = binarySearch(1,n);
         cout<<ans<<endl;
+
 
 
 
