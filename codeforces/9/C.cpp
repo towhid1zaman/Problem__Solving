@@ -24,23 +24,20 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int maxn = 2000100;
 
-int n;
-vector<int>res;
+int chek(int x, int n){
+    if(x>n){
+        return 0;
+    }
 
-void dfs(int x){
-    if(x>n)return ;
-    res.push_back(x);
-    dfs(x*10);
-    dfs(x*10+1);
+    return 1+ chek(x*10,n) +chek(x*10+1,n);
 }
-
 int main(){
         _ios;
 
+        int n;
         cin>>n;
-        dfs(1);
-        int ans = res.size();
-        cout<<ans<<endl;
+        int res = chek(1,n);
+        cout<<res<<endl;
 
 
 
