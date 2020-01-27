@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF69599809": {
+    "contest_id": 116,
+    "language": "GNU C++14",
+    "path": "codeforces\\116\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Little Pigs and Wolves",
+    "problem_url": "https://codeforces.com/contest/116/problem/B",
+    "submission_id": "CF69599809",
+    "submission_url": "https://codeforces.com/contest/116/submission/69599809",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Jan/27/2020 12:55"
+  },
   "CF69639025": {
     "contest_id": 282,
     "language": "GNU C++14",
