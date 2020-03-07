@@ -11622,6 +11622,24 @@
     ],
     "timestamp": "Feb/18/2020 00:55"
   },
+  "CF72643978": {
+    "contest_id": 1323,
+    "language": "GNU C++14",
+    "path": "codeforces\\1323\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Count Subrectangles",
+    "problem_url": "https://codeforces.com/contest/1323/problem/B",
+    "submission_id": "CF72643978",
+    "submission_url": "https://codeforces.com/contest/1323/submission/72643978",
+    "tags": [
+      "binary search",
+      "greedy",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Mar/07/2020 16:26"
+  },
   "CF72650624": {
     "contest_id": 1323,
     "language": "GNU C++14",
