@@ -1,5 +1,5 @@
 
-// </> : towhid1zaman
+// </>:towhid1zaman
 
 #include "bits/stdc++.h"
 using namespace std;
