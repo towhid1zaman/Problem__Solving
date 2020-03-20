@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF73788655": {
+    "contest_id": 980,
+    "language": "GNU C++14",
+    "path": "codeforces\\980\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Links and Pearls",
+    "problem_url": "https://codeforces.com/contest/980/problem/A",
+    "submission_id": "CF73788655",
+    "submission_url": "https://codeforces.com/contest/980/submission/73788655",
+    "tags": [
+      "implementation",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Mar/20/2020 17:52"
+  },
   "CF73791092": {
     "contest_id": 980,
     "language": "GNU C++14",
