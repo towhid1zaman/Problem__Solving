@@ -2179,6 +2179,22 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF73791092": {
+    "contest_id": 980,
+    "language": "GNU C++14",
+    "path": "codeforces\\980\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Marlin",
+    "problem_url": "https://codeforces.com/contest/980/problem/B",
+    "submission_id": "CF73791092",
+    "submission_url": "https://codeforces.com/contest/980/submission/73791092",
+    "tags": [
+      "constructive algorithms",
+      "*1600"
+    ],
+    "timestamp": "Mar/20/2020 18:22"
+  },
   "CF73948508": {
     "contest_id": 920,
     "language": "GNU C++14",
