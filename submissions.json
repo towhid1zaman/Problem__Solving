@@ -2179,6 +2179,24 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF75694986": {
+    "contest_id": 675,
+    "language": "GNU C++14",
+    "path": "codeforces\\675\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Restoring Painting",
+    "problem_url": "https://codeforces.com/contest/675/problem/B",
+    "submission_id": "CF75694986",
+    "submission_url": "https://codeforces.com/contest/675/submission/75694986",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Apr/07/2020 02:41"
+  },
   "CF75715177": {
     "contest_id": 448,
     "language": "GNU C++14",
