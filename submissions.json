@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF75715177": {
+    "contest_id": 448,
+    "language": "GNU C++14",
+    "path": "codeforces\\448\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Multiplication Table",
+    "problem_url": "https://codeforces.com/contest/448/problem/D",
+    "submission_id": "CF75715177",
+    "submission_url": "https://codeforces.com/contest/448/submission/75715177",
+    "tags": [
+      "binary search",
+      "brute force",
+      "*1800"
+    ],
+    "timestamp": "Apr/07/2020 11:59"
+  },
   "CF75857083": {
     "contest_id": 1333,
     "language": "GNU C++14",
