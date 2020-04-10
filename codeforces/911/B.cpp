@@ -31,19 +31,16 @@ int main(){
         _ios;
 
         int n,a,b; cin >> n >> a >> b;
-
-        //BS approach
-
-        int low = 1,high = a+b+1;
-        while(low+1<high){
-            int mid =  (low+high)/2;
-            int cnt = a/mid+b/mid;
-            if(cnt>=n  and  mid<=a  and mid<=b){
-                low = mid;
-            }
-            else high = mid;
+        if(a+b==n){
+            cout<<1<<endl;
+            return 0;
         }
-        cout<<low<<endl;
+        int ans = 0;
+        for(int i = 1; i<n; i++){
+
+            ans = max(ans,min(a/i,b/(n-i)));
+        }
+        cout<<ans<<endl;
 
 
 
