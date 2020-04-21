@@ -57,6 +57,7 @@ int main(){
         for(int i = 0; i<sz(posB)-1; i+=2){
             cout<<posB[i]<<' '<<posB[i+1]<<endl;
         }
+
         if(sz(posA)%2){
             cout<<posA.back()<<' '<<posA.back()<<endl;
             cout<<posA.back()<<' '<<posB.back()<<endl;
