@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF78370168": {
+    "contest_id": 236,
+    "language": "GNU C++14",
+    "path": "codeforces\\236\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "LCM Challenge",
+    "problem_url": "https://codeforces.com/contest/236/problem/C",
+    "submission_id": "CF78370168",
+    "submission_url": "https://codeforces.com/contest/236/submission/78370168",
+    "tags": [
+      "greedy",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Apr/28/2020 16:28"
+  },
   "CF78381171": {
     "contest_id": 385,
     "language": "GNU C++14",
