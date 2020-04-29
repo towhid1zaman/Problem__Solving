@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF78461344": {
+    "contest_id": 544,
+    "language": "GNU C++14",
+    "path": "codeforces\\544\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Set of Strings",
+    "problem_url": "https://codeforces.com/contest/544/problem/A",
+    "submission_id": "CF78461344",
+    "submission_url": "https://codeforces.com/contest/544/submission/78461344",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Apr/29/2020 15:48"
+  },
   "CF78470241": {
     "contest_id": 1106,
     "language": "GNU C++14",
