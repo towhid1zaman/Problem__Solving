@@ -2179,6 +2179,23 @@
     ],
     "timestamp": "Jan/03/2021 11:45"
   },
+  "CF78502144": {
+    "contest_id": 265,
+    "language": "GNU C++14",
+    "path": "codeforces\\265\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Escape from Stones",
+    "problem_url": "https://codeforces.com/contest/265/problem/C",
+    "submission_id": "CF78502144",
+    "submission_url": "https://codeforces.com/contest/265/submission/78502144",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Apr/29/2020 23:17"
+  },
   "CF78535004": {
     "contest_id": 1326,
     "language": "GNU C++14",
