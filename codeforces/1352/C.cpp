@@ -33,8 +33,16 @@ int main(){
         while(T--){
             int n,k; cin >> n >> k;
             int ans = 0;
-            if(k%(n-1)==0) ans  = k/(n-1) * n-1;
-            else ans = k/(n-1) * n + k%(n-1);
+            if(n>k)ans = k;
+            else{
+                int a = k/n, b = k+a, c = b/n,d;
+                while(c>a){
+                    d = c - a, b+=d;
+                    a = c,c = b/n;
+                }
+                ans = b;
+            }
+
             cout<<ans<<endl;
         }
 
