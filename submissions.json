@@ -2161,6 +2161,22 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF80288424": {
+    "contest_id": 349,
+    "language": "GNU C++14",
+    "path": "codeforces\\349\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Mafia",
+    "problem_url": "https://codeforces.com/contest/349/problem/C",
+    "submission_id": "CF80288424",
+    "submission_url": "https://codeforces.com/contest/349/submission/80288424",
+    "tags": [
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "May/16/2020 13:11"
+  },
   "CF80325493": {
     "contest_id": 1355,
     "language": "GNU C++14",
