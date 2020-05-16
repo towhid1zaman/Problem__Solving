@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF80286875": {
+    "contest_id": 284,
+    "language": "GNU C++14",
+    "path": "codeforces\\284\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Cows and Primitive Roots",
+    "problem_url": "https://codeforces.com/contest/284/problem/A",
+    "submission_id": "CF80286875",
+    "submission_url": "https://codeforces.com/contest/284/submission/80286875",
+    "tags": [
+      "implementation",
+      "math",
+      "number theory",
+      "*1400"
+    ],
+    "timestamp": "May/16/2020 12:53"
+  },
   "CF80288424": {
     "contest_id": 349,
     "language": "GNU C++14",
