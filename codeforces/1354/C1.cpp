@@ -38,10 +38,16 @@ int main(){
         sp(9);
         while(T--){
             int n; cin >> n;
-            long double len;
-            if(n%2==0) len = (1/tan(pi/(2*n)));
-            else len = (cos(pi/(4*n))/sin(pi/(2*n)));
-            cout<< len <<endl;
+            double angle = (n-1)*pi/n;
+            double len = 0.0;
+            double p = pi/2;
+            double x = 0.000001;
+            while(p>x){
+                len+=cos(p);
+                p = angle+p-pi;
+            }
+            len = len*2+1;
+            cout<<len<<endl;
         }
 
 return 0;
