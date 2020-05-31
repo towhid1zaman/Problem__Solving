@@ -2161,6 +2161,23 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF82010053": {
+    "contest_id": 1038,
+    "language": "GNU C++14",
+    "path": "codeforces\\1038\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Non-Coprime Partition",
+    "problem_url": "https://codeforces.com/contest/1038/problem/B",
+    "submission_id": "CF82010053",
+    "submission_url": "https://codeforces.com/contest/1038/submission/82010053",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "May/31/2020 10:56"
+  },
   "CF82087655": {
     "contest_id": 1363,
     "language": "GNU C++14",
