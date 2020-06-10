@@ -2161,6 +2161,22 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF83324366": {
+    "contest_id": 31,
+    "language": "GNU C++14",
+    "path": "codeforces\\31\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Worms Evolution",
+    "problem_url": "https://codeforces.com/contest/31/problem/A",
+    "submission_id": "CF83324366",
+    "submission_url": "https://codeforces.com/contest/31/submission/83324366",
+    "tags": [
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Jun/10/2020 23:28"
+  },
   "CF83332226": {
     "contest_id": 31,
     "language": "GNU C++14",
