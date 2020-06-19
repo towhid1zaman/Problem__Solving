@@ -34,17 +34,26 @@ const int maxn = 1000000;
 
 int main(){
         _
+        int x = maxn, y = maxn;
         int n; cin >> n;
-        cout<<(3*n + 4)<<endl;
-        cout <<"0 0"<<endl;
-        cout<<"0 1"<<endl;
-        for(int i = 1; i<=n; i++){
-            cout << i << ' ' << i-1 << endl;
-            cout << i << ' ' << i << endl;
-            cout << i << ' ' << i+1 << endl;
+        vector<pair<int,int> >vp;
+        vp.emplace_back(x,y);
+        vp.emplace_back(x+1,y);
+        vp.emplace_back(x+1,y-1);
+        vp.emplace_back(x,y-1);
+        x++, y--;
+
+        while(n--){
+            vp.emplace_back(x+1,y);
+            vp.emplace_back(x+1,y-1);
+            vp.emplace_back(x,y-1);
+            x++, y--;
         }
-        cout << n+1 << ' ' << n <<endl;
-        cout << n+1 << ' ' << n+1 << endl;
+
+        cout<<sz(vp)<<endl;
+        for(auto c : vp){
+            cout << c.ff <<' '<< c.ss<<endl;
+        }
 
 
 return 0;
