@@ -7,7 +7,6 @@ typedef long long ll;
 typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef pair< int, int > pii;
-typedef vector<pii>vip;
 typedef pair< pii, int > ppi;
 #define fill(a,b) memset(a,b,sizeof(a))
 #define all(v) (v).begin(),(v).end()
@@ -35,29 +34,37 @@ const int maxn = 2000100;
 
 int main(){
         _
-        ll n; cin>>n;
-        vi a(2000,0);
-        for(int k=1;k<=n;k++){
-            ll x;
-            cin>>x;
-            bitset<22> b=x;
-            for(int i=0;i<b.size();i++)
-                a[i]+=b[i];
+        int n; cin >> n;
+        vll a(n);
+        for(int i = 0; i<n; i++){
+            cin >> a[i];
         }
-        ll ans = 0;
-        for(int k=1;k<=n;k++){
-            ll p=0;
-            ll l=1;
-            for(int i=0;i<=22;i++){
-                if(a[i]!=0){
-                    a[i]--;
-                    p+=l;
-                }
-                l*=2;
+
+        vll binary(21,0);
+
+        for(int i = 0; i<n; i++){
+            ll x = a[i];
+
+            ll v = 0;
+            while(x){
+                if(x&1)binary[v]++;
+                x = x>>1; // simply terminate the first taken value
+                v++;
             }
-            ans+=p*p;
         }
-        cout<<ans<<endl;
+
+        ll ans = 0;
+        for(int i = 0; i<n; i++){
+            ll op = 0;
+            for(ll bits = 0; bits<20; bits++){
+                if(binary[bits]){
+                    op = op+(1<<bits);
+                    binary[bits]--;
+                }
+            }
+            ans+= op * op;
+        }
+        cout << ans << endl;
 
 
 return 0;
