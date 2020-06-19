@@ -40,29 +40,22 @@ int main(){
             cin >> a[i];
         }
 
-        vll binary(21,0);
+        vll op(n);
+        for(int bits = 0; bits<25; bits++){
 
-        for(int i = 0; i<n; i++){
-            ll x = a[i];
+                int cnt = 0;
+                for(int i = 0; i<n; i++){
+                    if(a[i]>>bits&1)cnt++;
+                }
+                for(int i = 0; i<cnt; i++){
+                    op[i] |= 1ll << bits;
+                }
 
-            ll v = 0;
-            while(x){
-                if(x&1)binary[v]++;
-                x = x>>1; // simply terminate the first taken value
-                v++;
-            }
         }
 
         ll ans = 0;
         for(int i = 0; i<n; i++){
-            ll op = 0;
-            for(ll bits = 0; bits<20; bits++){
-                if(binary[bits]){
-                    op = op+(1<<bits);
-                    binary[bits]--;
-                }
-            }
-            ans+= op * op;
+            ans+=sqr(op[i]);
         }
         cout << ans << endl;
 
