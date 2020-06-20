@@ -34,7 +34,6 @@ const int maxn = 2000100;
 
 string A="Ashishgup";
 string B="FastestFinger";
-
 int main(){
         _
         ll T; cin >> T;
