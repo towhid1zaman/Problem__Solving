@@ -37,18 +37,18 @@ int color[maxn];
 bool possible = true;
 
 void dfs(int v, int cur_color){
-    color[v] = cur_color;
-    for(int next : adj[v]){
-        if(color[next]==-1){
-            dfs(next, cur_color^1);
+    if(color[v]>0){
+        if(color[v] != cur_color){
+            possible = false;
         }
-        else{
-            if(color[next]==color[v]){
-                possible  = false;
-                return;
-            }
-        }
+        return;
     }
+    color[v] = cur_color;
+    int next_color = cur_color%2 + 1;
+    for(int next: adj[v]){
+        dfs(next,next_color);
+    }
+
 }
 
 int main(){
@@ -62,7 +62,7 @@ int main(){
             adj[v].pb(u);
             edges.emplace_back(u,v);
         }
-        fill(color,-1);
+
         dfs(1,1);
 
         if(!possible) return cout << "NO" << endl, 0;
