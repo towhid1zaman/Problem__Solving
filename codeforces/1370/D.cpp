@@ -32,20 +32,10 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 2000100;
 
 int n,k;
-bool ChekEven(int m,vi a){
+bool chek(int m, vi a, bool f){
     int cnt = 0;
-    for(int i = 0; i<n; i++){
-        if(cnt%2==0)cnt++;
-        else if(a[i]<=m)cnt++;
-    }
-    return cnt>=k;
-}
-
-bool ChekOdd(int m, vi a){
-    int cnt = 0;
-    for(int i = 0; i<n;i++){
-        if(cnt%2==1)cnt++;
-        else if(a[i]<=m)cnt++;
+    for(auto x: a){
+        if(x<=m or cnt%2==!f)cnt++;
     }
     return cnt>=k;
 }
@@ -59,7 +49,7 @@ int main(){
         int low = 1, high = mod, m;
         while(low<high){
             m = (low+high)/2;
-            if(ChekEven(m,a) or ChekOdd(m,a)) high = m;
+            if(chek(m,a,0) or chek(m,a,1)) high = m;
             else low = m+1;
         }
         cout << low << endl;
