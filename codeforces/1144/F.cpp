@@ -34,31 +34,21 @@ const int maxn = 200010;
 vi adj[maxn];
 vip edges;
 int color[maxn];
-int vis[maxn];
+bool possible = true;
 
-bool bfs(int s){
-    queue<int>q;
-    q.push(s);
-    vis[s]  = 1;
-    color[s] =1;
-    while(!q.empty()){
-
-        int tp = q.front();
-        q.pop();
-        for(int i = 0; i<adj[tp].size(); i++){
-            int next = adj[tp][i];
-            if(!vis[next]){
-                if(color[tp]==1)color[next] = 2;
-                else color[next] = 1;
-                vis[next] = 1;
-                q.push(next);
-            }
-            else{
-                if(color[tp]==color[next])return false;
+void dfs(int v, int cur_color){
+    color[v] = cur_color;
+    for(int next : adj[v]){
+        if(color[next]==-1){
+            dfs(next, cur_color^1);
+        }
+        else{
+            if(color[next]==color[v]){
+                possible  = false;
+                return;
             }
         }
     }
-    return true;
 }
 
 int main(){
@@ -72,8 +62,9 @@ int main(){
             adj[v].pb(u);
             edges.emplace_back(u,v);
         }
+        fill(color,-1);
+        dfs(1,1);
 
-        bool possible  =bfs(1);
         if(!possible) return cout << "NO" << endl, 0;
 
         cout << "YES" << endl;
