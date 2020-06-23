@@ -37,22 +37,27 @@ int main(){
         _
         int T; cin >> T;
         while(T--){
-             int n; cin >> n;
-             string s; cin >> s;
-             int left=0;
-             int right=0;
-             for(int i = 0; i<n && s[i]=='0'; i++){
-                cout<<s[i];
-             }
-             for(int i = 0; i<n; i++){
-                if(s[i]=='1')left = 1;
-                else if(s[i]=='0' && left)right = 1;
-             }
-             if(left && right)cout<<'0';
-             for(int i = n-1; i>=0 and s[i]=='1'; i--){
-                cout<<s[i];
-             }
-             cout<<endl;
+            int n; cin >> n;
+            string s; cin >> s;
+            int left=0;
+            int right=n-1;
+            while(s[left]=='0'){
+                ++left;
+            }
+            while(s[right]=='1'){
+                --right;
+            }
+            if(left>right){
+                    cout<<s<<endl;
+                    continue;
+            }
+            string res="";
+            rep(i,left)res=res+s[i];
+            res=res+'0';
+            for(int i=right+1;i<n;i++) {
+                    res=res+s[i];
+            }
+            cout<<res<<endl;
         }
 
 
