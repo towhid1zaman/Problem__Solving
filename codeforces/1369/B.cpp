@@ -39,22 +39,19 @@ int main(){
         while(T--){
              int n; cin >> n;
              string s; cin >> s;
-             int left=n+5;
+             int left=0;
              int right=0;
-             for(int i = 0; i<n; i++){
-                if(s[i]=='1'){
-                        left = i;
-                        break;
-                }
+             for(int i = 0; i<n && s[i]=='0'; i++){
+                cout<<s[i];
              }
              for(int i = 0; i<n; i++){
-                if(s[i]=='0')right = i;
+                if(s[i]=='1')left = 1;
+                else if(s[i]=='0' && left)right = 1;
              }
-             if(left<right){
-                string ans = s.substr(0,left)+s.substr(right, n-right);
-                cout<<ans;
+             if(left && right)cout<<'0';
+             for(int i = n-1; i>=0 and s[i]=='1'; i--){
+                cout<<s[i];
              }
-             else cout<<s;
              cout<<endl;
         }
 
