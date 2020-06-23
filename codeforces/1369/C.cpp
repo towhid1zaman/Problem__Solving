@@ -51,6 +51,7 @@ int main(){
                 if(w[i]==0)ans+=a[n-1-i];
              }
              int pos = 0;
+
              irep(i,k-1,0){
                 if(w[i]>0){
                     ans+=a[pos];
