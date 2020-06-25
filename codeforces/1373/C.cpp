@@ -46,7 +46,6 @@ int main(){
                 mx = max(cur,mx);
                 if(cur>0 and pos[cur]==-1)pos[cur]=i+1;
             }
-            
             ll ans = 0;
             for(int i = 1; i<=mx; i++){
                 ans+=1ll * pos[i];
