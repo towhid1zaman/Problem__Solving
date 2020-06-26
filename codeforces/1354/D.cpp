@@ -55,7 +55,7 @@ struct FenwickTree{
 			idx += idx & -idx;
 		}
 	}
-        //mainly Query
+    //mainly Query
 	int pref(int idx){
 		int ans = 0;
 		while (idx > 0){
@@ -64,7 +64,7 @@ struct FenwickTree{
 		}
 		return ans;
 	}
-        //range sum
+    //range sum
 	int rsum(int l, int r){
 		return pref(r) - pref(l - 1);
 	}
