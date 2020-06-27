@@ -38,27 +38,24 @@ int main(){
         int T; cin >> T;
         while(T--){
             int n; cin  >> n;
-            vll a(n);
+            vi a(n);
             ll sum = 0;
             for(int i = 0; i<n; i++){
                 cin >> a[i];
                 if(i%2==0)sum+=a[i];
             }
-            vll dp(n);
-            dp[0] = 0;
-            if(n>1){
-                dp[1] = max(0ll, a[1]-a[0]);
-                for(int i = 2; i<n; i++){
-                    if(i%2==0) dp[i] = max(0ll, dp[i-2]+a[i-1]-a[i]);
-                    else dp[i] = max(0ll, dp[i-2]+a[i]-a[i-1]);
-                }
-            }
-
             ll mx_sum = 0;
-            for(int i = 0; i<n; i++)mx_sum = max(mx_sum,  dp[i]);
-
-            cout<<mx_sum+sum<<endl;
-
+            ll cur_sum = 0;
+            for(int i = 0; i<n-n%2; i+=2){
+                cur_sum = max(0ll, cur_sum+a[i+1]-a[i]);
+                mx_sum = max(mx_sum, cur_sum);
+            }
+            cur_sum = 0;
+            for(int i = 1; i<n-(n%2==0); i+=2){
+                cur_sum = max(0ll, cur_sum+a[i]-a[i+1]);
+                mx_sum = max(mx_sum, cur_sum);
+            }
+            cout << mx_sum + sum <<endl;
         }
 
 
