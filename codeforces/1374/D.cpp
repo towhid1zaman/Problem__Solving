@@ -29,37 +29,35 @@ typedef pair< pii, int > ppi;
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
-const int maxn = 200005;
- 
-void task(){
-    int n, k;
-    cin >> n >> k;
-    map<int, int> mp;
-    for (int i = 0; i < n; ++ i) {
-        int a;
-        cin >> a;
-        if (a % k) mp[a % k] ++;
-    }
-    ll ans = 0;
-    for (auto& x : mp) {
-        ans = max(ans, x.ss * 1ll * k + 1 - x.ff);
-    }
-    cout << ans << endl;
-}
+const int maxn = 2000100;
+
+
 
 int main(){
         _
-        #ifdef OJ
-        freopen("inputf.in", "r", stdin);
-        freopen("outputf.in", "w", stdout);
-        #endif
-
-        int T = 1; cin >> T;
+        int T; cin >> T;
         while(T--){
-            task();
+            ll n,k; cin >> n >> k;
+            vll a(n);
+            rep(i,n){
+                cin >> a[i];
+                a[i] = (k-a[i]%k)%k;
+            }
+            sort(all(a));
+            ll ans = 0;
+            map<ll,ll>mp;
+            for(int i = 0, j=0; i<n;i = j){
+                while(j<n and a[i]==a[j])j++;
+                if(a[i]==0)continue;
+                ll cnt = j-i;
+                ans = max(ans, (cnt-1)*k+a[i]+1);
+            }
+            cout << ans << endl;
         }
-        
+
+
 return 0;
 }
+
 
 
