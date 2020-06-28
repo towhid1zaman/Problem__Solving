@@ -39,12 +39,12 @@ int main(){
         while(T--){
             int n; cin >> n;
             string s; cin >> s;
+            int sum = 0;
             int ans = 0;
-            stack<char>stock;
             for(char ch : s){
-                if(ch=='(')stock.push(ch);
-                else if(ch==')' and !stock.empty())stock.pop();
-                else ans++;
+                if(ch==')')sum++;
+                else sum--;
+                ans = max(ans,sum);
             }
             cout<<ans<<endl;
         }
