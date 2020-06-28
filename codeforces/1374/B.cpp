@@ -38,19 +38,17 @@ int main(){
         int T; cin >> T;
         while(T--){
             ll n; cin >> n;
-            set<ll>done;
-            int ans = 0;
-            while(n!=1){
-                if(done.count(n)){
-                    ans = -1;
-                    break;
-                }
-                done.insert(n);
-                if(n%6==0)n/=6;
-                else n*=2;
-                ans++;
+            int _2 = 0,_3 = 0;
+            while(n%2==0){
+                n/=2;
+                _2++;
             }
-            cout << ans << endl;
+            while(n%3==0){
+                n/=3;
+                _3++;
+            }
+            if(n==1 and _2<=_3)cout<<(_3-_2)+_3<<endl;
+            else cout << -1 << endl;
         }
 
 
