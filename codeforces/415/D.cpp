@@ -35,17 +35,17 @@ ll dp[2001][2001];
 void task(){
     ll n,k; cin >> n >> k;
     dp[0][1] = 1;
-    for(ll length = 1; length<=k; length++){
-        for(ll div = 1; div<=n; div++){
-            for(ll last= div; last<=n; last+=div){
-                dp[length][last] = (dp[length][last] + dp[length-1][div]) % mod;
+    for(ll i = 1; i<=k; i++){
+        for(ll j = 1; j<=n; j++){
+            for(ll k = j; k<=n; k+=j){
+                dp[i][k] = (dp[i][k] + dp[i-1][j]) % mod;
             }
         }
     }
 
     ll ans = 0;
-    for(ll last = 1; last<=n; last++){
-        ans=(ans+dp[k][last])%mod;
+    for(ll i = 1; i<=n; i++){
+        ans=(ans+dp[k][i])%mod;
     }
     cout << ans << endl;
 
