@@ -29,74 +29,22 @@ typedef pair< pii, int > ppi;
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
-const int maxn = 100006;
-const ll INF = 1e15;
-ll a[maxn];
-ll tree[4*maxn];
-ll lazy[4*maxn];
+const int maxn = 2000100;
 
-void build(ll node, ll left, ll right)
-{
-    lazy[node] = 0;
-    if (left==right)
-    {
-        tree[node] = a[left];
-        return;
-    }
-    ll mid = (left+right)/2;
-    build(2*node, left, mid);
-    build(2*node+1, mid+1, right);
-    ll l = tree[2*node], r = tree[2*node+1];
-    tree[node] = max(l,r);
-}
-void updateChild(ll node, ll left, ll right)
-{
-    tree[node] = lazy[node];
-    if (left < right)
-    {
-        lazy[2*node] = lazy[node];
-        lazy[2*node+1] = lazy[node];
-    }
-    lazy[node] = 0;
-}
-void update(ll node, ll left, ll right, ll start, ll end, ll val)
-{
-    if (lazy[node]) updateChild(node, left, right);
-    if (start <= left && right <= end)
-    {
-        lazy[node] = val;
-        return;
-    }
-    if (right < start || end < left) return;
-    ll mid = (left+right)/2;
-    update(2*node, left, mid, start, end, val);
-    update(2*node+1, mid+1, right, start, end, val);
-    ll l = lazy[2*node] ? lazy[2*node]:tree[2*node], r = lazy[2*node+1] ? lazy[2*node+1]:tree[2*node+1];
-    tree[node] = max(l,r);
-}
-ll query(ll node, ll left, ll right, ll start, ll end)
-{
-    if (lazy[node]) updateChild(node, left, right);
-    if (start <= left && right <= end) return tree[node];
-    if (right < start || end < left) return 0;
-    ll mid = (left+right)/2;
-    ll l = query(2*node, left, mid, start, end);
-    ll r = query(2*node+1, mid+1, right, start, end);
-    return max(l,r);
-}
 
 void task(){
-    ll n; cin >>n;
-    for(ll i = 1; i<=n; i++){
+    ll n,m; cin >>n;
+    vll a(n);
+    for(ll i = 0; i<n; i++){
         cin >> a[i];
     }
-    build(1,1,n);
-    ll q; cin >> q;
-    while(q--){
+    ll cur = a[0];
+    cin >> m;
+    while(m--){
         ll w,h; cin >> w >> h;
-        ll ans = query(1,1,n,1,w);
+        ll ans = max(cur, a[w-1]);
         cout << ans << endl;
-        update(1,1,n,1,w,ans+h);
+        cur = ans+h;
     }
 }
 
