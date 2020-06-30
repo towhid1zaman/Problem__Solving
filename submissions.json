@@ -4559,6 +4559,23 @@
     ],
     "timestamp": "Jun/30/2020 20:53"
   },
+  "CF85570885": {
+    "contest_id": 272,
+    "language": "GNU C++14",
+    "path": "codeforces\\272\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Dima and Staircase",
+    "problem_url": "https://codeforces.com/contest/272/problem/C",
+    "submission_id": "CF85570885",
+    "submission_url": "https://codeforces.com/contest/272/submission/85570885",
+    "tags": [
+      "data structures",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Jul/01/2020 00:58"
+  },
   "CF85667291": {
     "contest_id": 285,
     "language": "GNU C++14",
