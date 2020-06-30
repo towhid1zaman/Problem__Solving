@@ -33,18 +33,22 @@ const int maxn = 2000100;
 
 
 void task(){
-    ll n,m; cin >>n;
-    vll a(n);
-    for(ll i = 0; i<n; i++){
-        cin >> a[i];
+    int n; cin >> n;
+    map<int,int>mop;
+    for(int i = 1; i<=n; i++){
+        int a; cin >> a;
+        mop[i] = a;
     }
-    ll cur = a[0];
-    cin >> m;
+    int m; cin >> m;
+    ll w=0,h=0;
     while(m--){
-        ll w,h; cin >> w >> h;
-        ll ans = max(cur, a[w-1]);
-        cout << ans << endl;
-        cur = ans+h;
+        ll W,H; cin >> W >> H;
+        if(mop[W]>=w){
+            cout << mop[W] << endl;
+            w = mop[W];
+        }
+        else cout << w << endl;
+        w+=H;
     }
 }
 
