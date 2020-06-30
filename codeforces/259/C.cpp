@@ -35,7 +35,7 @@ const int maxn = 2000100;
 void task(){
     string s; cin >> s;
     int n = s.length();
-    string ans ="";
+    string ans = "";
     int ind = 0;
     for(int i = 0; i<n; i++){
         if(s[i]=='0'){
