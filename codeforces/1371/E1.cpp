@@ -34,25 +34,28 @@ const int maxn = 200005;
 int a[maxn], cnt[maxn];
 void task(){
     int n,p; cin >> n >>p;
-    for(int i = 0; i<n; i++){
+    for(int i = 1; i<=n; i++){
         cin >> a[i];
+        cnt[a[i]]++;
     }
-    sort(a,a+n);
-    int l = 0;
-    for(int i = 0; i<n; i++){
-        l = max(a[i]-i,l);
+    for(int i = 1; i<maxn; i++){
+        cnt[i] = cnt[i] + cnt[i-1];
     }
-    int r = 0;
-    for(int i = 0; i<n; i++){
-        if(i>=p-1) r = max(r, min(l - ( a[i]-i ), i));
+    sort(a+1,a+n+1);
+    vector<int>res;
+    for(int x = a[1]; x<=a[n]; x++){
+        int ok = 1,cur = x;
+        for(int i = 0; i<n; i++){
+            if(cnt[cur] <=i  or (cnt[cur]-i)%p==0){
+                ok = 0;
+                break;
+            }
+            cur++;
+        }
+        if(ok)res.pb(x);
     }
-    r = max(p-r-1,0);
-    cout<< r << endl;
-    for(int i = 0; i<r; i++){
-        cout << l+i<<' ';
-    }
-    cout<<endl;
-
+    cout<<res.size()<<endl;
+    for(int it:res)cout<<it<<' ';cout<<endl;
 }
 
 int main(){
