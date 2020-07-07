@@ -42,7 +42,6 @@ void task(){
         cin >> table[i].first;
         table[i].second = i;
     }
-    
     sort(table+1,table+k+1);
     int ans = 0,mx = 0;
     
