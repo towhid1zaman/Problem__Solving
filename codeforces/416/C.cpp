@@ -42,17 +42,17 @@ void task(){
         cin >> table[i].first;
         table[i].second = i;
     }
-
+    
     sort(table+1,table+k+1);
     int ans = 0,mx = 0;
     
     for(int tab = 1; tab<=k; tab++){
-        int now = 0;
+        int now = -1;
         for(int i = 1; i<=n; i++){
             if(visitor[i].first>table[tab].first)continue;
-            if(now==0 or visitor[i].second>visitor[now].second)now = i;
+            if(now==-1 or visitor[i].second>visitor[now].second)now = i;
         }
-        if(now!=0){
+        if(now!=-1){
             mx++;
             ans+=visitor[now].second;
         }
@@ -61,7 +61,7 @@ void task(){
     }
     cout << mx <<' '<< ans << endl;
     for(int i = 1; i<=k; i++){
-        if(table[i].first==0)continue;
+        if(table[i].first==-1)continue;
         cout << table[i].first <<' '<< table[i].second<<endl;
     }
  
