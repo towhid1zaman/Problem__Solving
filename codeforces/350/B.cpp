@@ -29,35 +29,43 @@ typedef pair< pii, int > ppi;
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
-const int maxn = 100005;
+const int maxn = 200005;
 
-int type[maxn], a[maxn], degree[maxn];
+int from[maxn], degree[maxn];
+vi path[maxn];
+bool type[maxn];
 
 void task(){
 	int n; cin >> n;
-	rep1(i,1,n) cin >> type[i];
-	rep1(i,1,n){
-		cin >> a[i];
-		degree[a[i]]++;
-	}
-	vi best;
-	rep1(i,1,n){
+	rep(i,n) cin >> type[i];
+	rep(i,n) cin >> from[i];
+	fill(degree,0);
+
+	rep(i,n){
+		from[i]-=1;
+		degree[from[i]]+=1;
+	}	 
+
+	int Size = -1, id = -1;
+
+	rep(i,n){
 		if(type[i]==1){
-		 vi v;
-		 int cur = i;
-		 v.push_back(cur);
-		 cur = a[cur];
-		 while(cur>0 and degree[cur]==1){
-		 v.push_back(cur);
-		 cur=a[cur]; 
-		 }
-		 if(v.size() > best.size())best = v;
+			path[i].push_back(i);
+			int x = i;
+			while(from[x]!=-1){
+				x = from[x];
+				if(degree[x]!=1)break;
+				path[i].push_back(x);
+			}
+			if(sz(path[i]) > Size)Size = sz(path[i]), id = i;
 		}
 	}
 
-	reverse(all(best));
-	cout << best.size() << endl;
-	for(auto &x: best)cout << x <<' ';
+	reverse(all(path[id]));
+	cout << Size << endl;
+	rep(i,Size){
+		cout << path[id][i] + 1 <<' '; 
+	}
 	cout << endl;
 
 }
