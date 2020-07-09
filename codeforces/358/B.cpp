@@ -53,7 +53,6 @@ void task(){
      }
      string line; cin >> line;
      bool ans = subsequence(b,line);
-     //cout << b <<endl;
      if(ans)cout <<"yes"<<endl;
      else cout <<"no"<<endl;
 
