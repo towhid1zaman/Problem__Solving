@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF86440189": {
+    "contest_id": 347,
+    "language": "GNU C++14",
+    "path": "codeforces\\347\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Difference Row",
+    "problem_url": "https://codeforces.com/contest/347/problem/A",
+    "submission_id": "CF86440189",
+    "submission_url": "https://codeforces.com/contest/347/submission/86440189",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "sortings",
+      "*1300"
+    ],
+    "timestamp": "Jul/10/2020 21:18"
+  },
   "CF86448759": {
     "contest_id": 347,
     "language": "GNU C++14",
