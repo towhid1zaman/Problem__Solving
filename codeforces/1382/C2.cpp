@@ -32,25 +32,24 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
  
 void task(){
-    ll n; cin >> n;
-    string a,b; cin >> a >> b;
-    vll ans;
-    rep1(i,1,n-1){
-        if(a[i]!=a[i-1]){
-            ans.pb(i);
-            if(a[0]=='0')a[0]='1';
-            else a[0]='0';
+    int n; cin >> n;
+    vi ans;
+    string s,t; cin >> s >> t;
+    int l = 0, r = n-1;
+    for(int i = 0; i<n; i++){
+        if(i%2==0){
+            if(s[l] == t[n-i-1])ans.pb(1);
+            ans.pb(n-i);
+            l++;
         }
-    }
-    irep(i,n-1,0){
-        if(b[i] !=a[0]){
-            ans.pb(i+1);
-            if(a[0]=='0')a[0]='1';
-            else a[0]='0';
+        else{
+            if(s[r] != t[n-i-1])ans.pb(1);
+            ans.pb(n-i);
+            r--;
         }
     }
     cout << ans.size()<<' ';
-    for(auto&x:ans)cout << x <<' ';
+    for(auto& x: ans) cout << x <<' ';
         cout << endl;
 }
 
