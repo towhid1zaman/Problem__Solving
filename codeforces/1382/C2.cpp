@@ -35,21 +35,25 @@ void task(){
     int n; cin >> n;
     vi ans;
     string s,t; cin >> s >> t;
-    int l = 0, r = n-1;
-    for(int i = 0; i<n; i++){
-        if(i%2==0){
-            if(s[l] == t[n-i-1])ans.pb(1);
-            ans.pb(n-i);
-            l++;
+    // make all characters same(s)
+    for(int i = 1; i<n; i++){
+        if(s[i]!=s[i-1]){
+            ans.pb(i);
+            if(s[0]=='0')s[0]='1';
+            else if(s[0]=='1')s[0]='0';
         }
-        else{
-            if(s[r] != t[n-i-1])ans.pb(1);
-            ans.pb(n-i);
-            r--;
+    }
+
+    //compare to (t)
+    for(int i = n-1; i>=0;i--){
+        if(t[i]!=s[0]){
+            ans.pb(i+1);
+            if(s[0]=='0')s[0]='1';
+            else if(s[0]=='1')s[0]='0';
         }
     }
     cout << ans.size()<<' ';
-    for(auto& x: ans) cout << x <<' ';
+    for(auto& x:ans)cout << x<<' ';
         cout << endl;
 }
 
