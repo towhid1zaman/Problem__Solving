@@ -35,12 +35,18 @@ void task(){
     int n; cin >> n;
     vi ans;
     string s,t; cin >> s >> t;
-    s+='0', t+='0';
+    int l = 0, r = n-1;
     for(int i = 0; i<n; i++){
-        if(s[i]!=s[i+1])ans.pb(i+1);
-    }
-    for(int i = n-1;i>=0;i--){
-        if(t[i]!=t[i+1])ans.pb(i+1);
+        if(i%2==0){
+            if(s[l] == t[n-i-1])ans.pb(1);
+            ans.pb(n-i);
+            l++;
+        }
+        else{
+            if(s[r] != t[n-i-1])ans.pb(1);
+            ans.pb(n-i);
+            r--;
+        }
     }
     cout << ans.size()<<' ';
     for(auto& x: ans) cout << x <<' ';
