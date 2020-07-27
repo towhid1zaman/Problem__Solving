@@ -37,24 +37,18 @@ ll gcd(ll a,ll b){
 ll lcm(ll a, ll b){
     return a/ gcd(a,b)*b;
 }
-ll bxpo(ll x,ll n){
-    ll res = 1;
-    while(n>0){
-        if(n%2==1){
-            res = res*x;
-        }
-        x = x*x;
-        n = n/2;
-    }
-    return res;
-}
 void task(){
-    /* find min x such that x%(10^k)==0 && x%n==0
-        It is LCM(n, 10^k)
-    */
     ll n, k; cin >> n >> k;
-    cout << lcm(n,bxpo(10,k))<<endl;
-    
+    ll t = 1;
+    for(int i = 0; i<k;i++){
+        t*=10;
+    }
+    ll res = gcd(n,t);
+    n/=res;
+    //cout << res<<' '<<n << endl;
+    cout << n;
+    string s(k,'0');
+    cout << s<<endl;
 
 }
 
