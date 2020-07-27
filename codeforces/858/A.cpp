@@ -30,7 +30,17 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
-
+ll bxpo(ll x,ll n){
+    ll res = 1;
+    while(n>0){
+        if(n%2==1){
+            res = res*x;
+        }
+        x = x*x;
+        n = n/2;
+    }
+    return res;
+}
 ll gcd(ll a,ll b){
     return b ? gcd(b,a%b) : a;
 }
@@ -39,17 +49,7 @@ ll lcm(ll a, ll b){
 }
 void task(){
     ll n, k; cin >> n >> k;
-    ll t = 1;
-    for(int i = 0; i<k;i++){
-        t*=10;
-    }
-    ll res = gcd(n,t);
-    n/=res;
-    //cout << res<<' '<<n << endl;
-    cout << n;
-    string s(k,'0');
-    cout << s<<endl;
-
+    cout << lcm(n,bxpo(10,k)) << endl;
 }
 
 int main(){
