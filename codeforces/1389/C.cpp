@@ -32,7 +32,7 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 ll cnt[11];
 void task(){
-    fill(cnt,0);///without WA
+    fill(cnt,0);
     string s; cin >> s;
     for(auto &c:s)cnt[c-'0']++;
     ll n = s.size();
