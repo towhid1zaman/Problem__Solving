@@ -31,25 +31,32 @@ const int mod = 100000000; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
-ll n1,n2,mxk1,mxk2; 
-ll dp[101][101][11][11];
+ll n1,n2,k1,k2; 
+ll dp[101][101][2];
 
-ll f(ll n1,ll n2,ll k1,ll k2){
-	//base case
-	if(n1<0 or n2<0 or k1<0 or k2<0)return 0;
-	if(n1==0 and n2==0)return 1;
-
-	ll &res = dp[n1][n2][k1][k2];
-	if(res!=-1)return res;
-	res =  f(n1-1,n2,k1-1,mxk2) + f(n1,n2-1,mxk1,k2-1);
-	res%=mod;
-	return res;
+ll f(ll n1,ll n2,ll last){
+    if(dp[n1][n2][last]!=-1)return dp[n1][n2][last];
+ 
+    ll res=0;
+    if(last){
+        for(int k=1;k<=min(k2,n2);k++)
+            res=(res+f(n1,n2-k,0))%mod;
+    }
+    else{
+        for(int k=1;k<=min(k1,n1);k++)
+            res=(res+f(n1-k,n2,1))%mod;
+    }
+    return (dp[n1][n2][last]=res);
 }
 void task(){
-	cin >> n1 >> n2 >> mxk1 >> mxk2;
+	cin >> n1 >> n2 >> k1 >> k2;
 	fill(dp,-1);
 	ll ans = 0;
-	ans = f(n1,n2,mxk1,mxk2);
+
+	// base case
+	dp[0][0][0]=dp[0][0][1]=1;
+	ans = (f(n1,n2,0)+f(n1,n2,1))%mod;
+
 	cout << ans << endl;
 }
 
