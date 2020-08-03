@@ -33,24 +33,20 @@ const int maxn = 200005;
 pii a[maxn];
 void task(){
 	ll n,r,avg; cin >> n >> r >> avg;
-	ll sum =0;
+	ll sum = avg*n;
 	rep(i,n){
 		cin >> a[i].second >> a[i].first;
-		sum+=a[i].second;
+		sum-=a[i].second;
 	}
 	sort(a,a+n);
-	ll ans = 0,i=0;
-	while(n*avg>sum){
-		ll tot_need = avg*n;
-		ll cur_mx = r - a[i].second;
-		ll res = min(tot_need - sum, cur_mx);
-		ans+=res*a[i].first;
-		sum+=res;
-		i++;
+	sum = max(sum,0ll);
+	ll ans = 0;
+	rep(i,n){
+		ll cur = min(sum,r-a[i].second);
+		ans+=cur*a[i].first;
+		sum-=cur;
 	}
 	cout << ans << endl;
-
-	
 }
 
 int main(){
