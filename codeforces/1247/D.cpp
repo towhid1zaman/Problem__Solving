@@ -88,8 +88,8 @@ void task(){
  	rep(i,n){
  		vector< pair<ll,ll> > List = get_factorization(a[i],k);
  		vector< pair<ll,ll> > L(List);
- 		for(auto &it:L){
- 			it.second = k - it.second;
+ 		for(auto it = L.begin(); it!=L.end();it++){
+ 			it->second = k - it->second;
  		}
  		ans+=L_store[L];
  		L_store[List]++;
