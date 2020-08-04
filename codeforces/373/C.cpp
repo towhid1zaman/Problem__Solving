@@ -30,35 +30,26 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
-
-int n;
-vi kangaroos;
-bool chek(int t){
-	if(t*2>kangaroos.size())return false;
-	for(int i =0; i<t; i++){
-		if(kangaroos[i]*2 > kangaroos[n-t+i]){
-			return false;
-		}
-	}
-	return true;
-}
  
 void task(){
- 	cin >> n;
- 	kangaroos.resize(n);
+ 	int n; cin >> n;
+ 	vi kangaroos(n);
  	rep(i,n) cin >> kangaroos[i];
 
  	sort(all(kangaroos));
- 	
- 	//BS
- 	int left = 0, right = n/2 + 1, mid;
- 	while(left<right){
- 		mid = left+right+1 >> 1;
- 		if(chek(mid))left=mid;
- 		else right = mid-1;
+ 	int ans = 0;
+ 	int j = n/2;
+ 	rep(i,n/2){
+ 		while(j<n){
+ 		if(kangaroos[i]*2<=kangaroos[j]){
+ 			ans++;
+ 			j++;
+ 			break;
+ 		}
+ 		else j++;
+ 	   }
  	}
-
- 	cout << n - left << endl;
+ 	cout << n - ans << endl;
 }
 
 int main(){
