@@ -30,7 +30,6 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
-
 int cnt[100];
 void task(){
     fill(cnt,0);
@@ -41,13 +40,15 @@ void task(){
         cnt[a[i]]++;
     }
     int mx =0;
-    for(int s = 2; s<=100; s++){
+    for(int i = 2; i<=100; i++){
+        int l = 1;
+        int r = i-1;
         int temp = 0;
-        for(int i = 1; i<(s+1)/2; i++){
-        	temp+=min(cnt[i], cnt[s-i]);
+        while(l<r){
+            temp+=min(cnt[l],cnt[r]);
+            l++, r--;
         }
-        //if s is even , means , cnt[s]==cnt[s-i]
-        if(s%2==0)temp+=(cnt[s/2]/2);
+        if(l==r)temp+=(cnt[l]/2);
         mx = max(mx,temp);
     }
     cout << mx << endl;
@@ -67,5 +68,5 @@ int main(){
         
 return 0;
 }
-
+    
 
