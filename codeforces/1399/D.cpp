@@ -30,46 +30,46 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
- 
+
+set<int>id[2];
+int ans[maxn];
+
 void task(){
+	fill(ans,0);
+	rep(i,2)id[i].clear();
  	int n; cin >> n;
  	string s; cin >> s;
- 	vi zero,one;
- 	vi ans(n);
- 	int num = 0;
  	for(int i = 0; i<n; i++){
- 		//chek for 0, means starting of subsequence 0
- 		if(s[i]=='0'){
- 			if(zero.size()){
- 				auto index = zero.back();
- 				zero.pop_back();
- 				ans[i] = index;
- 				one.push_back(index);
- 			}
- 			else{
- 				num++;
- 				ans[i] = num;
- 				one.push_back(num);
- 			}
+ 		id[s[i]-'0'].insert(i);
+ 	}
+ 	
+ 	int num = 1;
+ 	while(!id[0].empty() and !id[1].empty()){
+ 		int z; // subsequence 0 or 1
+ 		int beg0 = *id[0].begin(), beg1 = *id[1].begin();
+ 		if(beg0<beg1)z=0;
+ 		else z=1;
+ 		int cur = -1;
+ 		while(1){
+ 			if(id[z].lower_bound(cur)==id[z].end())break;
+ 			int temp = *id[z].lower_bound(cur);
+ 			cur = temp;
+ 			id[z].erase(cur);
+ 			ans[cur] = num;
+ 			z = 1 - z;
  		}
- 		// for 1
- 		if(s[i]=='1'){
- 			if(one.size()){
- 				auto index = one.back();
- 				one.pop_back();
- 				ans[i] = index;
- 				zero.push_back(index);
- 			}
- 			else{
- 				num++;
- 				ans[i] = num;
- 				zero.push_back(num);
- 			}
+ 		num++;
+ 	}
+ 	for(int i = 0; i<2;i++){
+ 		for(int x:id[i]){
+ 			ans[x] = num;
+ 			num++;
  		}
  	}
- 	cout << num << endl;
+
+ 	cout << num -1 << endl;
  	for(int i = 0; i<n; i++){
- 		cout << ans[i] << ' ';
+ 		cout << ans[i]<<' ';
  	}
  	cout << endl;
 }
