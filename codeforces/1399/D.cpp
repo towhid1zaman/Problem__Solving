@@ -34,19 +34,42 @@ const int maxn = 200005;
 void task(){
  	int n; cin >> n;
  	string s; cin >> s;
+ 	vi zero,one;
  	vi ans(n);
- 	int zero=0, one = 0;
- 	//greedy
+ 	int num = 0;
  	for(int i = 0; i<n; i++){
- 		bool ok = (s[i]=='1');
- 		if(zero>0 and ok){ans[i] = ++one, zero--;continue;}
- 		if(one>0 and !ok){ans[i] = one--, ++zero; continue;}
- 		if(ok)ans[i] = ++one;
- 		else ans[i] = ++zero;
+ 		//chek for 0, means starting of subsequence 0
+ 		if(s[i]=='0'){
+ 			if(zero.size()){
+ 				auto index = zero.back();
+ 				zero.pop_back();
+ 				ans[i] = index;
+ 				one.push_back(index);
+ 			}
+ 			else{
+ 				num++;
+ 				ans[i] = num;
+ 				one.push_back(num);
+ 			}
+ 		}
+ 		// for 1
+ 		if(s[i]=='1'){
+ 			if(one.size()){
+ 				auto index = one.back();
+ 				one.pop_back();
+ 				ans[i] = index;
+ 				zero.push_back(index);
+ 			}
+ 			else{
+ 				num++;
+ 				ans[i] = num;
+ 				zero.push_back(num);
+ 			}
+ 		}
  	}
- 	cout << zero+one << endl;
- 	for(int i =0; i<n; i++){
- 		cout << ans[i] <<' ';
+ 	cout << num << endl;
+ 	for(int i = 0; i<n; i++){
+ 		cout << ans[i] << ' ';
  	}
  	cout << endl;
 }
