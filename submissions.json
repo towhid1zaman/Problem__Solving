@@ -2161,6 +2161,27 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF89139192": {
+    "contest_id": 165,
+    "language": "GNU C++14",
+    "path": "codeforces\\165\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Another Problem on Strings",
+    "problem_url": "https://codeforces.com/contest/165/problem/C",
+    "submission_id": "CF89139192",
+    "submission_url": "https://codeforces.com/contest/165/submission/89139192",
+    "tags": [
+      "binary search",
+      "brute force",
+      "dp",
+      "math",
+      "strings",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Aug/06/2020 21:49"
+  },
   "CF89149484": {
     "contest_id": 467,
     "language": "GNU C++14",
