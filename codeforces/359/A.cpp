@@ -42,19 +42,16 @@ void task(){
         }
     }
     vis[0][0]=1,vis[n-1][0]=1,vis[0][m-1]=1,vis[n-1][m-1]=1;
-    int fr=0, fc=0,lr=0,lc=0;
+    int chek=0;
     for(int i = 0;i<n; i++){
         for(int j = 0; j<m; j++){
-            if(!vis[i][j] and g[i][j]){
-                if(i==0)fr++;
-                else if(j==0 )fc++;
-                else if(i==n-1)lr++;
-                else if(j==m-1)lc++;
+            if(vis[i][j]==0 and g[i][j]==1){
+                if(i==0 or i==n-1)chek=1;
+                if(j==0 or j==m-1)chek=1;
             }
         }
     }
-    if(fr>0 or fc>0)cout << 2 << endl;
-    else if(lr>0 or lc>0)cout << 2 << endl;
+    if(chek)cout << 2 << endl;
     else cout << 4 << endl;
 }
 
