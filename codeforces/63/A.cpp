@@ -47,6 +47,8 @@ void task(){
 	for(auto &x:woman)cout << x<<endl;
 	for(auto &x:men)cout << x<<endl;
 	for(auto &x:captain)cout << x<<endl;
+
+
  }
 
 int main(){
