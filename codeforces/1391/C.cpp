@@ -30,23 +30,20 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
-inline ll MOD(ll x)
-{
-    ll y = x % mod;
-    return (y >= 0) ? y: y+mod; // if -ve, simply add M
-}
-
 void task(){
     // n! - 2^(n-1)
-    int n, factorial = 1, power2 = 1;
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        factorial = 1LL * factorial * i % mod;
-        if (i < n) {
-            power2 = power2 * 2 % mod;
-        }
+    ll n; cin >> n;
+    ll fact=1,pow2=1;
+    for(ll i=1; i<=n; i++){
+        fact*=i;
+        fact%=mod;
+        if(i==n)continue;
+        pow2<<=1;
+        pow2%=mod;
     }
-    cout << MOD(factorial - power2)<< endl;
+    fact-=pow2;
+    if(fact<0)fact+=mod;
+    cout << fact << endl;
 }
 
 int main(){
