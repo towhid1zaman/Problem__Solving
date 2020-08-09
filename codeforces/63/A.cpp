@@ -43,6 +43,7 @@ void task(){
 		if(grade=="man")men.pb(name);
 		if(grade=="captain")captain.pb(name);
 	}
+	//sort(all(rat)),sort(all(men)), sort(all(captain));
 	for(auto &x:rat)cout << x<<endl;
 	for(auto &x:woman)cout << x<<endl;
 	for(auto &x:men)cout << x<<endl;
