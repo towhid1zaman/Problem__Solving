@@ -39,7 +39,6 @@ inline ll MOD(ll x)
 void task(){
     // n! - 2^(n-1)
     int n, factorial = 1, power2 = 1;
-    
     cin >> n;
     for (int i = 1; i <= n; i++) {
         factorial = 1LL * factorial * i % mod;
