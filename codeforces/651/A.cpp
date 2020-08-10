@@ -34,10 +34,23 @@ const int maxn = 200005;
 void task(){
  	int ans = 0;
  	int a,b; cin >> a >> b;
- 	while(a>0 and b>0){
- 		if(a<b)swap(a,b);
- 		if(a<2)break;
- 		a-=2,b++,ans++;
+ 	if(a==1 and b==1){
+ 		cout << 0 << endl;
+ 		return ;
+ 	}
+ 	while(true){
+ 		if(a<=0 or b<=0)break;
+ 		if(a<b){
+ 			a+=1;
+ 			b-=2;
+ 			ans++;
+ 		}
+ 		if(a<=0 or b<=0)break;
+ 		if(a>=b){
+ 			b+=1;
+ 			a-=2;
+ 			ans++;
+ 		}
  	}
  	cout << ans << endl;
 }
