@@ -30,26 +30,36 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
+void pp(int N, int K) {
+    vector<int> res; 
+ 
+    int l = 1, r = N, flag = 0; 
 
+    for (int i = 0; i < K; i++) { 
+        if (!flag) { 
+            res.push_back(l); 
+            l++; 
+        } 
+        else { 
+            res.push_back(r); 
+            r--; 
+        } 
+        flag ^= 1; 
+    } 
+    if (!flag) { 
+        for (int i = r; i >= l; i--) 
+            res.push_back(i); 
+    }
+    else { 
+        for (int i = l; i <= r; i++) 
+            res.push_back(i); 
+    }
+    for (auto i : res) 
+        cout << i << " "; 
+} 
 void task(){
  	int n; cin >> n;
-
- 	//two pointers , check every odd and even position
- 	int left = 1, right=n;
- 	int pos = 1;
- 	while(left<=right){
- 		if(pos%2==1){
- 			cout << left<<' ';
- 			left+=1;
- 			pos++;
- 		}
- 		else if(pos%2==0){
- 			cout << right << ' ';
- 			right-=1;
- 			pos++;
- 		}
- 	}
- 	cout << endl;
+ 	pp(n,n-1);
 }
 
 int main(){
