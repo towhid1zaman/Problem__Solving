@@ -2161,6 +2161,23 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF89510649": {
+    "contest_id": 355,
+    "language": "GNU C++14",
+    "path": "codeforces\\355\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Vasya and Digital Root",
+    "problem_url": "https://codeforces.com/contest/355/problem/A",
+    "submission_id": "CF89510649",
+    "submission_url": "https://codeforces.com/contest/355/submission/89510649",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Aug/10/2020 18:53"
+  },
   "CF89516178": {
     "contest_id": 651,
     "language": "GNU C++14",
