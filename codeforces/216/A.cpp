@@ -35,7 +35,7 @@ const int maxn = 300005;
 */
 void task(){
  	ll a,b,c; cin >> a >> b >> c;
- 	ll ans  = b*c+( (a-1) * (b+c-1));
+ 	ll ans  = a*b*c-(a-1)*(b-1)*(c-1);
  	cout << ans << endl;
 }
 
