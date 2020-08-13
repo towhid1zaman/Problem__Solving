@@ -33,16 +33,19 @@ const int maxn = 300005;
 /*
 	
 */
+string t = "bear";
 void task(){
  	string s; cin >> s;
  	int n = s.length();
+
+ 	string chek="";
+ 	ll cur=0;
  	ll ans = 0;
  	for(int i = 0; i<n; i++){
-		for(int j = i; j<n; j++){
-			if(s[j]=='b' and s[j+1]=='e' and s[j+2]=='a' and s[j+3]=='r'){
-				ans+=(n-(j+3));
-				break;
-			}
+		chek = s.substr(i,4);
+		if(chek==t){
+			ans+=(n-i-3)*(i+1-cur);
+			cur = i+1;
 		}
  	}
  	cout << ans<< endl;
