@@ -2161,6 +2161,23 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF89759862": {
+    "contest_id": 462,
+    "language": "GNU C++14",
+    "path": "codeforces\\462\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Appleman and Toastman",
+    "problem_url": "https://codeforces.com/contest/462/problem/C",
+    "submission_id": "CF89759862",
+    "submission_url": "https://codeforces.com/contest/462/submission/89759862",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Aug/13/2020 10:41"
+  },
   "CF89759959": {
     "contest_id": 462,
     "language": "GNU C++14",

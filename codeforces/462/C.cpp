@@ -31,8 +31,7 @@ const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 300005;
 /*
-	every time add sum the last all element except first element
-	prefix sum
+	
 */
 
 ll a[maxn], pref[maxn];
