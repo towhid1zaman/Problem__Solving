@@ -31,8 +31,8 @@ const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 300005;
 /*
-	every time add sum the last all element except first element.
-	brute
+	every time add sum the last all element except first element
+	prefix sum
 */
 
 ll a[maxn], pref[maxn];
@@ -48,11 +48,15 @@ void task(){
  		return;
  	}
  	sort(a,a+n);
- 	ll ans = 0;
+ 	ll ans = sum;
+ 	pref[0] = a[0];
+ 	for(int i = 1; i<n; i++){
+ 		pref[i] = pref[i-1] + a[i];
+ 	}
+
  	for(int i = 0; i<n; i++){
- 		ans+=sum;
- 		sum-=a[i];
- 		if(i!=n-1)ans+=a[i];
+ 		ans+=a[i];
+ 		if(i<n-2)ans+=(sum-pref[i]);
  	}
  	cout << ans << endl;
 }
