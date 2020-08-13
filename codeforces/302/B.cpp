@@ -46,11 +46,11 @@ void task(){
  	for(int i = 1; i<n; i++){
  		pref[i] = pref[i-1]+a[i];
  	}
- 	int vth = 0;
+
  	while(m--){
  		int v; cin >> v;
- 		while(pref[vth] < v)vth++;
- 		cout << vth+1 << endl;
+ 		int it = lower_bound(pref,pref+n, v) - pref;
+ 		cout << it+1 << endl;
  	}
 }
 
