@@ -58,7 +58,6 @@ void task(){
  			else if(hvis[number]==0)home_cnt[number]++;
  		}
  	}
- 	
  	for(int i = 0; i<ans.size(); i++){
  		cout<<ans[i].first <<' '<<ans[i].second.first<<' '<<ans[i].second.second<<endl;
  	}
