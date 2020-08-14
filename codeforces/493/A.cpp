@@ -37,7 +37,10 @@ bool avis[100];
 void task(){
  	string home, away; cin >> home >> away;
  	int n; cin >> n;
- 	std::map<int,int>home_cnt,away_cnt;
+ 	std::map<int,int>home_ans;
+ 	std::map<int,int>away_ans;
+ 	std::map<int,int>home_cnt;
+ 	std::map<int,int>away_cnt;
  	std::vector<pair<string,pair<int, int>>>ans;
  	while(n-->0){
  		char team, card;
@@ -45,6 +48,7 @@ void task(){
  		cin >> time >> team >> number >> card;
  		if(team=='a'){
  			if((away_cnt[number] or card=='r') and (avis[number]==0)){
+ 				away_ans[number] = time;
  				ans.pb({away,{number,time}});
  				avis[number]=1;
  			}
@@ -52,6 +56,7 @@ void task(){
  		}
  		if(team=='h'){
  			if((home_cnt[number] or card=='r') and hvis[number]==0){
+ 				home_ans[number] = time;
  				ans.pb({home,{number,time}});
  				hvis[number]=1;
  			}

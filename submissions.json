@@ -2161,6 +2161,22 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF89847496": {
+    "contest_id": 493,
+    "language": "GNU C++14",
+    "path": "codeforces\\493\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Vasya and Football",
+    "problem_url": "https://codeforces.com/contest/493/problem/A",
+    "submission_id": "CF89847496",
+    "submission_url": "https://codeforces.com/contest/493/submission/89847496",
+    "tags": [
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Aug/14/2020 12:41"
+  },
   "CF89847672": {
     "contest_id": 493,
     "language": "GNU C++14",
