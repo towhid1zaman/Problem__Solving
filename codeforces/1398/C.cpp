@@ -1,10 +1,6 @@
 
 // </> : towhid1zaman
 
-#pragma GCC optimize("Ofast")
-#pragma GCC target("avx,avx2,fma")
-#pragma GCC optimization ("unroll-loops")
-
 #include "bits/stdc++.h"
 using namespace std;
 typedef long long ll;
@@ -37,20 +33,19 @@ const int maxn = 200005;
  
 void task(){
  	int n; cin >> n;
- 	ll a[n+1]{};
- 	ll ans = 0;
  	string s; cin >> s;
- 	for(int i = 1; i<=n;i++){
- 		a[i] = s[i-1]-'0';
- 		a[i]+=a[i-1];
+ 	std::map<int, int>cnt;
+ 	int sum  = 0;
+ 	ll ans = 0;
+ 	cnt[0]++;
+ 	vi pref(n+1,0);
+ 	for(int i = 0; i<n; i++){
+ 		int t = s[i]-'0';
+ 		pref[i] = t-1;
+ 		if(i!=0) pref[i]+=pref[i-1];
+ 		ans+=cnt[pref[i]];
+ 		cnt[pref[i]]++;
  	}
- 	//O(n^2)
- 	for(int i = 1; i<=n; i++){
- 		for(int j = i; j<=n; j++){
- 			ans+=(a[j]-a[i-1]==j-i+1);
- 		}
- 	}
-
  	cout << ans << endl;
 }
 
