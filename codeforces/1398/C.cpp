@@ -38,13 +38,10 @@ void task(){
  	int sum  = 0;
  	ll ans = 0;
  	cnt[0]++;
- 	vi pref(n+1,0);
- 	for(int i = 0; i<n; i++){
- 		int t = s[i]-'0';
- 		pref[i] = t-1;
- 		if(i!=0) pref[i]+=pref[i-1];
- 		ans+=cnt[pref[i]];
- 		cnt[pref[i]]++;
+ 	for(int i = 1; i<=n; i++){
+ 		sum+=s[i-1]-'0'-1;
+ 		ans+=cnt[sum];
+ 		cnt[sum]++;
  	}
  	cout << ans << endl;
 }
