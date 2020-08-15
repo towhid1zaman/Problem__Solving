@@ -33,6 +33,7 @@ const int maxn = 200005;
 
 int dp[maxn];
 void task(){
+	fill(dp,0);
  	int n; cin >> n;
  	for(int i = 0; i<n; i++){
  		cin >> dp[i];

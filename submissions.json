@@ -2161,6 +2161,23 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF90039279": {
+    "contest_id": 192,
+    "language": "GNU C++14",
+    "path": "codeforces\\192\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Walking in the Rain",
+    "problem_url": "https://codeforces.com/contest/192/problem/B",
+    "submission_id": "CF90039279",
+    "submission_url": "https://codeforces.com/contest/192/submission/90039279",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Aug/16/2020 00:00"
+  },
   "CF90039529": {
     "contest_id": 192,
     "language": "GNU C++14",
