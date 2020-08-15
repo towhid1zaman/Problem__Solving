@@ -2161,6 +2161,23 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF90020846": {
+    "contest_id": 483,
+    "language": "GNU C++14",
+    "path": "codeforces\\483\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Diverse Permutation",
+    "problem_url": "https://codeforces.com/contest/483/problem/C",
+    "submission_id": "CF90020846",
+    "submission_url": "https://codeforces.com/contest/483/submission/90020846",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Aug/15/2020 19:13"
+  },
   "CF90023296": {
     "contest_id": 92,
     "language": "GNU C++14",
