@@ -34,12 +34,32 @@ const int maxn = 200005;
 void task(){
  	string s; cin >> s;
  	int n = s.size();
- 	//last 1 position
- 	int c = s.rfind('1');
- 	int one = count(all(s),'1');
- 	if(one>1)one-=2;
- 	int ans = n + c - one;
+
+ 	vi chek(n+1, 0);
+
+ 	for(int i = 1; i<=n; i++){
+ 		chek[i] = s[i-1] - '0';
+ 	}
+ 	int one = 0;
+ 	for(int i = 2; i<=n; i++){
+ 		one+=(chek[i]==1);
+ 	}
+
+ 	int ans = 0, carry = 0;
+
+ 	// processing binary number
+ 	for(int i = n; i>=1; i--){
+ 		chek[i]+=carry;
+ 		if(chek[i]==1){
+ 			chek[i]++;
+ 			ans++;
+ 		}
+ 		carry = chek[i]/2;
+ 		ans++;
+ 	}
+ 	if(one==0)ans-=2;
  	cout << ans << endl;
+
 }	
 
 int main(){
