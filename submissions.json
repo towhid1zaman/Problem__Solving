@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF89986486": {
+    "contest_id": 370,
+    "language": "GNU C++14",
+    "path": "codeforces\\370\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Rook, Bishop and King",
+    "problem_url": "https://codeforces.com/contest/370/problem/A",
+    "submission_id": "CF89986486",
+    "submission_url": "https://codeforces.com/contest/370/submission/89986486",
+    "tags": [
+      "graphs",
+      "math",
+      "shortest paths",
+      "*1100"
+    ],
+    "timestamp": "Aug/15/2020 10:54"
+  },
   "CF89992345": {
     "contest_id": 43,
     "language": "GNU C++14",
