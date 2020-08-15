@@ -39,8 +39,8 @@ void task(){
  	for(int i = 0; i<n; i++){
  		string chek = Gogol.substr(i,m);
  		if(chek==Pineapple){
-		 ans++;
-		 i+=m-1;
+ 			ans++;
+ 			i+=m-1;
  		}
  	}
  	cout << ans << endl;
