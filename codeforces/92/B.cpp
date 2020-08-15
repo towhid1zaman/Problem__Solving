@@ -34,29 +34,11 @@ const int maxn = 200005;
 void task(){
  	string s; cin >> s;
  	int n = s.size();
- 	deque<int>chek(n);
- 	for(int i = 0; i<n; i++){
- 		chek[i] = s[i]-'0';
- 	}
- 	reverse(all(chek));
-
- 	int ans = 0;
- 	for(int i = 0; i<chek.size(); i++){
- 		if(i==chek.size()-1)break;
- 		if(chek[i]==0)ans++;
- 		else{
- 			int pos = i+1, carry = 1;
- 			while(carry){
- 				if(pos>=chek.size())chek.pb(0);
- 				chek[pos]++;
- 				if(chek[pos]==2)chek[pos] = 0;
- 				else carry = 0;
- 				pos++;
- 			}
- 			ans+=2;
- 		}
- 	}
-
+ 	//last 1 position
+ 	int c = s.rfind('1');
+ 	int one = count(all(s),'1');
+ 	if(one>1)one-=2;
+ 	int ans = n + c - one;
  	cout << ans << endl;
 }	
 
