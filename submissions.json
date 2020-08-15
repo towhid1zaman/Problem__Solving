@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF90017297": {
+    "contest_id": 257,
+    "language": "GNU C++14",
+    "path": "codeforces\\257\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Sockets",
+    "problem_url": "https://codeforces.com/contest/257/problem/A",
+    "submission_id": "CF90017297",
+    "submission_url": "https://codeforces.com/contest/257/submission/90017297",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Aug/15/2020 18:16"
+  },
   "CF90018520": {
     "contest_id": 625,
     "language": "GNU C++14",
