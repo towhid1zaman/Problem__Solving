@@ -2161,6 +2161,23 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF90088416": {
+    "contest_id": 252,
+    "language": "GNU C++14",
+    "path": "codeforces\\252\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Little Xor",
+    "problem_url": "https://codeforces.com/contest/252/problem/A",
+    "submission_id": "CF90088416",
+    "submission_url": "https://codeforces.com/contest/252/submission/90088416",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Aug/16/2020 20:19"
+  },
   "CF90090968": {
     "contest_id": 318,
     "language": "GNU C++14",
