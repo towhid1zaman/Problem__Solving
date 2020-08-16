@@ -34,19 +34,15 @@ const int maxn = 200005;
 
 void task(){
  	int n,k; cin >> n >> k;
+ 	string t = "";
+ 	for(int i  =0; i<=k; i++){
+ 		t+=to_string(i);
+ 	}
  	int ans = 0;
- 	for(int p = 1; p<=n; p++){
+ 	for(int i = 0; i<n; i++){
  		string s; cin >> s;
- 		bool check[1011];
- 		for(int i = 0; i<=k; i++)check[i] = false;
- 		for(int i = 0; i<s.size(); i++){
- 			check[s[i]-'0'] = true;
- 		}
- 		bool ok=true;
- 		for(int i = 0; i<=k; i++){
- 			if(!check[i])ok = false;
- 		}
- 		if(ok) ans++;
+ 		unq(s);
+ 		if(s.substr(0,k+1)==t)ans++;
  	}
  	cout << ans << endl;
 }	
