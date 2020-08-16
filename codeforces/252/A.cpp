@@ -40,9 +40,9 @@ void task(){
  	}
  	int ans = 0;
  	rep(i,n){
+ 		int cur = 0;
  		for(int j = i; j<n; j++){
- 			int cur = 0;
- 			for(int k = i; k<=j;k++)cur^=a[k];
+ 			cur^=a[j];
  			ans = max(cur, ans);
  		}
  		
