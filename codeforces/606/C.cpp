@@ -37,15 +37,8 @@ void task(){
  	int ans = 0;
  	for(int i = 1, x; i<=n; i++){
  		cin >> x;
- 		pos[x] = i;
- 	}
- 	ans = 1;
- 	int cnt = 1;
- 	for(int i = 2; i<=n; i++){
- 		if(pos[i]>pos[i-1]){
- 			ans = max(ans, ++cnt);
- 		}
- 		else cnt = 1;
+ 		pos[x] = pos[x-1] + 1;
+ 		ans = max(ans, pos[x]);
  	}
  	cout << n - ans << endl;
 }
