@@ -43,8 +43,7 @@ void task(){
  	int cnt = 1;
  	for(int i = 2; i<=n; i++){
  		if(pos[i]>pos[i-1]){
- 			cnt++;
- 			ans = max(ans, cnt);
+ 			ans = max(ans, ++cnt);
  		}
  		else cnt = 1;
  	}
