@@ -34,7 +34,17 @@ const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
-
+ll bxpo(ll x,ll n){
+    ll res = 1;
+    while(n>0){
+        if(n%2==1){
+            res = res*x;
+        }
+        x = x*x;
+        n = n/2;
+    }
+    return res;
+}
 void task(){
  	ll n,l; cin >> n >> l;
  	ll p = n;
