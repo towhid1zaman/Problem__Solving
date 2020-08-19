@@ -36,7 +36,7 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
 string shift(string s){
-	s = s[s.size()-1] + s.substr(0,s.size()-1);
+	rotate(s.begin(),s.begin()+1,s.end());
 	return s;
 }
  
