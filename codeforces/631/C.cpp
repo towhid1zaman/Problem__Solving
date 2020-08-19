@@ -36,13 +36,9 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
 /*
-two types of operation,
-1-> accending order
-2-> descending order
-suppose first operation  we sort ascending 1 to 4 element
-and then we again sort descending order 1 to 5, so can we find previous
-sorted one ? No.
-so, we check this operation needed or not, if not then we remove it	
+	two types of operation,
+	1-> accending order
+	2-> descending order
 	
 */
 
