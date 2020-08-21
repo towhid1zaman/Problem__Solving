@@ -56,7 +56,7 @@ void task(){
 	bool ans = 1;
 	rep(i,n){
 		if(a[i]==b[i])continue;
-		if(!((gcd(a[i],mn)==mn) and gcd(b[i],mn)==mn)){
+		if (!(gcd(a[i], mn) == mn and gcd(b[i], mn) == mn)){
 			ans = 0;
 			break;
 		}
