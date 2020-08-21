@@ -41,28 +41,19 @@ const int mod = 1000000007; // (int)1e9+7
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
-ll gcd(ll a,ll b){
-    return b ? gcd(b,a%b) : a;
-}
-ll lcm(ll a, ll b){
-    return a/ gcd(a,b)*b;
-}
+
 void task(){
 	int n; cin >> n;
-	vll a(n), b(n);
-	rep(i,n) cin >> a[i], b[i] = a[i];
-	sort(all(a));
-	ll mn = a[0];
-	bool ans = 1;
-	rep(i,n){
-		if(a[i]==b[i])continue;
-		if (!(gcd(a[i], mn) == mn and gcd(b[i], mn) == mn)){
-			ans = 0;
-			break;
-		}
-	}
-
-	cout << (ans?"YES":"NO") << endl;
+ 	vi a(n), b(n);
+ 	rep(i,n)cin >> a[i], b[i] = a[i];
+ 	sort(all(a));
+ 	rep(i,n){
+ 		if(a[i]!=b[i] and b[i]%a[0]){
+ 			cout <<"NO"<<endl;
+ 			return;
+ 		}
+ 	}
+ 	cout <<"YES"<<endl;
 }
 
 int main(){
