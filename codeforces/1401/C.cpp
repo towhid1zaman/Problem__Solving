@@ -47,17 +47,16 @@ ll gcd(ll a,ll b){
 ll lcm(ll a, ll b){
     return a/ gcd(a,b)*b;
 }
-
 void task(){
 	int n; cin >> n;
 	vll a(n), b(n);
 	rep(i,n) cin >> a[i], b[i] = a[i];
-	sort(all(b));
-	ll mn = b[0];
+	sort(all(a));
+	ll mn = a[0];
 	bool ans = 1;
 	rep(i,n){
-		
-		if(a[i]%mn != 0 and a[i]!=b[i]){
+		if(a[i]==b[i])continue;
+		if(!((gcd(a[i],mn)==mn) and gcd(b[i],mn)==mn)){
 			ans = 0;
 			break;
 		}
