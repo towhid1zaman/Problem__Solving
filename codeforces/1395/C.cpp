@@ -73,7 +73,6 @@ void task(){
 				break;
 			}
 		}
-		
 		if(!ans){
 			cout << A << endl;
 			return;
