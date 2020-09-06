@@ -42,45 +42,53 @@ typedef vector<pll> vpll;
 
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
-const int inf = 1e8;// (int)3e18;
+const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
-/*ABC
- *Only 7 types of combination , 2^3 - 1
+/*
+ *
  */
 
 void task(){
 	int n; cin >> n;
-	vi Vitamins(8, inf);
+	vi A,B,C,AB,BC,AC,ABC;
 
 	rep(i, n){
-		int c; string s; cin >> c >> s;
-		int mask = 0;
-		for(int m = 0; m < s.size(); m++){
-			mask |= (1 << (s[m]-'A'));
-		}
-		Vitamins[mask] = min(Vitamins[mask], c);
+		int c; string s;
+		cin >> c >> s;
+		sort(all(s));
+		if(s=="A")A.pb(c);
+		else if(s=="B")B.pb(c);
+		else if(s=="C")C.pb(c);
+		else if(s=="AB")AB.pb(c);
+		else if(s=="BC")BC.pb(c);
+		else if(s=="AC")AC.pb(c);
+		else if(s=="ABC")ABC.pb(c);
 	}
-	int ans = inf;
-	for(int i = 0; i < 8; i++){
-		if(__builtin_popcount(i)==3){
-			ans = min(ans, Vitamins[i]);
-		}
-		for(int j = 0; j < 8; j++){
-			if(__builtin_popcount(i|j)==3){
-				ans = min(ans, Vitamins[i]+Vitamins[j]);
-			}
-			for(int k = 0; k < 8; k++){
-				if(__builtin_popcount(i|j|k)==3){
-					ans = min(ans, Vitamins[i] + Vitamins[j] + Vitamins[k]);
-				}
-			}
-		}
-	}
+	sort(all(A)), sort(all(B)), sort(all(C));
+	sort(all(AB)), sort(all(BC)), sort(all(AC)), sort(all(ABC));
 
-	if(ans >= inf) ans = -1 ;
-	cout << ans << endl;
+	vi Vitamins;
+	//A,B,C
+	if(A.size() and B.size() and C.size())Vitamins.pb(A[0]+B[0]+C[0]);
+	//AB,C
+	if(AB.size() and C.size())Vitamins.pb(AB[0]+C[0]);
+	//BC,A
+	if(BC.size() and A.size())Vitamins.pb(BC[0]+A[0]);
+	//AC,B
+	if(AC.size() and B.size())Vitamins.pb(AC[0]+B[0]);
+	//ABC
+	if(ABC.size())Vitamins.pb(ABC[0]);
+	//AB,BC
+	if(AB.size() and BC.size())Vitamins.pb(AB[0]+BC[0]);
+	//AB,AC
+	if(AB.size() and AC.size())Vitamins.pb(AB[0]+AC[0]);
+	//AC,BC
+	if(AC.size() and BC.size())Vitamins.pb(AC[0]+BC[0]);
 
+	sort(all(Vitamins));
+	if(Vitamins.size())cout << Vitamins[0] << endl;
+	else cout << -1 << endl;
 }
 
 int main(){
