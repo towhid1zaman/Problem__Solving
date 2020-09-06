@@ -57,16 +57,12 @@ void task(){
 	sort(all(a));
 
 	vi x,y;
-	ll xSum=0, ySum = 0;
-	for(int i = 0; i<n; i++){
-		if(xSum<=ySum){
-			x.pb(a[i].second);
-			xSum+=a[i].first;
-		}
-		else{
-			y.pb(a[i].second);
-			ySum+=a[i].first;
-		}
+	for(int i = 0; i<n; i+=2){
+		x.pb(a[i].second);
+	}
+
+	for(int i = 1; i<n; i+=2){
+		y.pb(a[i].second);
 	}
 
 	cout << x.size() << endl;
