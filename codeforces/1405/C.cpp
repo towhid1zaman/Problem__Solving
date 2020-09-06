@@ -67,7 +67,6 @@ void task(){
 			}
 			flag = flag && cnt0 <= k / 2 && cnt1 <= k / 2;
 		}
-		
 	yn(flag);   
 }
 
