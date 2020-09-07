@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF92122107": {
+    "contest_id": 451,
+    "language": "GNU C++14",
+    "path": "codeforces\\451\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Predict Outcome of the Game",
+    "problem_url": "https://codeforces.com/contest/451/problem/C",
+    "submission_id": "CF92122107",
+    "submission_url": "https://codeforces.com/contest/451/submission/92122107",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Sep/07/2020 15:44"
+  },
   "CF92359500": {
     "contest_id": 540,
     "language": "GNU C++14",
