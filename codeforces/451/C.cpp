@@ -64,7 +64,6 @@ void task(){
 	if(!ans) ans = chek(n, k, max(d1,d2)*2 - min(d1, d2), d1+d2);
 
 	yn(ans);
-	
 }
 
 int main(){
