@@ -81,9 +81,9 @@ void task(){
 	ll cS = (column ==0 ? columnSum[1] : columnSum[0]);
 
 	if(rS != cS){
-		No();
-		return;
-	}
+			No();
+			return;
+		}
 
 	ll dS1 = 0, dS2 = 0;
 
