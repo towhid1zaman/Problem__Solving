@@ -57,6 +57,12 @@ void task(){
 	for(char c: b)B[c-'a']++;
 	for(char c: c)C[c-'a']++;
 
+	int mxB = inf, mxC = inf;
+
+	for(int i = 0; i<26; i++){
+		if(B[i]) mxB = min(mxB, A[i]/B[i]);
+		if(C[i]) mxC  = min(mxC, A[i]/C[i]);
+	}
 
 	int best = -1;
 	int k1,k2;
@@ -79,6 +85,7 @@ void task(){
 
 		if(best < mn + k) best = mn + k, k1 = k, k2 = mn;
 	}
+
 	string ans;
 	for(int i = 0; i<k1; i++){
 		ans+=b;
