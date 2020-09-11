@@ -56,7 +56,7 @@ void task(){
 	int glasses = 0;
 	ans[1][1] = t;
 	for(int i = 1; i<=n; i++){
-		for(int e = 1; e<=n; e++){
+		for(int e = 1; e<=i; e++){
 			if(ans[i][e] >= 1){
 				double x = ans[i][e] - 1;
 				ans[i+1][e] += x/2;
