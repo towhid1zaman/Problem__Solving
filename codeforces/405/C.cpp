@@ -59,7 +59,7 @@ void task(){
         }
         int ans = 0;
         rep(i, n){
-        	ans = ans^mat[i][i];
+        	ans = (ans+mat[i][i])%2;
         }
         int Q; cin >> Q;
         rep(k, Q){
@@ -67,7 +67,7 @@ void task(){
         	
         	if(type == 1 or type == 2){
         		int a; cin >> a;
-        		ans^=1;
+        		ans = (ans+1)%2;
         	}
         	if(type == 3){
         		cout << ans;
