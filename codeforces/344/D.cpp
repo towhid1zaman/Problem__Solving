@@ -53,16 +53,17 @@ const int maxn = 200005;
 
 void task(){
 	string s; cin >> s;
-	std::vector<char>stak;
+	stack<char>stak;
+	
 	for(char c:s){
-		if(stak.size()==0)stak.push_back(c);
+		if(stak.size()==0)stak.push(c);
 		else{
-			if(c == stak.back()) stak.pop_back();
-			else stak.push_back(c);
+			if(c == stak.top()) stak.pop();
+			else stak.push(c);
 		}
 	}
 
-	bool ans = (sz(stak) >= 1 or sz(s)%2==1);
+	bool ans = (sz(stak) >=1 or sz(s)%2==1);
 	yn(!ans);
 }
 
