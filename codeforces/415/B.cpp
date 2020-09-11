@@ -57,7 +57,7 @@ void task(){
 	rep(i, n){
 		ll x; cin >> x;
 		ll money = ((x*a)/b);
-		ll ans = x - ( (ceil(money*b)/a) );
+		ll ans = x - ceil( (ceil(money*b)/a) );
 		cout << ans <<' ';
 	}
 	cout << endl;
