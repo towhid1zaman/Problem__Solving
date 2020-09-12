@@ -42,51 +42,26 @@ typedef vector<pll> vpll;
 
 const double pi = acos(-1.0);
 const int mod = 1000000007; // (int)1e9+7
-const int inf = 0x3f3f3f3f;// (int)3e18;
+const ll inf = 3e18;
 const int maxn = 200005;
 
 /*
  *
  */
-int n;
-ll solve(vll A, int k){
-    ll product = 1; 
-    if (A[n - 1] == 0 && (k & 1)) 
-        return 0;  
-    if (A[n - 1] <= 0 && (k & 1)) { 
-        for (int i = n - 1; i >= n - k; i--) 
-            product *= A[i]; 
-        return product; 
-    } 
- 
-    int i = 0, j = n - 1; 
-    if (k & 1) { 
-        product *= A[j]; 
-        j--; 
-        k--; 
-    } 
-    k >>= 1; 
-    for (int itr = 0; itr < k; itr++) { 
-        ll left_product = A[i] * A[i + 1]; 
-        ll right_product = A[j] * A[j - 1]; 
-        if (left_product > right_product) { 
-            product *= left_product; 
-            i += 2; 
-        } 
-        else { 
-            product *= right_product; 
-            j -= 2; 
-        } 
-    } 
-    return product; 
-} 
-  
+
 void task(){
-       cin >> n;
-       vll a(n);
-       rep(i, n) cin >> a[i];
-       sort(all(a));
-       cout << solve(a,5)<<endl;
+	int n; cin >> n;
+	std::vector<ll> v(n);
+	for(ll &x:v)cin >> x;
+	sort(all(v));
+	ll ans = -inf;
+	for(int i = 0; i<=5; i++){
+		ll prod = 1;
+		for(int j = 0; j<i; j++)prod*=v[j];
+		for(int j = i; j<5; j++)prod*=v[n-5+j];
+		ans = max(prod, ans);
+	} 
+	cout << ans << endl;
 }
 
 int main(){
