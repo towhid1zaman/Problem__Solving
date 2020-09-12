@@ -56,18 +56,13 @@ void task(){
     	int a; cin >> a;
     	cnt[a]++;
     }
-    int a = 0, b = 0;
-    for(int i =100; i>=0;i--){
-    	if(cnt[i]==0){
-    		a = i;
-    	}
+    int ans = 0, in = 2;
+    rep(i, 101){
+    	if(cnt[i]>=2)ans+=in;
+    	else if(cnt[i]==1)ans+=1, in = 1;
+    	else break;
     }
-    //deb(a)
-    for(int i = 100; i>=0;i--){
-    	if(cnt[i]<=1)b = i;
-    }
-    //deb(b)
-    cout << a+b << endl;
+    cout << ans << endl;
 }
 
 int main(){
