@@ -46,22 +46,28 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
 /*
- *go other way maximize the smaller triangle as fast as possible
- *greedy
+ *
  */
-
-
 
 void task(){
     int x,y; cin >> x >> y;
-    vi a = {y,y,y};
-    int turns = 0;
-    while(a[0] < x){
-    	turns ++;
-    	a[0] = a[1] + a[2] - 1;
-    	sort(all(a));
+    int a = y, b = y, c = y, turns = 0;
+    while(true){
+    	if(a>=x and b>=x and c>=x){
+    		cout << turns << endl;
+    		return;
+    	}
+    	turns++;
+    	if(turns%3 == 0){
+    		c = a + b - 1;
+    	}
+    	if(turns%3 == 2){
+    		b = a + c - 1;
+    	}
+    	if(turns%3 == 1){
+    		a = b + c - 1;
+    	}
     }
-    cout << turns << endl;
 }
 
 int main(){
