@@ -8507,6 +8507,24 @@
     ],
     "timestamp": "Sep/13/2020 21:12"
   },
+  "CF92739032": {
+    "contest_id": 582,
+    "language": "GNU C++14",
+    "path": "codeforces\\582\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "GCD Table",
+    "problem_url": "https://codeforces.com/contest/582/problem/A",
+    "submission_id": "CF92739032",
+    "submission_url": "https://codeforces.com/contest/582/submission/92739032",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "number theory",
+      "*1700"
+    ],
+    "timestamp": "Sep/14/2020 00:01"
+  },
   "CF92739062": {
     "contest_id": 583,
     "language": "GNU C++14",
