@@ -51,19 +51,31 @@ const int maxn = 200005;
 
 void task(){
 	int n; cin >> n;
-	std::vector<int>cnt(maxn);
-
-	int ans = 0;
-
+	std::vector<int> a(n+1);
 	for(int i = 1; i<=n; i++){
-		int x; cin >> x;
-		cnt[x]++, cnt[x+1]++;
-		cnt[x-1] = 0, cnt[x+2] = 0;
-
-		ans = max(ans, max(cnt[x], cnt[x+1]));
+		cin >> a[i];
 	}
 	
+	multiset<int>ms;
+	ms.insert(a[1]);
+
+	int ans = 1;
+	int L = 1, R = 1;
+
+	while(R<n){
+		R++;
+		ms.insert(a[R]);
+
+		while(*(--ms.end()) - *(ms.begin()) > 1){
+			ms.erase(ms.find(a[L]));
+			L++;
+		}
+
+		ans = max(ans, R - L + 1);
+	}
+
 	cout << ans << endl;
+
 }
 
 int main(){
@@ -73,7 +85,7 @@ int main(){
         freopen("outputf.in", "w", stdout);
         #endif
 
-        int T = 1;// cin >> T;
+        int T = 1; //cin >> T;
         while(T--){
             task();
         }
