@@ -51,16 +51,31 @@ const int maxn = 200005;
 
 void task(){
 	int n; cin >> n;
-	std::vector<int>dp(maxn);
-	int ans = 0;
+	std::vector<int> a(n+1);
 	for(int i = 1; i<=n; i++){
-		int x; cin >> x;
-		dp[x]++, dp[x+1]++;
-		dp[x-1]=0, dp[x+2] =0;
-		ans = max(ans, dp[x]);
-		ans = max(ans, dp[x+1]);
+		cin >> a[i];
 	}
+	
+	multiset<int>ms;
+	ms.insert(a[1]);
+
+	int ans = 1;
+	int L = 1, R = 1;
+
+	while(R<n){
+		R++;
+		ms.insert(a[R]);
+
+		while(*(--ms.end()) - *(ms.begin()) > 1){
+			ms.erase(ms.find(a[L]));
+			L++;
+		}
+
+		ans = max(ans, (int)ms.size());
+	}
+
 	cout << ans << endl;
+
 }
 
 int main(){
