@@ -50,23 +50,20 @@ const int maxn = 200005;
  */
 
 
-int f(ll n){
-	if(n==0)return 0;
-	if(n%2==0) return f(n/2);
-	else return f(n/2)+1;
-}
 
 void task(){
 	int n; cin >> n;
-	std::map<ll, ll> mop;
-	for(int i= 0; i<n; i++){
-		ll x; cin >> x;
-		mop[f(x)]++;
+	std::vector<ll> a(n+1,0), Bit_cnt(40,0);
+
+	for(int i = 1; i<=n; i++){
+		cin >> a[i];
+		Bit_cnt[__builtin_popcountl(a[i])]++;
 	}
 
 	ll sum = 0;
-	for(auto &x:mop){
-		sum += (x.ss*(x.ss-1)/2);
+
+	for(int i = 0; i<40; i++){
+		sum += (Bit_cnt[i] * (Bit_cnt[i]-1)/2);
 	}
 
 	cout << sum << endl;
