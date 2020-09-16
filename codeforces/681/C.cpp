@@ -113,6 +113,8 @@ void task(){
 
 	cout << sz(ans) << endl;
 	for(auto x: ans)cout << x << endl;
+
+	
 }
 
 int main(){
