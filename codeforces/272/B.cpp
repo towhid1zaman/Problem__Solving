@@ -46,27 +46,10 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
 /*
- *f(0)=0
- * f(1)=1
- * f(2)=1
- * f(3)=2
- * f(4)=1
- * f(5)=2
- * f(6)=2
- * f(7)=3
- * f(8)=1
- * f(9)=2
- * f(10)=2
- * f(11)=3
- * f(12)=2
- * f(13)=3
- * f(14)=3
- * f(15)=4
- * f(16)=1
- * ...number of bits 
+ *
  */
 
-//return number of bits actually
+
 int f(ll n){
 	if(n==0)return 0;
 	if(n%2==0) return f(n/2);
@@ -78,8 +61,7 @@ void task(){
 	std::map<ll, ll> mop;
 	for(int i= 0; i<n; i++){
 		ll x; cin >> x;
-		//mop[f(x)]++;
-		mop[__builtin_popcountl(x)]++;
+		mop[f(x)]++;
 	}
 
 	ll sum = 0;
