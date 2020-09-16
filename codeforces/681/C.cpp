@@ -70,7 +70,7 @@ void task(){
 
 	int n; cin >> n;
 	std::vector<string>ans;
-	multiset<int>heap; // small value first
+	priority_queue<int, std::vector<int> , greater<int> > heap; // small value first
 
 	while(n-- > 0){
 		string type; 
@@ -79,19 +79,19 @@ void task(){
 
 		if(type == "insert"){
 			cin >> x;
-			heap.insert(x);
+			heap.push(x);
 			ans.push_back("insert "+to_str(x));
 		}
 
 		else if(type == "getMin"){
 			cin >> x;
-			while(!heap.empty() and x > *heap.begin()){
+			while(!heap.empty() and x > heap.top()){
 				ans.push_back("removeMin");
-				heap.erase(heap.begin());
+				heap.pop();
 			}
 
-			if(heap.empty() or x < *heap.begin()){
-				heap.insert(x);
+			if(heap.empty() or x < heap.top()){
+				heap.push(x);
 				ans.push_back("insert "+to_str(x));
 			}
 
@@ -102,10 +102,10 @@ void task(){
 			
 			if(heap.empty()){
 				ans.push_back("insert "+to_str(0));
-				heap.insert(0);
+				heap.push(0);
 			}
 			ans.push_back("removeMin");
-			heap.erase(heap.begin());
+			heap.pop();
 
 		}
 
