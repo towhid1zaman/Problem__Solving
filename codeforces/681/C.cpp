@@ -49,72 +49,51 @@ const int maxn = 200005;
  *
  */
 
-string to_str(int n){
-	if(n==0)return "0";
-	bool sign  = (n<0);
-
-	string str="";
-	n = abs(n);
-	while(n){
-		str+=((n%10) +'0');
-		n/=10;
-	}
-	if(sign)str+="-";
-	reverse(str.begin(), str.end());
-
-	return str;
-}
-
 void task(){
 
-
+	stringstream res;
 	int n; cin >> n;
-	std::vector<string>ans;
-	priority_queue<int, std::vector<int> , greater<int> > heap; // small value first
 
+	priority_queue<int, std::vector<int> , greater<int> > heap; // small value first
+	int cnt = n;
 	while(n-- > 0){
 		string type; 
 		cin >> type;
 		int x;
-
 		if(type == "insert"){
 			cin >> x;
+			res << type<<' '<<x<<endl;
 			heap.push(x);
-			ans.push_back("insert "+to_str(x));
 		}
+		else if(type == "removeMin"){
+			if(heap.empty()){
+				res << "insert -1000000000"<<endl;
+				cnt++;
+			}
+			else heap.pop();
 
-		else if(type == "getMin"){
+			res << type << endl;
+		}
+		else{
 			cin >> x;
-			while(!heap.empty() and x > heap.top()){
-				ans.push_back("removeMin");
+			while(!heap.empty() and heap.top() < x){
+				res << "removeMin"<<endl;
+				cnt++;
 				heap.pop();
 			}
-
-			if(heap.empty() or x < heap.top()){
+			if(heap.empty() or heap.top() != x){
+				res << "insert "<< x << endl;
+				cnt++;
 				heap.push(x);
-				ans.push_back("insert "+to_str(x));
 			}
 
-			ans.push_back("getMin "+to_str(x));
+			res << type <<' '<< x << endl;
 		}
-
-		else{
-			
-			if(heap.empty()){
-				ans.push_back("insert "+to_str(0));
-				heap.push(0);
-			}
-			ans.push_back("removeMin");
-			heap.pop();
-
-		}
-
 	}
 
-	cout << sz(ans) << endl;
-	for(auto x: ans)cout << x << endl;
+	cout << cnt << endl;
 
-	
+	cout << res.str() << endl;
 }
 
 int main(){
