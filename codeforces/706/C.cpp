@@ -40,7 +40,7 @@ typedef vector<pll> vpll;
 
 vi mods = {1000000007, 1000000009, 998244353};
 const double pi = acos(-1.0);
-const ll inf =  3e18;
+const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
 
@@ -49,7 +49,19 @@ const int maxn = 200005;
  */
 
 ll n, c[maxn],dp[maxn][2];
-string s[maxn],t[maxn];
+string s[maxn][2]; //1 = reverse, 0 = not reverse
+
+ll recur(int index, int rev){
+	if(index>n)return 0;
+	ll &ans = dp[index][rev];
+
+	if(ans!=-1)return ans;
+	ans = 1e15;
+	if(s[index][0] >= s[index-1][rev]) ans = min(ans, recur(index+1, 0));
+	if(s[index][1] >= s[index-1][rev]) ans = min(ans, c[index] + recur(index+1, 1));
+	return ans;
+}
+
 
 void task(){
 
@@ -58,34 +70,18 @@ void task(){
 		cin >> c[i];
 	}
 
-	//not reverse, reversed
-	dp[0][0] = 0, dp[0][1] = 0;
-
-	for(int i = 1;i<=n; i++){
-		dp[i][0] = inf, dp[i][1] = inf;
-		
-		cin >> s[i];
-		t[i] = s[i];
-
-		reverse(all(t[i]));
-		if(s[i] == s[i-1] or s[i] > s[i-1]){
-			dp[i][0] = min(dp[i][0], dp[i-1][0]);
-		}
-		if(s[i] == t[i-1] or s[i] > t[i-1]){
-			dp[i][0] = min(dp[i][0], dp[i-1][1]);
-		}
-		if(t[i] == t[i-1] or t[i] > t[i-1]){
-			dp[i][1] = min(dp[i][1], c[i] + dp[i-1][1]);
-		}
-		if(t[i] == s[i-1] or t[i] > s[i-1]){
-			dp[i][1] = min(dp[i][1], c[i] + dp[i-1][0]);
-		}
-
+	for(int i = 1; i<=n; i++){
+		cin >> s[i][0];
+		string t = s[i][0];
+		reverse(all(t));
+		s[i][1] = t;
 	}
 
-	ll ans = min(dp[n][0],dp[n][1]);
-	if(ans == inf)ans = -1;
-	cout << ans << endl;
+	fill(dp, -1);
+
+	ll ans = min(recur(2,0), c[1]+recur(2,1));
+	if(ans>=1e15) cout << -1 << endl;
+	else cout << ans << endl;
 
 }
 
