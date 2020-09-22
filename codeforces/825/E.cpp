@@ -1,3 +1,4 @@
+
 // </> : towhid1zaman
 
 //#pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math,O3")
@@ -40,56 +41,42 @@ typedef vector<pll> vpll;
 vi mods = {1000000007, 1000000009, 998244353};
 const double pi = acos(-1.0);
 const int inf = 0x3f3f3f3f;// (int)3e18;
-const int maxn = 1e5+5;
+const int maxn = 100001;
 
 /*
  *
  */
+int n,m, topo[100001], indeg[100001];
+vi adj[100001];
+priority_queue<int> Q;
 
-int n,m;
-vector<int>g[maxn];
-vector<int> topo; //Stores the Topological Order
-bool toposort() //Returns 1 if there exists a toposort, 0 if there is a cycle
-{	
-	
-	priority_queue<int> pq; // small value first
-	vector<int> indeg(n + 1, 0);
-	for(int i=1;i<=n;i++)
-		for(auto &it:g[i])
-			indeg[it]++;
-	for(int i=1;i<=n;i++)
-	{
-		if(!indeg[i])
-			pq.push(i);
-	}
-	for(int i =n; i>=1; i--)
-	{
-		int u=pq.top();
-		pq.pop();
-		topo[u] = i;
-		for(auto &v:g[u])
-		{
-			indeg[v]--;
-			if(!indeg[v])
-				pq.push(v);
-		}
-	}
-	if(topo.size()<n)
-		return 0;
-	return 1;
-}
- 
+
 void task(){
-	cin >> n >> m;
-	for(int i = 1; i<=m; i++){
-		ll u,v; cin >> u >> v;
-		g[v].pb(u);
-	}
-	topo.resize(n+1,0);
-	toposort();
-	for(int i = 1; i<=n; i++)
-		cout<<topo[i]<<" ";
+	int n, m; cin >> n >> m;
 
+	for(int i = 1; i<=m;i++){
+		int v,u; cin >> v >> u;
+	    adj[u].pb(v);
+		indeg[v]++;
+	}
+
+	for(int i = 1; i<=n; i++){
+		if (indeg[i] == 0) Q.push(i);
+	}
+
+	for(int i = n; i>=1;i--){
+		int t = Q.top(); Q.pop();
+		topo[t] = i;
+		for (int j: adj[t]) {
+	        indeg[j] --;
+	        if (indeg[j] == 0) Q.push(j);
+	    }
+	}
+
+	for(int i = 1; i<=n; i++){
+		cout << topo[i]<<' ';
+	}
+	cout << endl;
 }
 
 int main(){
@@ -108,4 +95,5 @@ int main(){
         
 return 0;
 }
+
 
