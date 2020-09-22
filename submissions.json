@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF93453462": {
+    "contest_id": 237,
+    "language": "GNU C++14",
+    "path": "codeforces\\237\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Primes on Interval",
+    "problem_url": "https://codeforces.com/contest/237/problem/C",
+    "submission_id": "CF93453462",
+    "submission_url": "https://codeforces.com/contest/237/submission/93453462",
+    "tags": [
+      "binary search",
+      "number theory",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Sep/22/2020 11:45"
+  },
   "CF93455657": {
     "contest_id": 584,
     "language": "GNU C++14",
