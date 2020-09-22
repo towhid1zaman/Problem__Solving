@@ -52,9 +52,7 @@ vector<int> topo; //Stores the Topological Order
 bool toposort() //Returns 1 if there exists a toposort, 0 if there is a cycle
 {	
 	
-	
-	priority_queue<int> pq; // greater value first
-	
+	priority_queue<int> pq; // small value first
 	vector<int> indeg(n + 1, 0);
 	for(int i=1;i<=n;i++)
 		for(auto &it:g[i])
