@@ -45,29 +45,42 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
 /*we have to reach n-1 from 0
- *BS approach
+ *first convert destination to its binary form
+ *let, 10101 is binary form, this tell us Direction RLRLR
  */
-
+ll Pow(ll x,ll n){
+    ll res = 1;
+    while(n>0){
+        if(n%2==1){
+            res = res*x;
+        }
+        x = x*x;
+        n = n/2;
+    }
+    return res;
+}
 void task(){
 	ll h, n; cin >> h >> n;
-	ll node_visited = 0;
-	bool f = 0;
-	ll cur = 1;
-	ll l = 1, r = (1ll << h); // 2^h
+	ll destination = n-1;
+	int binary[50]{};
+	for(int i = 0; i<h; i++){
+		binary[h-i-1] = destination%2;
+		destination/=2;
+	}
 
-	while(l < r){
-		node_visited++;
-		ll mid = (l + r) >> 1;
-		if((!f and mid<n) or ( f and n<=mid)){
-			ll len = mid - l + 1;
-			while(len){
-				node_visited+=len;
-				len/=2;
-			}
+	ll node_visited = 0;
+
+	if(binary[0]==1){
+		//means right child
+		node_visited+=Pow(2,h);
+	}
+	else node_visited++; 
+
+	for(int i = 1; i<h; i++){
+		if(binary[i]==binary[i-1]){
+			node_visited+=Pow(2,h-i);
 		}
-		else f = !f;
-		if(mid < n) l = mid + 1;
-		else r = mid;
+		else node_visited+=1;
 	}
 
 	cout << node_visited << endl;
