@@ -2,7 +2,7 @@
 // </> : towhid1zaman
 
 //#pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math,O3")
-#pragma GCC target("avx,avx2,fma") 
+//#pragma GCC target("avx,avx2,fma") 
 #pragma comment (linker,"/STACK:16777216")
 #include "bits/stdc++.h"
 using namespace std;
