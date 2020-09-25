@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF93812063": {
+    "contest_id": 507,
+    "language": "GNU C++14",
+    "path": "codeforces\\507\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Guess Your Way Out!",
+    "problem_url": "https://codeforces.com/contest/507/problem/C",
+    "submission_id": "CF93812063",
+    "submission_url": "https://codeforces.com/contest/507/submission/93812063",
+    "tags": [
+      "implementation",
+      "math",
+      "trees",
+      "*1700"
+    ],
+    "timestamp": "Sep/26/2020 00:07"
+  },
   "CF93829789": {
     "contest_id": 507,
     "language": "GNU C++14",

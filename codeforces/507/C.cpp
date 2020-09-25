@@ -2,7 +2,7 @@
 // </> : towhid1zaman
 
 //#pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math,O3")
-//#pragma GCC target("avx,avx2,fma") 
+#pragma GCC target("avx,avx2,fma") 
 #pragma comment (linker,"/STACK:16777216")
 #include "bits/stdc++.h"
 using namespace std;
@@ -29,6 +29,7 @@ typedef vector<pll> vpll;
 #define fill(a,b) memset(a,b,sizeof(a))
 #define all(v) (v).begin(),(v).end()
 
+
 #define rep(i,a) for(int i=0;i<a;i++)
 #define rep1(i,a,b) for(int i=(a);i<=(b);++i)
 #define irep(i,b,a) for(int i=(b);i>=(a);--i)
@@ -43,37 +44,34 @@ const double pi = acos(-1.0);
 const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 200005;
 
-/*
- *
+/*we have to reach n-1 from 0
+ *BS approach
  */
 
 void task(){
 	ll h, n; cin >> h >> n;
 	ll node_visited = 0;
-	ll index = (1ll << h) + n - 1;
+	bool f = 0;
+	ll cur = 1;
+	ll l = 1, r = (1ll << h); // 2^h
 
-	for(int i = h; i>=1; i--){
-		if(index%2==1){//odd node
-			if((index/2)%2 == 0){//even parent
-				node_visited++;
+	while(l < r){
+		node_visited++;
+		ll mid = (l + r) >> 1;
+		if((!f and mid<n) or ( f and n<=mid)){
+			ll len = mid - l + 1;
+			while(len){
+				node_visited+=len;
+				len/=2;
 			}
-			else{//odd parent
-				node_visited+=(1ll << h-i+1);
-			}
-			index/=2;
 		}
-		else{//even node
-			if((index/2)%2 == 0){//even parent
-				node_visited+=(1ll << (h-i+1));
-			}
-			else{//odd parent
-				node_visited++;
-			}
-			index/=2;
-		}
+		else f = !f;
+		if(mid < n) l = mid + 1;
+		else r = mid;
 	}
 
 	cout << node_visited << endl;
+
 }
 
 int main(){
