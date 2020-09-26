@@ -44,7 +44,7 @@ const int inf = 0x3f3f3f3f;// (int)3e18;
 const int maxn = 223332;
 
 /*
- *ways calculate number of ways of same shortest path from source to any other node
+ *
  */
 
 std::vector<int>adj[maxn];
