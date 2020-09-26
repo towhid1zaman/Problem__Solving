@@ -2161,6 +2161,24 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF93889226": {
+    "contest_id": 208,
+    "language": "GNU C++14",
+    "path": "codeforces\\208\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Police Station",
+    "problem_url": "https://codeforces.com/contest/208/problem/C",
+    "submission_id": "CF93889226",
+    "submission_url": "https://codeforces.com/contest/208/submission/93889226",
+    "tags": [
+      "dp",
+      "graphs",
+      "shortest paths",
+      "*1900"
+    ],
+    "timestamp": "Sep/26/2020 21:42"
+  },
   "CF93972330": {
     "contest_id": 1417,
     "language": "GNU C++14",
