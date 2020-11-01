@@ -98,7 +98,7 @@ void task(){
 
         ans %= mod;
         
-        combi.Build(2*n);
+        combi.Build(maxn);
         ll way = combi.choose(2*n, n);
         ans = (ans* way) % mod;
 
