@@ -54,9 +54,8 @@ void task(){
         rep(i,n)cin >> a[i];
         rep(i,n)cin >> b[i];
         sort(all(a)), sort(all(b));
-        reverse(all(b));
         bool f = 1;
-        rep(i,n) if(a[i] + b[i] > x)f = 0;
+        rep(i,n) if(a[i] + b[n-i-1] > x)f = 0;
         yn(f);
 }
 
