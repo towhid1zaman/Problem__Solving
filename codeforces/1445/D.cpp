@@ -72,14 +72,14 @@ struct Combinatorics{
         }
     }
  
-    ll choose(ll n,ll r){
+    ll Choose(ll n,ll r){
         if(n < r)return 0;
         ll u = fact[n];
         ll v = (inv[r] * inv[n - r]) % mod;
         return (u * v) % mod;
     }
 
-    ll factorial(ll n){
+    ll Factorial(ll n){
       return fact[n];
     }
 
@@ -98,8 +98,8 @@ void task(){
 
         ans %= mod;
         
-        combi.Build(maxn);
-        ll way = combi.choose(2*n, n);
+        combi.Build(2*n);
+        ll way = combi.Choose(2*n, n);
         ans = (ans* way) % mod;
 
         cout << ans << endl;
