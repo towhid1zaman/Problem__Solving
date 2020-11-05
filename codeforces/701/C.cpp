@@ -56,20 +56,23 @@ void task(){
         int n; cin >> n;
         string s; cin >> s;
         int ans = inf;
-        std::vector<int>freq1(100000,0), freq2(100000,0);
-        int dist1 = 0, dist2 = 0;
+        std::vector<int>freq(100000,0);
+        set<int>distinct;
+        int dist;
         for(int i = 0; i<n; i++){
-        	freq1[ s[i] ]++;
-        	if(freq1[ s[i] ] == 1) dist1++;
+        	distinct.insert( s[i] );
         }
+        dist = distinct.size();
         int high = 0;
+        int need = 0;
         for(int low = 0; low < n; low++){
-        	freq2[ s[low] ]++;
-        	if(freq2[ s[low] ] == 1)dist2++;
-        	while(freq2[ s[high] ] > 1){
-        		freq2[ s[high] ]--;high++;
+        	freq[ s[low] ]++;
+        	if(freq[ s[low] ] == 1)need++;
+        	while(freq[ s[high] ] > 1){
+        		freq[ s[high] ]--;high++;
         	}
-        	if(dist2 == dist1) ans = min(ans, low-high + 1);
+
+        	if(need == dist)ans = min(ans, low-high + 1);
         }
         cout << ans << endl;
 }
