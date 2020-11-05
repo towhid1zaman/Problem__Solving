@@ -74,9 +74,10 @@ void task(){
         	}
         }
         if(f){
-        	for(int i = 1; i<=n; i++)cout << ans[i] << ' '; cout << endl;
+        	for(int i = 1; i<=n; i++)cout << ans[i] << ' ';
         }
-    	else cout << -1 << endl;
+    	else cout << -1;
+    	cout << endl;
 }
 
 int main(){
