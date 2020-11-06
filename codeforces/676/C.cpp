@@ -52,24 +52,19 @@ const int mod = mods[0];
 void task(){
         int n, k; cin >> n >> k;
         string s; cin >> s;
-        int ans = 0, high = 0, cnt = 0;
-        for(char curChar = 'a'; curChar<='b'; curChar++){
-          high = 0;
-          cnt = 0;
-          for(int low = 0; low < n; low++){
-            while(high < n){
-              cnt+=(s[high] != curChar);
-              if (cnt > k){
-                cnt-=(s[high] != curChar);
-                break;
-              }
-              high++;
-            }
+        int ans = 0, high = 0, a = 0, b = 0;
+        for(int low = 0; low < n; low++){
+          if(s[low] == 'a')a++;
+          else b++;
 
-            ans = max(ans, high-low);
-            cnt -= (s[low] != curChar);
+          while(min(a, b) > k){
+            if(s[high] == 'a')a--;
+            else b--;
+            high++;
           }
 
+          int substr = low - high + 1;
+          ans = max(ans, substr);
         }
         cout << ans << endl;
 
