@@ -2161,6 +2161,25 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF97797806": {
+    "contest_id": 676,
+    "language": "GNU C++14",
+    "path": "codeforces\\676\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Vasya and String",
+    "problem_url": "https://codeforces.com/contest/676/problem/C",
+    "submission_id": "CF97797806",
+    "submission_url": "https://codeforces.com/contest/676/submission/97797806",
+    "tags": [
+      "binary search",
+      "dp",
+      "strings",
+      "two pointers",
+      "*1500"
+    ],
+    "timestamp": "Nov/06/2020 23:55"
+  },
   "CF97931178": {
     "contest_id": 334,
     "language": "GNU C++14",
