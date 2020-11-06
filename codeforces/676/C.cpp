@@ -46,35 +46,30 @@ const int maxn = 200005;
 const int mod = mods[0];
 
 /*change k char so that length of same char substring is maximum possible
- *two pointers, binary search :)
+ *two pointers :)
  */
 
-int n,k;
-string s;
-
-bool chek(int mid){
-  int cnt = 0;
-  rep(i, n){
-    cnt+=(s[i]=='b');
-    if(i>=mid) cnt -= (s[i-mid] == 'b');
-    if(i >= mid - 1 and (cnt<=k or mid - cnt <= k)) return true;
-  }
-  return false;
-}
-
 void task(){
-        cin >> n >> k;
-        cin >> s;
-        int ans = -1;
-        int low = 1, high = n;
+        int n, k; cin >> n >> k;
+        string s; cin >> s;
+        int ans = 0, high = 0, cnt = 0;
+        for(char curChar = 'a'; curChar<='b'; curChar++){
+          high = 0;
+          cnt = 0;
+          for(int low = 0; low < n; low++){
+            while(high < n){
+              cnt+=(s[high] != curChar);
+              if (cnt > k){
+                cnt-=(s[high] != curChar);
+                break;
+              }
+              high++;
+            }
 
-        while(low <= high){
-          int mid = (low + high) >> 1;
-          if(chek(mid)){
-            ans = mid;
-            low = mid+1;
+            ans = max(ans, high-low);
+            cnt -= (s[low] != curChar);
           }
-          else high = mid - 1;
+
         }
         cout << ans << endl;
 
