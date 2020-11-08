@@ -2161,6 +2161,22 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF97933220": {
+    "contest_id": 334,
+    "language": "GNU C++14",
+    "path": "codeforces\\334\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Secrets",
+    "problem_url": "https://codeforces.com/contest/334/problem/C",
+    "submission_id": "CF97933220",
+    "submission_url": "https://codeforces.com/contest/334/submission/97933220",
+    "tags": [
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Nov/08/2020 21:17"
+  },
   "CF97999272": {
     "contest_id": 394,
     "language": "GNU C++14",
