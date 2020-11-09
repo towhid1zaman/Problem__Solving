@@ -67,7 +67,7 @@ void task(){
         }
         if(!f)cout << "Impossible" << endl;
         else rep1(i,1,p)cout << a[i];cout << endl;
-} 
+}
 
 int main(){
         _
