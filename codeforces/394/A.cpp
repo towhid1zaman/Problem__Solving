@@ -54,19 +54,9 @@ void task(){
         int befp = 0, afb = 0, afe = 0;
         int n = sz(s);
         int i = 0;
-        for(; i<n; i++){
-          if(s[i] == '+')break;
-          if(s[i] == '|')befp++;
-        }
-        i++;
-        for(; i<n; i++){
-          if(s[i] == '=')break;
-          if(s[i] == '|')afb++;
-        }
-        i++;
-        for(; i<n; i++){
-          if(s[i]=='|')afe++;
-        }
+        while(s[i++]!='+')befp++;
+        while(s[i++]!='=')afb++;
+        while(i++<n)afe++;
         if(befp+afb == afe){
           cout << s<< endl;
           return;
