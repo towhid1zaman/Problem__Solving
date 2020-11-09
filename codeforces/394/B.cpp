@@ -51,22 +51,32 @@ const int mod = mods[0];
 
 void task(){
         int p, x; cin >> p >> x;
-        std::vector<int>a(p+5);
-        bool f = 0;
-        for(int dig = 1; dig<=9; dig++){
-          a[p] = dig;
-          int rem = 0;
-          for(int i = p-1; i ; i--){
-            a[i] = a[i+1] * x + rem;
-            rem = a[i]/10;
-            a[i]%=10;
-          }
-          if(a[1]*x+rem != dig or a[1] == 0)continue;
-          f = 1;
-          break;
+        string ans = "";
+        if(p==1){
+          if(x==1)cout << 1 << endl;
+          else cout <<"Impossible"<<endl;
+          return;
         }
-        if(!f)cout << "Impossible" << endl;
-        else rep1(i,1,p)cout << a[i];cout << endl;
+        for(int last = 1; last<=9; last++){
+          string s = "";
+          s+=(last+'0');
+          int cur = last, d = 0;
+          for(int i = 1; i<=p-1; i++){
+            cur = cur*x+d;
+            d = cur/10; cur%=10;
+            s+=(cur+'0');
+          }
+
+            if(cur*x+d == last and s[p-1] != '0'){
+              reverse(all(s));
+              //choose minimum
+              if(ans=="" or s<ans) ans = s;
+            }
+            
+        }
+
+        if(ans == "")cout << "Impossible" << endl;
+        else cout << ans << endl;
 }
 
 int main(){
