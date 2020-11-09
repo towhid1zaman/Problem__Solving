@@ -2161,6 +2161,21 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF98015118": {
+    "contest_id": 394,
+    "language": "GNU C++14",
+    "path": "codeforces\\394\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Very Beautiful Number",
+    "problem_url": "https://codeforces.com/contest/394/problem/B",
+    "submission_id": "CF98015118",
+    "submission_url": "https://codeforces.com/contest/394/submission/98015118",
+    "tags": [
+      "math"
+    ],
+    "timestamp": "Nov/09/2020 23:49"
+  },
   "CF98052383": {
     "contest_id": 371,
     "language": "GNU C++14",
