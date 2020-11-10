@@ -176,7 +176,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 346 | [B - Cutting](https://codeforces.com/contest/998/problem/B) | [GNU C++14](./codeforces/998/B.cpp) | `dp` `greedy` `sortings` `*1200` | Nov/11/2020 21:53 | 
 345 | [A - Balloons](https://codeforces.com/contest/998/problem/A) | [GNU C++14](./codeforces/998/A.cpp) | `constructive algorithms` `implementation` `*1000` | Nov/11/2020 21:40 | 
 344 | [D - Vessels](https://codeforces.com/contest/371/problem/D) | [GNU C++14](./codeforces/371/D.cpp) | `data structures` `dsu` `implementation` `trees` `*1800` | Nov/11/2020 09:00 | 
-343 | [C - Hamburgers](https://codeforces.com/contest/371/problem/C) | [GNU C++14](./codeforces/371/C.cpp) | `binary search` `brute force` `*1600` | Nov/10/2020 18:13 | 
+343 | [C - Hamburgers](https://codeforces.com/contest/371/problem/C) | [GNU C++14](./codeforces/371/C.cpp) | `binary search` `brute force` `*1600` | Nov/10/2020 18:17 | 
 342 | [B - Fox Dividing Cheese](https://codeforces.com/contest/371/problem/B) | [GNU C++14](./codeforces/371/B.cpp) | `math` `number theory` `*1300` | Nov/10/2020 17:13 | 
 341 | [A - K-Periodic Array](https://codeforces.com/contest/371/problem/A) | [GNU C++14](./codeforces/371/A.cpp) | `greedy` `implementation` `math` `*1000` | Nov/10/2020 17:04 | 
 340 | [B - Very Beautiful Number](https://codeforces.com/contest/394/problem/B) | [GNU C++14](./codeforces/394/B.cpp) | `math` | Nov/09/2020 23:49 | 

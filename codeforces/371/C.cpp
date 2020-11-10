@@ -73,10 +73,10 @@ void task(){
 
         ll low = 0, high = 10000000000000ll;
 
-        while(low+1 < high){
-        	ll mid = (low + high) >> 1;
+        while(low < high){
+        	ll mid = (low + high + 1) >> 1;
         	if(chek(mid))low = mid;
-        	else high = mid;
+        	else high = mid-1;
         }
 
         cout << low << endl;
