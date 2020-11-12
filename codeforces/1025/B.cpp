@@ -49,33 +49,38 @@ const int mod = mods[0];
  *
  */
 
-set<int> s; 
-void factor(int n) {
-    for (int d = 2; d * d <= n; d++) {
-        if (n % d == 0) {
-            s.insert(d);
-            while (n % d == 0)
-                n /= d;
-        }
-    }
-    if (n != 1)
-        s.insert(n);
+ll gcd(ll a,ll b){
+    return b ? gcd(b,a%b) : a;
+}
+ll lcm(ll a, ll b){
+    return a/ gcd(a,b)*b;
 }
 
 void task(){
-        int n,a,b; cin >> n;
-        cin >> a >> b;
-        factor(a), factor(b);
-        rep(i, n-1){
-            cin >> a >> b;
-            set<int>s2;
-            for (int x : s) {
-                if (a % x == 0 || b % x == 0)
-                    s2.insert(x);
-                }
-                s = s2;
+        int n; cin >> n;
+        std::vector<ll>a(n), b(n);
+        ll g = 0;
+        rep(i, n){
+            cin >> a[i] >> b[i];
+            g = gcd(g, a[i] * b[i]);
+        }
+        if(g == 1){
+            cout << -1 << endl;
+            return;
+        }
+
+        rep(i, n){
+            ll temp = gcd(g, a[i]);
+            if(temp > 1){
+                g = temp;
             }
-            cout << (s.empty() ? -1 : *s.begin()) << endl;
+            temp = gcd(g, b[i]);
+            if(temp > 1){
+                g = temp;
+            }
+        }
+
+        cout << g << endl;
 }
 
 int main(){
