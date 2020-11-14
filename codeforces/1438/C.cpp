@@ -51,14 +51,24 @@ const int mod = mods[0];
 
 void task(){
         int n, m; cin >> n >> m;
+        vector<vector<int>>cell(n+1, vector<int>(m+1, 0));
+        rep1(i,1,n)rep1(j,1,m){
+            cin >> cell[i][j];
+            if((i%2==1 and j%2==1) or (j%2==0 and i%2==0)){
+                if(cell[i][j]%2)cell[i][j]++;
+            }
+            else{
+                if(cell[i][j]%2==0)cell[i][j]++;
+            }
+        }
+
         rep1(i,1,n){
             rep1(j,1,m){
-            int x; cin >> x;
-            if((i+j+x)%2)x++;
-            cout <<x<<' ';
+                cout << cell[i][j]<<' ';
             }
             cout << endl;
         }
+
 }
 
 int main(){
