@@ -10297,6 +10297,23 @@
     ],
     "timestamp": "Nov/13/2020 21:04"
   },
+  "CF98453318": {
+    "contest_id": 1447,
+    "language": "GNU C++14",
+    "path": "codeforces\\1447\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Numbers Box",
+    "problem_url": "https://codeforces.com/contest/1447/problem/B",
+    "submission_id": "CF98453318",
+    "submission_url": "https://codeforces.com/contest/1447/submission/98453318",
+    "tags": [
+      "greedy",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Nov/15/2020 20:52"
+  },
   "CF98485146": {
     "contest_id": 1447,
     "language": "GNU C++14",
