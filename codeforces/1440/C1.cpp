@@ -56,59 +56,72 @@ void task(){
 		ll n, m, cnt = 0;
 		cin >> n >> m;
 		string str[n];
-		for (ll i = 0; i < n; i++){
+		for (ll i = 0; i < n; i++)
+		{
 			cin >> str[i];
-			for (ll j = 0; j < m; j++){
+			for (ll j = 0; j < m; j++)
+			{
 				if (str[i][j] == '0')
 					cnt++;
 			}
 		}
 		cout << (3 * n * m) - (3 * cnt) << endl;
-		for (ll i = 0; i < n; i++){
-			for (ll j = 0; j < m; j++){
+		for (ll i = 0; i < n; i++)
+		{
+			for (ll j = 0; j < m; j++)
+			{
 				if (str[i][j] == '0')
 					continue;
-				if (i == 0 && j == 0){
+				if (i == 0 && j == 0)
+				{
 					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
 				}
-				else if (i == n - 1 && j == 0){
+				else if (i == n - 1 && j == 0)
+				{
 					printt(i + 1, j + 1, i, j + 2, i + 1, j + 2);
 					printt(i, j + 1, i + 1, j + 1, i + 1, j + 2);
 					printt(i, j + 1, i, j + 2, i + 1, j + 1);
 				}
-				else if (i == 0 && j == m - 1){
+				else if (i == 0 && j == m - 1)
+				{
 					printt(i + 1, j + 1, i + 2, j, i + 2, j + 1);
 					printt(i + 1, j, i + 1, j + 1, i + 2, j + 1);
 					printt(i + 1, j, i + 2, j, i + 1, j + 1);
 				}
-				else if (i == n - 1 && j == m - 1){
+				else if (i == n - 1 && j == m - 1)
+				{
 					printt(i + 1, j + 1, i, j + 1, i + 1, j);
 					printt(i, j, i + 1, j + 1, i + 1, j);
 					printt(i, j, i, j + 1, i + 1, j + 1);
 				}
-				else if (i == 0){
+				else if (i == 0)
+				{
 					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
 				}
-				else if (j == 0){
+				else if (j == 0)
+				{
 					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
 				}
-				else if (j == m - 1){
+				else if (j == m - 1)
+				{
 					printt(i + 1, j + 1, i + 2, j, i + 2, j + 1);
 					printt(i + 1, j, i + 1, j + 1, i + 2, j + 1);
 					printt(i + 1, j, i + 2, j, i + 1, j + 1);
 				}
-				else if (i == n - 1){
+				else if (i == n - 1)
+				{
 					printt(i + 1, j + 1, i, j + 1, i + 1, j);
 					printt(i, j, i + 1, j + 1, i + 1, j);
 					printt(i, j, i, j + 1, i + 1, j + 1);
 				}
-				else{
+				else
+				{
 					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
