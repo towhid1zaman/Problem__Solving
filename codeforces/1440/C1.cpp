@@ -47,6 +47,7 @@ const int mod = mods[0];
 /*
  *
  */
+ 
 int n, m;
 bool v[200][200];
 string s;
@@ -62,7 +63,7 @@ void add(int a, int b, int c) {
     if (c!=4) pb(a+1, b+1);
 }
 void task(){
-	cin >> n >> m;
+		cin >> n >> m;
         sol.clear();
         for (int i=1; i<=n; i++) {
             cin >> s;
