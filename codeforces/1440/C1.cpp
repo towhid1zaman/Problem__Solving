@@ -126,7 +126,7 @@ void task(){
 					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
 					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
 				}
-
+ 
 			}
 		}
 }
