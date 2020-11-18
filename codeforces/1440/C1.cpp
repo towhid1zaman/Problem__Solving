@@ -21,6 +21,7 @@ typedef vector<pll> vpll;
 #define sz(x) ((int)(x).size())
 #define ff first
 #define ss second
+#define pb push_back
 #define eb emplace_back
 #define deb(x) cout<<#x <<"="<<x<<endl;
 #define present(v,x) ((v).find(x)!=(v).end())
@@ -47,72 +48,74 @@ const int mod = mods[0];
 /*
  *
  */
-int n, m;
-bool v[200][200];
-string s;
-vector<int> sol;
-void pb(int a, int b) {
-    v[a][b]=1-v[a][b];
-    sol.push_back(a), sol.push_back(b);
-}
-void add(int a, int b, int c) {
-    if (c!=1) pb(a, b);
-    if (c!=2) pb(a, b+1);
-    if (c!=3) pb(a+1, b);
-    if (c!=4) pb(a+1, b+1);
+void printt(ll x1, ll y1, ll x2, ll y2, ll x3, ll y3){
+	cout << x1 << " " << y1 << " " << x2 << " " << y2 << " " << x3 << " " << y3 << endl;
+ 
 }
 void task(){
+		ll n, m, cnt = 0;
 		cin >> n >> m;
-        sol.clear();
-        for (int i=1; i<=n; i++) {
-            cin >> s;
-            for (int j=0; j<m; j++) {
-                v[i][j+1]=(s[j]=='1');
-            }
-        }
-        if (n%2) {
-            for (int j=1; j<m; j++) {
-                if (v[n][j]) add(n-1, j, 4);
-            }
-            if (v[n][m]) {
-                add(n-1, m-1, 3);
-            }
-        }
-        if (m%2) {
-            if (v[n][m]) {
-                add(n-1, m-1, 3);
-            }
-            if (v[n-1][m]) {
-                if (n==2) {
-                    add(n-1, m-1, 4);
-                } else {
-                    add(n-2, m-1, 3);
-                }
-            }
-            for (int i=m-2; i>=1; i--) {
-                if (v[i][m]) {
-                    add(i, m-1, 4);
-                }
-            }
-        }
-        for (int i=1; i<n; i+=2) {
-            for (int j=1; j<m; j+=2) {
-                int db=v[i][j]+v[i][j+1]+v[i+1][j]+v[i+1][j+1];
-                int a=v[i][j], b=v[i][j+1], c=v[i+1][j], d=v[i+1][j+1];
-                if ((db-a)%2) add(i, j, 1);
-                if ((db-b)%2) add(i, j, 2);
-                if ((db-c)%2) add(i, j, 3);
-                if ((db-d)%2) add(i, j, 4);
-            }
-        }
-        int sze=sol.size();
-        cout << sze/6 << "\n";
-        for (int i=0; i<sze; i+=6) {
-            for (int j=0; j<6; j++) {
-                cout << sol[i+j] << " ";
-            }
-            cout << endl;
-        }
+		string str[n];
+		for (ll i = 0; i < n; i++){
+			cin >> str[i];
+			for (ll j = 0; j < m; j++){
+				if (str[i][j] == '0')
+					cnt++;
+			}
+		}
+		cout << (3 * n * m) - (3 * cnt) << endl;
+		for (ll i = 0; i < n; i++){
+			for (ll j = 0; j < m; j++){
+				if (str[i][j] == '0')
+					continue;
+				if (i == 0 && j == 0){
+					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
+				}
+				else if (i == n - 1 && j == 0){
+					printt(i + 1, j + 1, i, j + 2, i + 1, j + 2);
+					printt(i, j + 1, i + 1, j + 1, i + 1, j + 2);
+					printt(i, j + 1, i, j + 2, i + 1, j + 1);
+				}
+				else if (i == 0 && j == m - 1){
+					printt(i + 1, j + 1, i + 2, j, i + 2, j + 1);
+					printt(i + 1, j, i + 1, j + 1, i + 2, j + 1);
+					printt(i + 1, j, i + 2, j, i + 1, j + 1);
+				}
+				else if (i == n - 1 && j == m - 1){
+					printt(i + 1, j + 1, i, j + 1, i + 1, j);
+					printt(i, j, i + 1, j + 1, i + 1, j);
+					printt(i, j, i, j + 1, i + 1, j + 1);
+				}
+				else if (i == 0){
+					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
+				}
+				else if (j == 0){
+					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
+				}
+				else if (j == m - 1){
+					printt(i + 1, j + 1, i + 2, j, i + 2, j + 1);
+					printt(i + 1, j, i + 1, j + 1, i + 2, j + 1);
+					printt(i + 1, j, i + 2, j, i + 1, j + 1);
+				}
+				else if (i == n - 1){
+					printt(i + 1, j + 1, i, j + 1, i + 1, j);
+					printt(i, j, i + 1, j + 1, i + 1, j);
+					printt(i, j, i, j + 1, i + 1, j + 1);
+				}
+				else{
+					printt(i + 1, j + 1, i + 2, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 1, j + 1, i + 2, j + 2);
+					printt(i + 1, j + 2, i + 2, j + 1, i + 1, j + 1);
+				}
+
+			}
+		}
 }
 
 int main(){
