@@ -47,7 +47,6 @@ const int mod = mods[0];
 /*
  *
  */
- 
 int n, m;
 bool v[200][200];
 string s;
