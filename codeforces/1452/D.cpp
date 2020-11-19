@@ -73,7 +73,6 @@ void task(){
         for(int i = 3; i<=n; i++)fib[i] = (fib[i-1]+ fib[i-2])%mod;
         ll ans = fib[n];
         ans*=bigmod(modinverse(2, mod), n, mod);
-        
         cout << ans%mod << endl;
 }
 
