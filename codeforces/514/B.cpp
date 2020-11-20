@@ -50,30 +50,30 @@ const int mod = mods[0];
  */
 
 void task(){
-	int n,x1,y1; cin >> n >> x1 >> y1;
-	int x,y;
-	std::vector<pii>v;
-	std::map<pii,bool>visit;
-	rep(i,n){
-		cin >> x >> y;
-		v.eb(x,y);
-	}   
-	int ans = 0;
-	rep(i, n){
-		int x2 = v[i].ff, y2 = v[i].ss;
-		if(!visit[{x2,y2}]){
-			ans++;
-			for(int j = i+1; j<n; j++){
-				int x3 = v[j].ff, y3 = v[j].ss;
-				int straight = ((x2 - x1)*(y3-y1)) - ((x3-x1)*(y2-y1));
-				if(straight == 0){
-					visit[{x3,y3}] = 1;
+		int n,x1,y1; cin >> n >> x1 >> y1;
+		int x,y;
+		std::vector<pii>v;
+		std::map<pii,bool>visit;
+		rep(i,n){
+			cin >> x >> y;
+			v.eb(x,y);
+		}   
+		int ans = 0;
+		rep(i, n){
+			int x2 = v[i].ff, y2 = v[i].ss;
+			if(!visit[{x2,y2}]){
+				ans++;
+				for(int j = i+1; j<n; j++){
+					int x3 = v[j].ff, y3 = v[j].ss;
+					int straight = ((x2 - x1)*(y3-y1)) - ((x3-x1)*(y2-y1));
+					if(straight == 0){
+						visit[{x3,y3}] = 1;
+					}
 				}
 			}
 		}
-	}
 
-	cout << ans << endl;
+		cout << ans << endl;
 }
 
 int main(){
