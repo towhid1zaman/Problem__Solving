@@ -53,7 +53,7 @@ void task(){
         sp(12)
         double a,b,c,d; cin >> a >> b >> c >> d;
         double p = a/b, q = c/d;
-        double ans = (p / (p+q - p*q));
+        double ans = (p / (1 - (1 - p) * (1 - q)));
         cout << ans << endl;
 }
 
