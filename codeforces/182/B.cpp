@@ -53,11 +53,11 @@ void task(){
         int d,a; cin >> d;
         int n; cin >> n;
         ll ans = 0;
-        rep(i,n){
+        rep(i ,n){
             cin >> a;
-            if(i+1<n)ans+=(d-a);
+            ans+=(d-a);
         }
-        cout << ans << endl;
+        cout << ans-(d-a) << endl;
 }
 
 int main(){

@@ -2161,6 +2161,22 @@
     ],
     "timestamp": "Jan/02/2021 21:54"
   },
+  "CF99112683": {
+    "contest_id": 182,
+    "language": "GNU C++14",
+    "path": "codeforces\\182\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Vasya's Calendar",
+    "problem_url": "https://codeforces.com/contest/182/problem/B",
+    "submission_id": "CF99112683",
+    "submission_url": "https://codeforces.com/contest/182/submission/99112683",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Nov/21/2020 18:47"
+  },
   "CF99112775": {
     "contest_id": 182,
     "language": "GNU C++14",
