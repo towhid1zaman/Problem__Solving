@@ -61,7 +61,6 @@ void task(){
         }
         char p = '0', q = '0';
         if(i+1<n)p = s[i+1]; if(i+2<n) q = s[i+2];
-        
         string ans;
 
         if(bra)ans+="(";
