@@ -30,7 +30,7 @@ typedef vector<pll> vpll;
 #define fill(a,b) memset(a,b,sizeof(a))
 #define all(v) (v).begin(),(v).end()
 
-#define rep(i,a) for(int i=0;i<a;i++)
+#define rep(i,a) for(ll i=0;i<a;i++)
 #define rep1(i,a,b) for(int i=(a);i<=(b);++i)
 #define irep(i,b,a) for(int i=(b);i>=(a);--i)
 
@@ -42,51 +42,63 @@ typedef vector<pll> vpll;
 vi mods = {1000000007, 1000000009, 998244353};
 const double pi = acos(-1.0);
 const int inf = 0x3f3f3f3f;// (int)3e18;
-const int maxn = 200005;
+const int maxn = 1000005;
 const int mod = mods[0];
 
 /*
  *
  */
-
-
-  
-//prime factorization
-vector<pair<ll,ll>>factorize(ll a){
-    vector<pair<ll,ll> > pf;
-    for (ll i = 2; i * i <= a; ++i) {
-        if (a % i) continue;
-        pf.emplace_back(i, 0);
-        while (a % i == 0) {
-            ++pf.back().second;
-            a /= i;
+bool checkprime[maxn + 5];
+vll prime;
+void sieve() {///false means prime
+    prime.push_back(2);
+    checkprime[0]=true;
+    checkprime[1]=true;
+    for (ll i = 3; i <= maxn; i += 2) {
+        if (!checkprime[i]) {
+            prime.push_back(i);
+            for (ll j = i * i; j <= maxn; j += (i + i))
+                checkprime[j] = true;
         }
     }
-    if (a > 1) {
-        pf.emplace_back(a, 1);
-    }
-    return pf;
 }
-
+ll Pow(ll x,ll n){
+    ll res = 1;
+    while(n>0){
+        if(n%2==1){
+            res = res*x;
+        }
+        x = x*x;
+        n = n/2;
+    }
+    return res;
+}
 void task(){
         ll n; cin >> n;
-        std::vector<pll> pfact = factorize(n);
-        ll most = 0, p = -1;
 
-        for(auto &a : pfact){
-            if(a.ss > most){
-                most = a.ss;
-                p = a.ff;
+        if(n==2){
+            cout << 1 <<endl<<2<<endl;
+            return;
+        }
+        ll lim = min(100000ll, n);
+        ll ans = 0ll, sol = n;
+        for(ll i = 0; i<lim; i++){
+            if(!checkprime[i]){
+                ll cpn = n, cnt = 0;
+                while(cpn%i==0 and (cpn/i)%i==0 and cpn>1){
+                    cnt++;
+                    cpn/=i;
+                }
+                if(cnt > ans){
+                    ans = cnt;
+                    sol = i;
+                }
             }
         }
-
-        cout << most << endl;
-        std::vector<ll>ans(most, p);
-
-        while(n%p == 0) n/=p;
-        ans.back()*=n;
-
-        for(auto x:ans)cout << x << ' '; cout << endl;
+        ans++;
+        cout << ans << endl;
+        rep(i, ans-1) cout << sol <<' ';
+        cout << (n/(ll)pow(sol, ans-1)) << endl;
 }
 
 int main(){
@@ -95,7 +107,7 @@ int main(){
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
 #endif
-
+        sieve();
         int T = 1; cin >> T;
         for(int __ = 1; __ <= T; __++){
             //cout <<"Case "<<__<<": ";
