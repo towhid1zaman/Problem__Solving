@@ -1,4 +1,22 @@
 {
+  "CF100061312": {
+    "contest_id": 260,
+    "language": "GNU C++14",
+    "path": "codeforces\\260\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Ancient Prophesy",
+    "problem_url": "https://codeforces.com/contest/260/problem/B",
+    "submission_id": "CF100061312",
+    "submission_url": "https://codeforces.com/contest/260/submission/100061312",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*1600"
+    ],
+    "timestamp": "Dec/01/2020 00:18"
+  },
   "CF100158045": {
     "contest_id": 214,
     "language": "GNU C++14",
