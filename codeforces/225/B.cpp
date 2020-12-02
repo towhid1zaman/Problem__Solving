@@ -71,7 +71,6 @@ void task(){
             }
         }
 
-
         bool f = binary_search(all(v), s);
 
         if(f){

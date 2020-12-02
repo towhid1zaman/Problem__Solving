@@ -1,4 +1,22 @@
 {
+  "CF100195067": {
+    "contest_id": 225,
+    "language": "GNU C++14",
+    "path": "codeforces\\225\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Well-known Numbers",
+    "problem_url": "https://codeforces.com/contest/225/problem/B",
+    "submission_id": "CF100195067",
+    "submission_url": "https://codeforces.com/contest/225/submission/100195067",
+    "tags": [
+      "binary search",
+      "greedy",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Dec/02/2020 19:47"
+  },
   "CF100209182": {
     "contest_id": 225,
     "language": "GNU C++14",
