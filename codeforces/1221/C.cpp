@@ -48,22 +48,17 @@ const int mod = mods[0];
 /*
  *
  */
-ll c, m, x;
-bool chek(ll mid){
-	return (c+m+x - 2 * mid >= mid);
-}
+
 void task(){
-        cin >> c >> m >> x;
+        ll c, m, x; cin >> c >> m >> x;
         ll ans = 0;
-        ll lower = 0, upper = min(c, m);
-        while(lower <= upper){
-        	ll mid = (lower + upper) >> 1;
-        	if(chek(mid)){
-        		lower = mid + 1;
-        		ans = mid;
-        	}
-        	else upper = mid - 1;
+        if(x > 0 and (x<=c and x <= m)){
+        	ans+=x;
+        	c-=x, m-=x;
+        	x-=x;
         }
+        ll mn = min({c,m,(c+m+x)/3});
+        ans+=mn;
         cout << ans << endl;
 }
 
