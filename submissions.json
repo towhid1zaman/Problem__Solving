@@ -1,4 +1,21 @@
 {
+  "CF100636417": {
+    "contest_id": 1169,
+    "language": "GNU C++14",
+    "path": "codeforces\\1169\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Increasing by Modulo",
+    "problem_url": "https://codeforces.com/contest/1169/problem/C",
+    "submission_id": "CF100636417",
+    "submission_url": "https://codeforces.com/contest/1169/submission/100636417",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*1700"
+    ],
+    "timestamp": "Dec/07/2020 20:41"
+  },
   "CF100646957": {
     "contest_id": 1221,
     "language": "GNU C++14",
