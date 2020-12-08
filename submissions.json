@@ -1,4 +1,22 @@
 {
+  "CF100714329": {
+    "contest_id": 1426,
+    "language": "GNU C++14",
+    "path": "codeforces\\1426\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Increase and Copy",
+    "problem_url": "https://codeforces.com/contest/1426/problem/C",
+    "submission_id": "CF100714329",
+    "submission_url": "https://codeforces.com/contest/1426/submission/100714329",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Dec/08/2020 22:43"
+  },
   "CF100946863": {
     "contest_id": 1461,
     "language": "GNU C++14",
