@@ -11,7 +11,7 @@ void task(){
         string s; cin >> s;
         int ans = 1;
         if((s[s.size()-1] - '0') % 2 == 0) ans = 0;
-        cout << ans << endl;         
+        cout << ans << endl;        
 }
 
 int main(){

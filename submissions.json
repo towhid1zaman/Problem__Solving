@@ -1,4 +1,19 @@
 {
+  "CF101256576": {
+    "contest_id": 1331,
+    "language": "GNU C++14",
+    "path": "codeforces\\1331\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Again?",
+    "problem_url": "https://codeforces.com/contest/1331/problem/D",
+    "submission_id": "CF101256576",
+    "submission_url": "https://codeforces.com/contest/1331/submission/101256576",
+    "tags": [
+      "implementation"
+    ],
+    "timestamp": "Dec/15/2020 20:05"
+  },
   "CF101256721": {
     "contest_id": 1331,
     "language": "GNU C++14",
