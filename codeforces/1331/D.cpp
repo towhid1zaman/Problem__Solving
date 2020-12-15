@@ -11,12 +11,12 @@ void task(){
         string s; cin >> s;
         int ans = 1;
         if((s[s.size()-1] - '0') % 2 == 0) ans = 0;
-        cout << ans << endl;        
+        cout << ans << endl;
 }
 
 int main(){
-	ios::sync_with_stdio(0);
-	cin.tie(0);
+		ios::sync_with_stdio(0);
+		cin.tie(0);
 #ifdef OJ
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
