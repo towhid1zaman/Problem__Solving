@@ -11,31 +11,23 @@ const int mod = 1000000007;
 void task(){
     int n; cin >> n;
     std::vector<int>v(n);
+    std::vector<int>p(n+1, 0);
     for(int i = 0; i<n; i++){
         cin >> v[i];
+        p[i+1] = p[i] + v[i];
     }
-    ll tot = accumulate(all(v), 0ll);
     int ans = 0;
-    for(int li = 1; li<=n; li++){
-        int sum = 0;
-        for(int i = 0; i<li; i++){
-            sum+=v[i];
-        }
-        bool ok = true;
+    for(int d: p){
+        if(d == 0) continue;
         int cur = 0;
-        for(int i = li; i<n; i++){
-            cur+=v[i];
-            if(cur > sum){
-                ok = false;
-                break;
-            }
-            if(sum == cur){
-                cur = 0;
+        for(int i = 0; i<=n; i++){
+            if(cur == p[i]){
+                cur+=d;
             }
         }
-        if(cur != 0) ok = false;
-        if(ok){
-            ans = n - tot/sum;
+
+        if(cur == p[n] + d){
+            ans = n - p[n] / d;
             break;
         }
     }
