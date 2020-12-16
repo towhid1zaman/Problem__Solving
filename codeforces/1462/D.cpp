@@ -29,7 +29,7 @@ void task(){
                 ok = false;
                 break;
             }
-            else if(sum == cur){
+            if(sum == cur){
                 cur = 0;
             }
         }
