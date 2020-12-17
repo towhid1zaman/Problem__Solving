@@ -33,7 +33,7 @@ void task(){
     dsu.Build(n);
     for(int i = 1; i <= n;i++){
         int p; cin >> p;
-        dsu.Union(p,i);
+        dsu.Union(i, p);
     }
     for(int i = 1; i <= n; i++){
         cout << dsu.Size(dsu.Find(i))<<' ';
