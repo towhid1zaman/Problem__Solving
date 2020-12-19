@@ -15,7 +15,7 @@ void task(){
     int ans = 1, cur = 1;
     for(int i = 0; i<s.size();i++){
         if(vl(s[i])){
-            ans = max(cur, ans); // longest consonent
+            ans = max(cur, ans);
             cur = 0;
         }
         cur++;
