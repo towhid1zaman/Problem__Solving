@@ -1,4 +1,20 @@
 {
+  "CF101792483": {
+    "contest_id": 1077,
+    "language": "GNU C++14",
+    "path": "codeforces\\1077\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Disturbed People",
+    "problem_url": "https://codeforces.com/contest/1077/problem/B",
+    "submission_id": "CF101792483",
+    "submission_url": "https://codeforces.com/contest/1077/submission/101792483",
+    "tags": [
+      "greedy",
+      "*1000"
+    ],
+    "timestamp": "Dec/19/2020 23:29"
+  },
   "CF101794605": {
     "contest_id": 1221,
     "language": "GNU C++14",
