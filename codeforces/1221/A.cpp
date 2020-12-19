@@ -17,7 +17,8 @@ void task(){
         cin >> a[i];
         mp[a[i]] = 1;
     }
-    bool f = 0;ll ans=  0;
+    bool f = 0;
+    ll ans=  0;
     for(int i = 1; i<=n; i++){
         if(mp[2048])f = 1;
         if(a[i]<2048)ans+=a[i];
