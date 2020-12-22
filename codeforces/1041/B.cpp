@@ -18,9 +18,11 @@ void task(){
     ll a, b, x, y;
     cin >> a >> b >> x >> y;
 
-    ll cf = gcd(x,y);  // common factor
-    x/=cf, y/=cf;
-    ll totdA = a/x, totdB = b/y; // possible pair
+    ll spx, spy;
+    spx = spy = gcd(x,y);
+    x/=spx, y/=spy;
+
+    ll totdA = a/x, totdB = b/y;
     cout << min(totdA, totdB) << endl;
 }
 

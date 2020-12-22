@@ -1,4 +1,20 @@
 {
+  "CF102055530": {
+    "contest_id": 1041,
+    "language": "GNU C++14",
+    "path": "codeforces\\1041\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Buying a TV Set",
+    "problem_url": "https://codeforces.com/contest/1041/problem/B",
+    "submission_id": "CF102055530",
+    "submission_url": "https://codeforces.com/contest/1041/submission/102055530",
+    "tags": [
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/22/2020 21:37"
+  },
   "CF102056178": {
     "contest_id": 1041,
     "language": "GNU C++14",
