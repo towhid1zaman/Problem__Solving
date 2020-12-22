@@ -1,4 +1,21 @@
 {
+  "CF102070197": {
+    "contest_id": 1266,
+    "language": "GNU C++14",
+    "path": "codeforces\\1266\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Competitive Programmer",
+    "problem_url": "https://codeforces.com/contest/1266/problem/A",
+    "submission_id": "CF102070197",
+    "submission_url": "https://codeforces.com/contest/1266/submission/102070197",
+    "tags": [
+      "chinese remainder theorem",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/23/2020 00:54"
+  },
   "CF102070842": {
     "contest_id": 979,
     "language": "GNU C++14",
