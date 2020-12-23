@@ -1,4 +1,21 @@
 {
+  "CF102130169": {
+    "contest_id": 1195,
+    "language": "GNU C++14",
+    "path": "codeforces\\1195\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Drinks Choosing",
+    "problem_url": "https://codeforces.com/contest/1195/problem/A",
+    "submission_id": "CF102130169",
+    "submission_url": "https://codeforces.com/contest/1195/submission/102130169",
+    "tags": [
+      "greedy",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/23/2020 21:18"
+  },
   "CF102139124": {
     "contest_id": 1088,
     "language": "GNU C++14",
