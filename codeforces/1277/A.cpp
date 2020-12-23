@@ -11,7 +11,6 @@ const int mod = 1000000007;
 void task(){
     ll n; cin >> n;
     int ans = 0;
-    // digit by digit 1,11,111..2,22,222...
     for(int i = 1; i<=9; i++){
         ll a = i;
         while(a <= n){
