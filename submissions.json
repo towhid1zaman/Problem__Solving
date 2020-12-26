@@ -1,4 +1,20 @@
 {
+  "CF102419096": {
+    "contest_id": 887,
+    "language": "GNU C++14",
+    "path": "codeforces\\887\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Div. 64",
+    "problem_url": "https://codeforces.com/contest/887/problem/A",
+    "submission_id": "CF102419096",
+    "submission_url": "https://codeforces.com/contest/887/submission/102419096",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/26/2020 23:56"
+  },
   "CF102483710": {
     "contest_id": 886,
     "language": "GNU C++14",
