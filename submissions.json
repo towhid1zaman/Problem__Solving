@@ -1,4 +1,21 @@
 {
+  "CF102418836": {
+    "contest_id": 990,
+    "language": "GNU C++14",
+    "path": "codeforces\\990\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Commentary Boxes",
+    "problem_url": "https://codeforces.com/contest/990/problem/A",
+    "submission_id": "CF102418836",
+    "submission_url": "https://codeforces.com/contest/990/submission/102418836",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/26/2020 23:53"
+  },
   "CF102419096": {
     "contest_id": 887,
     "language": "GNU C++14",
