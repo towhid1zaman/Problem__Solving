@@ -15,13 +15,16 @@ void task(){
         cin >> a[i];tot+=a[i];
     }
     bool f = 0;
-    sort(all(a));
-    do{
-        if((a[0]+a[1]+a[2])*2==tot){
-            f = 1;
-            break;
+    for(int i = 0; i<6; i++){
+        for(int j = i+1; j<6; j++){
+            for(int k = j+1; k<6; k++){
+                if((a[i]+a[j]+a[k])*2 == tot){
+                    f = 1;
+                    break;
+                }
+            }
         }
-    }while(next_permutation(all(a)));
+    }
     cout << (f?"YES":"NO")<<endl;
 }
 
