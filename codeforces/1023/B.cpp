@@ -10,7 +10,6 @@ const int mod = 1000000007;
 
 void task(){
     ll n, k; cin >> n >> k;
-    // analysis given test cases
     ll ans = 0;
     if(n>=k)ans = (k-1)/2;
     else if(2*n > k) ans = n-(k/2);
