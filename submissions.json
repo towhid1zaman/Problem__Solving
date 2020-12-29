@@ -1,4 +1,22 @@
 {
+  "CF102711634": {
+    "contest_id": 909,
+    "language": "GNU C++14",
+    "path": "codeforces\\909\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Generate Login",
+    "problem_url": "https://codeforces.com/contest/909/problem/A",
+    "submission_id": "CF102711634",
+    "submission_url": "https://codeforces.com/contest/909/submission/102711634",
+    "tags": [
+      "brute force",
+      "greedy",
+      "sortings",
+      "*1000"
+    ],
+    "timestamp": "Dec/29/2020 23:32"
+  },
   "CF102713382": {
     "contest_id": 620,
     "language": "GNU C++14",
