@@ -1,4 +1,21 @@
 {
+  "CF102687137": {
+    "contest_id": 816,
+    "language": "GNU C++14",
+    "path": "codeforces\\816\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Karen and Morning",
+    "problem_url": "https://codeforces.com/contest/816/problem/A",
+    "submission_id": "CF102687137",
+    "submission_url": "https://codeforces.com/contest/816/submission/102687137",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/29/2020 18:30"
+  },
   "CF102687312": {
     "contest_id": 849,
     "language": "GNU C++14",
