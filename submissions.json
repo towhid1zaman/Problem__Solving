@@ -1,4 +1,21 @@
 {
+  "CF102665472": {
+    "contest_id": 893,
+    "language": "GNU C++14",
+    "path": "codeforces\\893\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Beautiful Divisors",
+    "problem_url": "https://codeforces.com/contest/893/problem/B",
+    "submission_id": "CF102665472",
+    "submission_url": "https://codeforces.com/contest/893/submission/102665472",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/29/2020 13:16"
+  },
   "CF102687137": {
     "contest_id": 816,
     "language": "GNU C++14",
