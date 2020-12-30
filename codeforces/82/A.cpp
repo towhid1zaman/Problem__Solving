@@ -7,15 +7,39 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-
+bool chek(int n, int i){
+    return n>=0 and n<=i;
+}
 void task(){
     std::vector<string> v={"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
     int n; cin >> n;
-    --n; //zero
-    while(n >= 5){
-        n-=5; n/=2;
+    for(int i = 1; ;i*=2){
+        if(chek(n,i)){
+            cout << v[0]<<endl;
+            break;
+        }
+        n-=i;
+        if(chek(n,i)){
+            cout << v[1]<<endl;
+            break;
+        }
+        n-=i;
+        if(chek(n,i)){
+            cout << v[2]<<endl;
+            break;
+        }
+        n-=i;
+        if(chek(n,i)){
+            cout << v[3]<<endl;
+            break;
+        }
+        n-=i;
+        if(chek(n,i)){
+            cout << v[4]<<endl;
+            break;
+        }
+        n-=i;
     }
-    cout << v[n] << endl;
 }
 
 int main(){
