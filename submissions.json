@@ -1,4 +1,21 @@
 {
+  "CF102772093": {
+    "contest_id": 714,
+    "language": "GNU C++14",
+    "path": "codeforces\\714\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Meeting of Old Friends",
+    "problem_url": "https://codeforces.com/contest/714/problem/A",
+    "submission_id": "CF102772093",
+    "submission_url": "https://codeforces.com/contest/714/submission/102772093",
+    "tags": [
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Dec/30/2020 20:20"
+  },
   "CF102799917": {
     "contest_id": 1466,
     "language": "GNU C++14",
