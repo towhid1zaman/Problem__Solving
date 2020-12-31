@@ -1,4 +1,20 @@
 {
+  "CF102918595": {
+    "contest_id": 835,
+    "language": "GNU C++14",
+    "path": "codeforces\\835\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "The number on the board",
+    "problem_url": "https://codeforces.com/contest/835/problem/B",
+    "submission_id": "CF102918595",
+    "submission_url": "https://codeforces.com/contest/835/submission/102918595",
+    "tags": [
+      "greedy",
+      "*1100"
+    ],
+    "timestamp": "Dec/31/2020 20:38"
+  },
   "CF102951409": {
     "contest_id": 1015,
     "language": "GNU C++14",
