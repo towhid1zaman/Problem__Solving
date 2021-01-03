@@ -2214,6 +2214,22 @@
     ],
     "timestamp": "Jan/03/2021 16:23"
   },
+  "CF103120357": {
+    "contest_id": 1066,
+    "language": "GNU C++14",
+    "path": "codeforces\\1066\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Vova and Train",
+    "problem_url": "https://codeforces.com/contest/1066/problem/A",
+    "submission_id": "CF103120357",
+    "submission_url": "https://codeforces.com/contest/1066/submission/103120357",
+    "tags": [
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Jan/04/2021 00:06"
+  },
   "CF103121520": {
     "contest_id": 1066,
     "language": "GNU C++14",
