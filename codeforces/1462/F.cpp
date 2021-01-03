@@ -10,29 +10,24 @@ const int mod = 1000000007;
 
 void task(){
     int n; cin >> n;
-    std::vector< pair<int, int> > v(n);
-    for(int i = 0; i<n; i++){
-        cin >> v[i].first >> v[i].second;
+    std::vector<int>L(n), R(n);
+    std::vector<int>seq1, seq2;
+    seq1.clear(), seq2.clear();
+    for(int i = 0; i<n;i++){
+        cin >> L[i] >> R[i];
+        seq1.push_back(R[i]), seq2.push_back(L[i]);
     }
 
-    sort(all(v));
+    sort(all(seq1)), sort(all(seq2));
 
-    priority_queue<int> Q; // greater value first
-    
-    int ans = INT_MAX;
-    for(int i = 0; i<n; i++){
-        while(!Q.empty() and -Q.top() < v[i].first){
-            Q.pop();
-        }
-        int pos = lower_bound(v.begin()+i+1, v.end(), make_pair(v[i].second+1,0)) - v.begin();
-        int a = i - Q.size();
-        int b = n-pos;
-        ans = min(ans, a+b);
-        Q.push(-v[i].second);
+    int ans = n;
+    for(int i = 0; i<n;i++){
+        int pos1 = lower_bound(all(seq1), L[i]) - seq1.begin();
+        int pos2 = upper_bound(all(seq2), R[i]) - seq2.begin();
+        ans = min(ans, pos1 + n - pos2);
     }
 
     cout << ans << endl;
-
 }
 
 int main(){
