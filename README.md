@@ -12,11 +12,12 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1334 | [B - Unlucky Ticket](https://codeforces.com/contest/160/problem/B) | [GNU C++14](./codeforces/160/B.cpp) | `greedy` `sortings` `*1100` | Jan/05/2021 23:35 | 
-1333 | [B - Squares and Segments](https://codeforces.com/contest/1099/problem/B) | [GNU C++14](./codeforces/1099/B.cpp) | `binary search` `constructive algorithms` `math` `*1100` | Jan/05/2021 23:27 | 
-1332 | [B - Anton and Classes](https://codeforces.com/contest/785/problem/B) | [GNU C++14](./codeforces/785/B.cpp) | `greedy` `sortings` `*1100` | Jan/05/2021 23:19 | 
-1331 | [A - Ilya and a Colorful Walk](https://codeforces.com/contest/1119/problem/A) | [GNU C++14](./codeforces/1119/A.cpp) | `greedy` `implementation` `*1100` | Jan/05/2021 23:14 | 
-1330 | [A - Vitaliy and Pie](https://codeforces.com/contest/525/problem/A) | [GNU C++14](./codeforces/525/A.cpp) | `greedy` `hashing` `strings` `*1100` | Jan/05/2021 23:05 | 
+1335 | [B - Unlucky Ticket](https://codeforces.com/contest/160/problem/B) | [GNU C++14](./codeforces/160/B.cpp) | `greedy` `sortings` `*1100` | Jan/05/2021 23:35 | 
+1334 | [B - Squares and Segments](https://codeforces.com/contest/1099/problem/B) | [GNU C++14](./codeforces/1099/B.cpp) | `binary search` `constructive algorithms` `math` `*1100` | Jan/05/2021 23:27 | 
+1333 | [B - Anton and Classes](https://codeforces.com/contest/785/problem/B) | [GNU C++14](./codeforces/785/B.cpp) | `greedy` `sortings` `*1100` | Jan/05/2021 23:19 | 
+1332 | [A - Ilya and a Colorful Walk](https://codeforces.com/contest/1119/problem/A) | [GNU C++14](./codeforces/1119/A.cpp) | `greedy` `implementation` `*1100` | Jan/05/2021 23:14 | 
+1331 | [A - Vitaliy and Pie](https://codeforces.com/contest/525/problem/A) | [GNU C++14](./codeforces/525/A.cpp) | `greedy` `hashing` `strings` `*1100` | Jan/05/2021 23:05 | 
+1330 | [A - Benches](https://codeforces.com/contest/1042/problem/A) | [GNU C++14](./codeforces/1042/A.cpp) | `binary search` `implementation` `*1100` | Jan/05/2021 22:59 | 
 1329 | [C - Long Jumps](https://codeforces.com/contest/1472/problem/C) | [GNU C++14](./codeforces/1472/C.cpp) | `dp` | Jan/04/2021 21:04 | 
 1328 | [B - Fair Division](https://codeforces.com/contest/1472/problem/B) | [GNU C++14](./codeforces/1472/B.cpp) | `greedy` | Jan/04/2021 20:55 | 
 1327 | [A - Cards for Friends](https://codeforces.com/contest/1472/problem/A) | [GNU C++14](./codeforces/1472/A.cpp) | `greedy` `math` | Jan/04/2021 20:41 | 
