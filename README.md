@@ -12,8 +12,9 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1337 | [B - Div Times Mod](https://codeforces.com/contest/1085/problem/B) | [GNU C++14](./codeforces/1085/B.cpp) | `math` `*1100` | Jan/06/2021 23:24 | 
-1336 | [B - Blown Garland](https://codeforces.com/contest/758/problem/B) | [GNU C++14](./codeforces/758/B.cpp) | `brute force` `implementation` `number theory` `*1100` | Jan/06/2021 23:01 | 
+1338 | [B - Div Times Mod](https://codeforces.com/contest/1085/problem/B) | [GNU C++14](./codeforces/1085/B.cpp) | `math` `*1100` | Jan/06/2021 23:24 | 
+1337 | [B - Blown Garland](https://codeforces.com/contest/758/problem/B) | [GNU C++14](./codeforces/758/B.cpp) | `brute force` `implementation` `number theory` `*1100` | Jan/06/2021 23:01 | 
+1336 | [B - Weird Rounding](https://codeforces.com/contest/779/problem/B) | [GNU C++14](./codeforces/779/B.cpp) | `brute force` `greedy` `*1100` | Jan/06/2021 22:53 | 
 1335 | [B - Unlucky Ticket](https://codeforces.com/contest/160/problem/B) | [GNU C++14](./codeforces/160/B.cpp) | `greedy` `sortings` `*1100` | Jan/05/2021 23:35 | 
 1334 | [B - Squares and Segments](https://codeforces.com/contest/1099/problem/B) | [GNU C++14](./codeforces/1099/B.cpp) | `binary search` `constructive algorithms` `math` `*1100` | Jan/05/2021 23:27 | 
 1333 | [B - Anton and Classes](https://codeforces.com/contest/785/problem/B) | [GNU C++14](./codeforces/785/B.cpp) | `greedy` `sortings` `*1100` | Jan/05/2021 23:19 | 
