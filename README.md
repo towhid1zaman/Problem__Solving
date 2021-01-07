@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1340 | [D - Districts Connection](https://codeforces.com/contest/1433/problem/D) | [GNU C++14](./codeforces/1433/D.cpp) | `constructive algorithms` `dfs and similar` `*1200` | Jan/07/2021 19:30 | 
+1341 | [D - Districts Connection](https://codeforces.com/contest/1433/problem/D) | [GNU C++14](./codeforces/1433/D.cpp) | `constructive algorithms` `dfs and similar` `*1200` | Jan/07/2021 19:30 | 
+1340 | [B - Collecting Packages](https://codeforces.com/contest/1294/problem/B) | [GNU C++14](./codeforces/1294/B.cpp) | `implementation` `sortings` `*1200` | Jan/07/2021 19:24 | 
 1339 | [B - Div Times Mod](https://codeforces.com/contest/1085/problem/B) | [GNU C++14](./codeforces/1085/B.cpp) | `math` `*1100` | Jan/06/2021 23:24 | 
 1338 | [B - Blown Garland](https://codeforces.com/contest/758/problem/B) | [GNU C++14](./codeforces/758/B.cpp) | `brute force` `implementation` `number theory` `*1100` | Jan/06/2021 23:01 | 
 1337 | [B - Weird Rounding](https://codeforces.com/contest/779/problem/B) | [GNU C++14](./codeforces/779/B.cpp) | `brute force` `greedy` `*1100` | Jan/06/2021 22:53 | 
