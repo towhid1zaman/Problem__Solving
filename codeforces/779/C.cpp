@@ -7,34 +7,31 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-struct node{
-    int x, y;
-}v[maxn];
-bool cmp(node a, node b){
-    if((a.x - a.y) == (b.x - b.y)){
-        return a.x < b.x;
+bool cmp(const pair<int,int>&a, const pair<int, int>&b){
+    if((a.first - a.second) == (b.first - b.second)){
+        return a.first < b.first;
     }
 
-    return (a.x - a.y) < (b.x - b.y);
+    return (a.first - a.second) < (b.first - b.second);
 }
-
 void task(){
     int n, k; cin >> n >> k;
+    std::vector< pair<int, int> > v(n);
     for(int i = 0; i<n; i++){
-        cin >> v[i].x;
+        cin >> v[i].first;
     }
     for(int i = 0; i<n; i++){
-        cin >> v[i].y;
+        cin >> v[i].second;
     }
-    sort(v,v+n,cmp);
+    sort(all(v), cmp);
 
     int cost = 0;
     for(int i = 0; i<n; i++){
         if(i < k){
-            cost+=v[i].x;
+            cost+=v[i].first;
         }
         else{
-            cost+= min(v[i].x, v[i].y);
+            cost+= min(v[i].first, v[i].second);
         }
     }
 
