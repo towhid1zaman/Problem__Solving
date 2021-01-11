@@ -7,35 +7,34 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-bool cmp(const pair<int,int>&a, const pair<int, int>&b){
-    if((a.first - a.second) == (b.first - b.second)){
-        return a.first < b.first;
-    }
 
-    return (a.first - a.second) < (b.first - b.second);
-}
 void task(){
     int n, k; cin >> n >> k;
-    std::vector< pair<int, int> > v(n);
+    int tot = 0;
+    std::vector<int>now(n), after(n);
     for(int i = 0; i<n; i++){
-        cin >> v[i].first;
+        cin >> now[i];
+        tot+=now[i];
     }
-    for(int i = 0; i<n; i++){
-        cin >> v[i].second;
-    }
-    sort(all(v), cmp);
 
-    int cost = 0;
+    priority_queue<int> Q; // greater value first
+    
     for(int i = 0; i<n; i++){
-        if(i < k){
-            cost+=v[i].first;
-        }
-        else{
-            cost+= min(v[i].first, v[i].second);
+        cin >> after[i];
+        int cur = now[i] - after[i];
+        if(cur > 0){
+            Q.push(cur);
         }
     }
 
-    cout << cost << endl;
+    int rest = n-k;
+    while(!Q.empty() and rest){
+        tot-=Q.top();
+        Q.pop();
+        rest--;
+    }
+
+    cout << tot << endl;
 }
 
 int main(){
