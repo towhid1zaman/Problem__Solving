@@ -14,14 +14,19 @@ void task(){
     for(int i = 0; i<n; i++){
         cin >> a[i];
     }
-    std::set<int>in;
+    std::vector<int>in(n,0);
     for(int i = 0; i<n; i++){
         int k = i+a[i];
         k%=n;
-        if(k<0)k+=n;
-        in.emplace(k);
+        k+=n;
+        k%=n;
+        in[k]++;
     }
-    cout << (in.size()==n?"YES":"NO")<<endl;
+    bool oo=0;
+    for(int i = 0; i<n; i++){
+        if(in[i] > 1)oo = 1;
+    }
+    cout << (!oo?"YES":"NO")<<endl;
 }
 
 int main(){
