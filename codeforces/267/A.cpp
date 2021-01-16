@@ -1,0 +1,38 @@
+#pragma comment (linker,"/STACK:16777216")
+#include "bits/stdc++.h"
+using namespace std;
+typedef long long ll;
+#define all(v) (v).begin(),(v).end()
+#define endl "\n"
+const int maxn = 200005;
+const int mod = 1000000007;
+
+int rec(int x, int y){
+    if(x==0 or y==0)return 0;
+    int res = 0;
+    int p = y/x;
+    res+=p;
+    return res+=rec(y%x, x);
+}
+void task(){
+    int a, b; cin >> a >> b;
+    int ans = rec(a, b);
+    cout << ans << endl;
+}
+
+int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+#ifdef OJ
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+
+    int T = 1; cin >> T;
+    for(int __ = 1; __ <= T; __++){
+        //cout <<"Case "<<__<<": ";
+        task();
+    }
+      
+return 0;
+}
