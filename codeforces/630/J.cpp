@@ -7,21 +7,11 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-ll gcd(ll a,ll b){
-    return b ? gcd(b,a%b) : a;
-}
-ll lcm(ll a, ll b){
-    return a/ gcd(a,b)*b;
-}
 
 void task(){
     ll n; cin >> n;
-    ll cnt = 0;
-    for(ll i=1;i<=3000;i++){
-        if(i%2==0 && i%3==0 && i%4==0 && i%5==0 && i%6==0 && i%7==0 && i%8==0 && i%9==0 && i%10==0)
-            cnt = i;
-    }
-    cout << n/cnt << endl;
+    ll tot = n/2520;
+    cout << tot << endl;
 }
 
 int main(){
