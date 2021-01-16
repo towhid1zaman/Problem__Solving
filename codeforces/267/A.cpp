@@ -7,16 +7,15 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-int rec(int x, int y){
-    if(x==0 or y==0)return 0;
-    int res = 0;
-    int p = y/x;
-    res+=p;
-    return res+=rec(y-p*x, x);
-}
+
 void task(){
     int a, b; cin >> a >> b;
-    int ans = rec(a, b);
+    int ans = 0;
+    while(a !=0 and b!=0){
+        if(a<b)swap(a, b);
+        ans+=(a/b);
+        a%=b;
+    }
     cout << ans << endl;
 }
 
