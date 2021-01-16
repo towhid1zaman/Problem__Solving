@@ -7,16 +7,53 @@ typedef unsigned long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-bool isP(ll n)
+//Calculate ( a*b ) %c
+ll mulmod(ll a,ll b,ll c)
 {
-    if(n<=1)return false;
-    if(n<=3)return true;
-    if(n%2==0||n%3==0)return false;
-    for(ll i=5;i*i<=n;i+=6)
+    ll x = 0 , y = a%c ;
+    while(b>0)
     {
-        if(n%i==0||n%(i+2)==0)return false;
+        if(b%2) x = (x+y)%c ;
+        y=(y*2)%c;
+        b/=2;
     }
-    return true;
+    return x%c ;
+}
+
+//Calculate ( a^b ) %c
+ll modulo(ll a,ll b,ll c)
+{
+    ll x = 1 , y = a%c ;
+    while( b > 0 )
+    {
+        if(b%2) x = mulmod(x,y,c) ;
+        y=mulmod(y,y,c);
+        b/=2;
+    }
+    return x%c ;
+}
+
+bool miller(ll p, int  iteration=50)
+{
+    if(p<2) return false ;
+    if(p%2==0&&p!=2) return false ;
+
+    ll s = p-1 ;
+    while(s%2==0) s/=2;
+
+    for(ll i=1;i<=iteration;i++)
+    {
+        ll a = rand() % (p-1)+1 , temp = s ;
+
+        ll mod = modulo(a,temp,p);
+        while(mod!=1&&mod!=p-1&&temp!=p-1)
+        {
+            mod = mulmod(mod,mod,p);
+            temp*=2;
+        }
+        if(temp%2==0&&mod!=p-1) return false ;
+    }
+    return true ;
 }
 void task(){
     ll a, b; cin >> a >> b;
@@ -25,7 +62,7 @@ void task(){
         return;
     }
     ll ans = a+b;
-    if(isP(ans))cout << "YES"<<endl;
+    if(miller(ans))cout << "YES"<<endl;
     else cout << "NO" << endl;   
 }
 
