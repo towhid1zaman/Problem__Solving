@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1370 | [B - Square Difference](https://codeforces.com/contest/1033/problem/B) | [GNU C++14](./codeforces/1033/B.cpp) | `math` `number theory` `*1100` | Jan/17/2021 00:17 | 
-1369 | [J - Divisibility](https://codeforces.com/contest/630/problem/J) | [GNU C++14](./codeforces/630/J.cpp) | `math` `number theory` `*1100` | Jan/16/2021 23:26 | 
-1368 | [B - Proper Nutrition](https://codeforces.com/contest/898/problem/B) | [GNU C++14](./codeforces/898/B.cpp) | `brute force` `implementation` `number theory` `*1100` | Jan/16/2021 23:04 | 
+1371 | [B - Square Difference](https://codeforces.com/contest/1033/problem/B) | [GNU C++14](./codeforces/1033/B.cpp) | `math` `number theory` `*1100` | Jan/17/2021 00:17 | 
+1370 | [J - Divisibility](https://codeforces.com/contest/630/problem/J) | [GNU C++14](./codeforces/630/J.cpp) | `math` `number theory` `*1100` | Jan/16/2021 23:26 | 
+1369 | [B - Proper Nutrition](https://codeforces.com/contest/898/problem/B) | [GNU C++14](./codeforces/898/B.cpp) | `brute force` `implementation` `number theory` `*1100` | Jan/16/2021 23:04 | 
+1368 | [A - Ebony and Ivory](https://codeforces.com/contest/633/problem/A) | [GNU C++14](./codeforces/633/A.cpp) | `brute force` `math` `number theory` `*1100` | Jan/16/2021 22:55 | 
 1367 | [A - Replacing Elements](https://codeforces.com/contest/1473/problem/A) | [GNU C++14](./codeforces/1473/A.cpp) | `greedy` `implementation` `sortings` | Jan/15/2021 12:50 | 
 1366 | [D - Program](https://codeforces.com/contest/1473/problem/D) | [GNU C++14](./codeforces/1473/D.cpp) | `data structures` `dp` `implementation` | Jan/15/2021 12:38 | 
 1365 | [C - No More Inversions](https://codeforces.com/contest/1473/problem/C) | [GNU C++14](./codeforces/1473/C.cpp) | `constructive algorithms` | Jan/14/2021 23:20 | 
