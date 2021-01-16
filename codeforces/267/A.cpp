@@ -11,10 +11,11 @@ const int mod = 1000000007;
 void task(){
     int a, b; cin >> a >> b;
     int ans = 0;
-    while(a !=0 and b!=0){
-        if(a<b)swap(a, b);
+    if(a<b)swap(a, b);
+    while(b!=0){
         ans+=(a/b);
         a%=b;
+        swap(a,b);
     }
     cout << ans << endl;
 }

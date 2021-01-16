@@ -3059,6 +3059,23 @@
     ],
     "timestamp": "Jan/15/2021 12:50"
   },
+  "CF104513303": {
+    "contest_id": 267,
+    "language": "GNU C++14",
+    "path": "codeforces\\267\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Subtractions",
+    "problem_url": "https://codeforces.com/contest/267/problem/A",
+    "submission_id": "CF104513303",
+    "submission_url": "https://codeforces.com/contest/267/submission/104513303",
+    "tags": [
+      "math",
+      "number theory",
+      "*900"
+    ],
+    "timestamp": "Jan/16/2021 19:44"
+  },
   "CF104513443": {
     "contest_id": 267,
     "language": "GNU C++14",
