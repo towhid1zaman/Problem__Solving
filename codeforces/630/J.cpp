@@ -16,11 +16,12 @@ ll lcm(ll a, ll b){
 
 void task(){
     ll n; cin >> n;
-    ll LcM = 1;
-    for(ll i=1;i<=10;i++){
-        LcM = lcm(LcM, i);
+    ll cnt = 0;
+    for(ll i=1;i<=3000;i++){
+        if(i%2==0 && i%3==0 && i%4==0 && i%5==0 && i%6==0 && i%7==0 && i%8==0 && i%9==0 && i%10==0)
+            cnt = i;
     }
-    cout << n/LcM << endl;
+    cout << n/cnt << endl;
 }
 
 int main(){
