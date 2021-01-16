@@ -12,7 +12,7 @@ int rec(int x, int y){
     int res = 0;
     int p = y/x;
     res+=p;
-    return res+=rec(y%x, x);
+    return res+=rec(y-p*x, x);
 }
 void task(){
     int a, b; cin >> a >> b;
