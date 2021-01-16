@@ -3059,6 +3059,23 @@
     ],
     "timestamp": "Jan/15/2021 12:50"
   },
+  "CF104512123": {
+    "contest_id": 84,
+    "language": "GNU C++14",
+    "path": "codeforces\\84\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Toy Army",
+    "problem_url": "https://codeforces.com/contest/84/problem/A",
+    "submission_id": "CF104512123",
+    "submission_url": "https://codeforces.com/contest/84/submission/104512123",
+    "tags": [
+      "math",
+      "number theory",
+      "*900"
+    ],
+    "timestamp": "Jan/16/2021 19:28"
+  },
   "CF104513303": {
     "contest_id": 267,
     "language": "GNU C++14",
