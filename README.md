@@ -12,11 +12,12 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1380 | [B - Easy Number Challenge](https://codeforces.com/contest/236/problem/B) | [GNU C++14](./codeforces/236/B.cpp) | `implementation` `number theory` `*1300` | Jan/18/2021 00:16 | 
-1379 | [B - Prime Matrix](https://codeforces.com/contest/271/problem/B) | [GNU C++14](./codeforces/271/B.cpp) | `binary search` `brute force` `math` `number theory` `*1300` | Jan/18/2021 00:03 | 
-1378 | [C - Maximum splitting](https://codeforces.com/contest/870/problem/C) | [GNU C++14](./codeforces/870/C.cpp) | `dp` `greedy` `math` `number theory` `*1300` | Jan/17/2021 22:50 | 
-1377 | [B - Pseudorandom Sequence Period](https://codeforces.com/contest/172/problem/B) | [GNU C++14](./codeforces/172/B.cpp) | `*special problem` `implementation` `number theory` `*1200` | Jan/17/2021 21:57 | 
-1376 | [A1 - Heidi Learns Hashing (Easy)](https://codeforces.com/contest/1184/problem/A1) | [GNU C++14](./codeforces/1184/A1.cpp) | `brute force` `math` `number theory` `*1200` | Jan/17/2021 20:01 | 
+1381 | [B - Easy Number Challenge](https://codeforces.com/contest/236/problem/B) | [GNU C++14](./codeforces/236/B.cpp) | `implementation` `number theory` `*1300` | Jan/18/2021 00:16 | 
+1380 | [B - Prime Matrix](https://codeforces.com/contest/271/problem/B) | [GNU C++14](./codeforces/271/B.cpp) | `binary search` `brute force` `math` `number theory` `*1300` | Jan/18/2021 00:03 | 
+1379 | [C - Maximum splitting](https://codeforces.com/contest/870/problem/C) | [GNU C++14](./codeforces/870/C.cpp) | `dp` `greedy` `math` `number theory` `*1300` | Jan/17/2021 22:50 | 
+1378 | [B - Pseudorandom Sequence Period](https://codeforces.com/contest/172/problem/B) | [GNU C++14](./codeforces/172/B.cpp) | `*special problem` `implementation` `number theory` `*1200` | Jan/17/2021 21:57 | 
+1377 | [A1 - Heidi Learns Hashing (Easy)](https://codeforces.com/contest/1184/problem/A1) | [GNU C++14](./codeforces/1184/A1.cpp) | `brute force` `math` `number theory` `*1200` | Jan/17/2021 20:01 | 
+1376 | [A - Treasure Hunt](https://codeforces.com/contest/817/problem/A) | [GNU C++14](./codeforces/817/A.cpp) | `implementation` `math` `number theory` `*1200` | Jan/17/2021 19:30 | 
 1375 | [B - Square Difference](https://codeforces.com/contest/1033/problem/B) | [GNU C++14](./codeforces/1033/B.cpp) | `math` `number theory` `*1100` | Jan/17/2021 00:17 | 
 1374 | [J - Divisibility](https://codeforces.com/contest/630/problem/J) | [GNU C++14](./codeforces/630/J.cpp) | `math` `number theory` `*1100` | Jan/16/2021 23:26 | 
 1373 | [B - Proper Nutrition](https://codeforces.com/contest/898/problem/B) | [GNU C++14](./codeforces/898/B.cpp) | `brute force` `implementation` `number theory` `*1100` | Jan/16/2021 23:04 | 
