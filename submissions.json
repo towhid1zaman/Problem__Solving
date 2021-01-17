@@ -3302,6 +3302,24 @@
     ],
     "timestamp": "Jan/17/2021 00:17"
   },
+  "CF104600893": {
+    "contest_id": 172,
+    "language": "GNU C++14",
+    "path": "codeforces\\172\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Pseudorandom Sequence Period",
+    "problem_url": "https://codeforces.com/contest/172/problem/B",
+    "submission_id": "CF104600893",
+    "submission_url": "https://codeforces.com/contest/172/submission/104600893",
+    "tags": [
+      "*special problem",
+      "implementation",
+      "number theory",
+      "*1200"
+    ],
+    "timestamp": "Jan/17/2021 21:57"
+  },
   "CF104604957": {
     "contest_id": 870,
     "language": "GNU C++14",
