@@ -8,9 +8,9 @@ const int maxn = 200005;
 const int mod = 1000000007;
 
 ll bit(ll n){
-    ll ccnt = 0;
+    ll ccnt = 1;
     while(n){
-        ccnt++;
+        ccnt*=2;
         n/=2;
     }
     return ccnt;
@@ -19,7 +19,7 @@ void task(){
     ll n, k; cin >> n >> k;
     ll ans = 0;
     ll x = bit(n);
-    ans = (1ll<<x) - 1;
+    ans = x - 1;
     cout <<(k==1 ? n:ans) << endl;
 }
 
