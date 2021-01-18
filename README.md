@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1389 | [C - Array Destruction](https://codeforces.com/contest/1474/problem/C) | [GNU C++14](./codeforces/1474/C.cpp) | `constructive algorithms` | Jan/20/2021 00:35 | 
-1388 | [A - Puzzle From the Future](https://codeforces.com/contest/1474/problem/A) | [GNU C++14](./codeforces/1474/A.cpp) | `greedy` | Jan/19/2021 23:32 | 
-1387 | [B - Different Divisors](https://codeforces.com/contest/1474/problem/B) | [GNU C++14](./codeforces/1474/B.cpp) | `constructive algorithms` `greedy` `math` `number theory` | Jan/19/2021 23:19 | 
+1390 | [C - Array Destruction](https://codeforces.com/contest/1474/problem/C) | [GNU C++14](./codeforces/1474/C.cpp) | `constructive algorithms` | Jan/20/2021 00:35 | 
+1389 | [A - Puzzle From the Future](https://codeforces.com/contest/1474/problem/A) | [GNU C++14](./codeforces/1474/A.cpp) | `greedy` | Jan/19/2021 23:32 | 
+1388 | [B - Different Divisors](https://codeforces.com/contest/1474/problem/B) | [GNU C++14](./codeforces/1474/B.cpp) | `constructive algorithms` `greedy` `math` `number theory` | Jan/19/2021 23:19 | 
+1387 | [B - Koala and Lights](https://codeforces.com/contest/1209/problem/B) | [GNU C++14](./codeforces/1209/B.cpp) | `implementation` `math` `number theory` `*1300` | Jan/18/2021 19:15 | 
 1386 | [B - Easy Number Challenge](https://codeforces.com/contest/236/problem/B) | [GNU C++14](./codeforces/236/B.cpp) | `implementation` `number theory` `*1300` | Jan/18/2021 00:16 | 
 1385 | [B - Prime Matrix](https://codeforces.com/contest/271/problem/B) | [GNU C++14](./codeforces/271/B.cpp) | `binary search` `brute force` `math` `number theory` `*1300` | Jan/18/2021 00:03 | 
 1384 | [C - Maximum splitting](https://codeforces.com/contest/870/problem/C) | [GNU C++14](./codeforces/870/C.cpp) | `dp` `greedy` `math` `number theory` `*1300` | Jan/17/2021 22:50 | 
