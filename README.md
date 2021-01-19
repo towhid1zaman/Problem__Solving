@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1387 | [C - Array Destruction](https://codeforces.com/contest/1474/problem/C) | [GNU C++14](./codeforces/1474/C.cpp) | `constructive algorithms` | Jan/20/2021 00:35 | 
 1386 | [B - Easy Number Challenge](https://codeforces.com/contest/236/problem/B) | [GNU C++14](./codeforces/236/B.cpp) | `implementation` `number theory` `*1300` | Jan/18/2021 00:16 | 
 1385 | [B - Prime Matrix](https://codeforces.com/contest/271/problem/B) | [GNU C++14](./codeforces/271/B.cpp) | `binary search` `brute force` `math` `number theory` `*1300` | Jan/18/2021 00:03 | 
 1384 | [C - Maximum splitting](https://codeforces.com/contest/870/problem/C) | [GNU C++14](./codeforces/870/C.cpp) | `dp` `greedy` `math` `number theory` `*1300` | Jan/17/2021 22:50 | 
