@@ -3500,6 +3500,24 @@
     ],
     "timestamp": "Jan/18/2021 00:16"
   },
+  "CF104838998": {
+    "contest_id": 1474,
+    "language": "GNU C++14",
+    "path": "codeforces\\1474\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Different Divisors",
+    "problem_url": "https://codeforces.com/contest/1474/problem/B",
+    "submission_id": "CF104838998",
+    "submission_url": "https://codeforces.com/contest/1474/submission/104838998",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Jan/19/2021 23:19"
+  },
   "CF104840839": {
     "contest_id": 1474,
     "language": "GNU C++14",
