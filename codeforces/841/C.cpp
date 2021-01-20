@@ -20,6 +20,8 @@ void task(){
     }
 
     std::vector<int>ans(n);
+
+
     sort(all(b)), sort(all(A));
     reverse(all(A));
 
