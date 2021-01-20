@@ -3619,6 +3619,22 @@
     ],
     "timestamp": "Jan/20/2021 00:35"
   },
+  "CF104933043": {
+    "contest_id": 841,
+    "language": "GNU C++14",
+    "path": "codeforces\\841\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Leha and Function",
+    "problem_url": "https://codeforces.com/contest/841/problem/C",
+    "submission_id": "CF104933043",
+    "submission_url": "https://codeforces.com/contest/841/submission/104933043",
+    "tags": [
+      "greedy",
+      "*1300"
+    ],
+    "timestamp": "Jan/21/2021 00:31"
+  },
   "CF104950823": {
     "contest_id": 158,
     "language": "GNU C++14",
