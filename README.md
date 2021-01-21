@@ -12,10 +12,11 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1396 | [C - Prime Permutation](https://codeforces.com/contest/124/problem/C) | [GNU C++14](./codeforces/124/C.cpp) | `constructive algorithms` `dfs and similar` `dsu` `greedy` `number theory` `sortings` `strings` `*1300` | Jan/23/2021 23:36 | 
-1395 | [B - A Trivial Problem](https://codeforces.com/contest/633/problem/B) | [GNU C++14](./codeforces/633/B.cpp) | `brute force` `constructive algorithms` `math` `number theory` `*1300` | Jan/22/2021 02:19 | 
-1394 | [B - Position in Fraction](https://codeforces.com/contest/900/problem/B) | [GNU C++14](./codeforces/900/B.cpp) | `math` `number theory` `*1300` | Jan/22/2021 02:03 | 
-1393 | [B - Sasha and Magnetic Machines](https://codeforces.com/contest/1113/problem/B) | [GNU C++14](./codeforces/1113/B.cpp) | `greedy` `number theory` `*1300` | Jan/22/2021 01:48 | 
+1397 | [C - Prime Permutation](https://codeforces.com/contest/124/problem/C) | [GNU C++14](./codeforces/124/C.cpp) | `constructive algorithms` `dfs and similar` `dsu` `greedy` `number theory` `sortings` `strings` `*1300` | Jan/23/2021 23:36 | 
+1396 | [B - A Trivial Problem](https://codeforces.com/contest/633/problem/B) | [GNU C++14](./codeforces/633/B.cpp) | `brute force` `constructive algorithms` `math` `number theory` `*1300` | Jan/22/2021 02:19 | 
+1395 | [B - Position in Fraction](https://codeforces.com/contest/900/problem/B) | [GNU C++14](./codeforces/900/B.cpp) | `math` `number theory` `*1300` | Jan/22/2021 02:03 | 
+1394 | [B - Sasha and Magnetic Machines](https://codeforces.com/contest/1113/problem/B) | [GNU C++14](./codeforces/1113/B.cpp) | `greedy` `number theory` `*1300` | Jan/22/2021 01:48 | 
+1393 | [C - New Year and the Sphere Transmission](https://codeforces.com/contest/1091/problem/C) | [GNU C++14](./codeforces/1091/C.cpp) | `math` `number theory` `*1400` | Jan/22/2021 01:09 | 
 1392 | [C - Array Destruction](https://codeforces.com/contest/1474/problem/C) | [GNU C++14](./codeforces/1474/C.cpp) | `constructive algorithms` | Jan/20/2021 00:35 | 
 1391 | [A - Puzzle From the Future](https://codeforces.com/contest/1474/problem/A) | [GNU C++14](./codeforces/1474/A.cpp) | `greedy` | Jan/19/2021 23:32 | 
 1390 | [B - Different Divisors](https://codeforces.com/contest/1474/problem/B) | [GNU C++14](./codeforces/1474/B.cpp) | `constructive algorithms` `greedy` `math` `number theory` | Jan/19/2021 23:19 | 
