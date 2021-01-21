@@ -23,9 +23,8 @@ void task(){
     int d_sz = d.size();
     set<ll>ans;
     for(int i = 0; i<d_sz; i++){
-        ll D = d[i];
-        ll sum = D * (D - 1)/2;
-        sum = sum * (n/D) + D;
+        ll D = d[i], N = n/D;
+        ll sum = ((2 + (N-1)*D)*N)/2;
         ans.emplace(sum);
     }
 

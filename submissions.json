@@ -3619,6 +3619,23 @@
     ],
     "timestamp": "Jan/20/2021 00:35"
   },
+  "CF105015652": {
+    "contest_id": 1091,
+    "language": "GNU C++14",
+    "path": "codeforces\\1091\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "New Year and the Sphere Transmission",
+    "problem_url": "https://codeforces.com/contest/1091/problem/C",
+    "submission_id": "CF105015652",
+    "submission_url": "https://codeforces.com/contest/1091/submission/105015652",
+    "tags": [
+      "math",
+      "number theory",
+      "*1400"
+    ],
+    "timestamp": "Jan/22/2021 00:46"
+  },
   "CF105016464": {
     "contest_id": 1091,
     "language": "GNU C++14",
