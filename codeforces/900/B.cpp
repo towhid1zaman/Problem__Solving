@@ -11,27 +11,15 @@ const int mod = 1000000007;
 void task(){
     ll a, b, c; cin >> a >> b >> c;
 
-    // untill c is found or periodic
-
-    set<int>vis;
-    int pos = 1;
-    int d = a/b;
-    a%=b;
-    while(true){
-        a*=10;
-        d = a/b;
-        if(vis.count(a)){
-            cout << -1 << endl;
+    for(int i = 1; i<=100000; i++){
+        a = a*10;
+        if(a/b == c){
+            cout << i << endl;
             return;
         }
-        if(d==c){
-            cout << pos << endl;
-            return;
-        }
-        vis.emplace(a);
         a%=b;
-        pos++;
     }
+    cout << -1 << endl;
 }
 
 int main(){
