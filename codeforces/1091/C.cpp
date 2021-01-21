@@ -7,12 +7,6 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-ll tot(ll n, ll D){
-    ll jump = n/D;
-    ll sum_D = (D*(D-1))/2;
-    ll sum = D + (jump*sum_D);
-    return sum;
-}
 
 void task(){
     ll n; cin >> n;
@@ -29,7 +23,9 @@ void task(){
     int d_sz = d.size();
     set<ll>ans;
     for(int i = 0; i<d_sz; i++){
-        ll sum = tot(n, d[i]);
+        ll D = d[i];
+        ll sum = (D * (D - 1))/2;
+        sum = sum * (n/D) + D;
         ans.emplace(sum);
     }
 
