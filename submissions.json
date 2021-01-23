@@ -3619,6 +3619,28 @@
     ],
     "timestamp": "Jan/20/2021 00:35"
   },
+  "CF105172527": {
+    "contest_id": 124,
+    "language": "GNU C++14",
+    "path": "codeforces\\124\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Prime Permutation",
+    "problem_url": "https://codeforces.com/contest/124/problem/C",
+    "submission_id": "CF105172527",
+    "submission_url": "https://codeforces.com/contest/124/submission/105172527",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "dsu",
+      "greedy",
+      "number theory",
+      "sortings",
+      "strings",
+      "*1300"
+    ],
+    "timestamp": "Jan/23/2021 23:36"
+  },
   "CF37028927": {
     "contest_id": 339,
     "language": "GNU C11",
