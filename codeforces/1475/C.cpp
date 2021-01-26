@@ -7,31 +7,25 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-ll pos(ll n){
-    return n*(n-1)/2;
-}
+
 void task(){
-    ll a, b, k; cin >> a >> b >> k;
-    std::map<ll, ll> cnta, cntb;
+    ll A, B, k; cin >> A >> B >> k;
+    std::vector<ll>a(k), b(k);
+    std::map<ll,int> cnta, cntb;
     for(int i = 0; i<k; i++){
-        ll x; cin >> x;
-        cnta[x]++;
+        cin >> a[i]; cnta[ a[i] ]++;
     }
-
     for(int i = 0; i<k; i++){
-        ll x; cin >> x;
-        cntb[x]++;
+       cin >> b[i]; cntb[ b[i] ]++;
     }
 
-    ll ans = pos(k);
-    for(int i = 1; i<=a; i++){
-        ans-= pos(cnta[i]);
+    ll ans = 0;
+    for(int i = 1;i<=k; i++){
+        cnta[ a[i-1] ]--, cntb[ b[i-1] ]--;
+        ll now = k - i;
+        now = now - cnta[ a[i-1] ] - cntb[ b[i-1] ];
+        ans += now;
     }
-
-    for(int i = 1; i<=b; i++){
-        ans-= pos(cntb[i]);
-    }
-
     cout << ans << endl;
 }
 
