@@ -7,33 +7,25 @@ typedef long long ll;
 const int maxn = 200005;
 const int mod = 1000000007;
 
-std::vector<int>divisor[maxn];
-void d(){
-    for(int i = 1; i<maxn; i++){
-        for(int j = i; j<maxn; j+=i){
-            divisor[j].push_back(i);
-        }
-    }
-}
+
 void task(){
     int n; cin >> n;
-    std::vector<int>a(n);
+    std::vector<int>aFreq(maxn, 0);
     for(int i = 0; i<n; i++){
-        cin >> a[i];
-    }
-    sort(all(a));
-    int mn = 0;
-    std::vector<int>cnt(maxn, 0);
-    for(int i = 0; i<n; i++){
-        int now = 0;
-        for(int dd: divisor[a[i]]){
-            now = max(now, cnt[dd]);
-        }
-        cnt[a[i]] = now+1;
-        mn = max(mn, cnt[a[i]]);
+        int a; cin >> a;
+        aFreq[ a ]++;
     }
 
-    cout << n - mn << endl;
+    for(int i = maxn; i>=1; i--){
+        int res = 0;
+        for(int j = 2; i*j<=maxn; j++){
+            res = max(aFreq[i*j], res);
+        }
+        aFreq[i] += res;   
+    }
+
+    int ans = n - *max_element(all(aFreq));
+    cout << ans << endl;
 }
 
 int main(){
@@ -43,7 +35,7 @@ int main(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-    d();
+
     int T = 1; cin >> T;
     for(int __ = 1; __ <= T; __++){
         //cout <<"Case "<<__<<": ";
