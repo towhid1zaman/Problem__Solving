@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1400 | [F - Unusual Matrix](https://codeforces.com/contest/1475/problem/F) | [GNU C++14](./codeforces/1475/F.cpp) | `constructive algorithms` `greedy` | Jan/26/2021 15:52 | 
+1401 | [F - Unusual Matrix](https://codeforces.com/contest/1475/problem/F) | [GNU C++14](./codeforces/1475/F.cpp) | `constructive algorithms` `greedy` | Jan/26/2021 15:52 | 
+1400 | [G - Strange Beauty](https://codeforces.com/contest/1475/problem/G) | [GNU C++14](./codeforces/1475/G.cpp) | `dp` `math` `number theory` | Jan/26/2021 13:36 | 
 1399 | [C - Prime Permutation](https://codeforces.com/contest/124/problem/C) | [GNU C++14](./codeforces/124/C.cpp) | `constructive algorithms` `dfs and similar` `dsu` `greedy` `number theory` `sortings` `strings` `*1300` | Jan/23/2021 23:36 | 
 1398 | [B - A Trivial Problem](https://codeforces.com/contest/633/problem/B) | [GNU C++14](./codeforces/633/B.cpp) | `brute force` `constructive algorithms` `math` `number theory` `*1300` | Jan/22/2021 02:19 | 
 1397 | [B - Position in Fraction](https://codeforces.com/contest/900/problem/B) | [GNU C++14](./codeforces/900/B.cpp) | `math` `number theory` `*1300` | Jan/22/2021 02:03 | 
