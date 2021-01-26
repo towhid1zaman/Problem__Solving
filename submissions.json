@@ -3829,6 +3829,22 @@
     ],
     "timestamp": "Jan/23/2021 23:36"
   },
+  "CF105462985": {
+    "contest_id": 1475,
+    "language": "GNU C++14",
+    "path": "codeforces\\1475\\F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Unusual Matrix",
+    "problem_url": "https://codeforces.com/contest/1475/problem/F",
+    "submission_id": "CF105462985",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105462985",
+    "tags": [
+      "constructive algorithms",
+      "greedy"
+    ],
+    "timestamp": "Jan/26/2021 15:52"
+  },
   "CF37028927": {
     "contest_id": 339,
     "language": "GNU C11",
