@@ -13,7 +13,6 @@ ll one(ll n){
         if(n%2)cnt++;
         n/=2;
     }
-    return cnt;
 }
 bool ithBitSet(int mask, int pos){
     //suppose mask = 10101, we have to check 3rd bit set or not
@@ -31,13 +30,17 @@ void task(){
     
     for(ll mask = 1; mask<=(1<<d.size()) - 1; mask++){
         Denominator = 1ll;
-        ll setbit = one(mask); // builtinpopcount
+        std::vector<int>subset;
+
         for(int i = 0; i<d.size(); i++){
             if(ithBitSet(mask, i)){
-                Denominator*=d[i];
+                subset.push_back(d[i]);
             }
         }
-        if(setbit&1)possible-=(Numerator/Denominator);
+
+        for(auto x:subset)Denominator*=x;   
+
+        if(subset.size()%2)possible-=(Numerator/Denominator);
         else possible+=(Numerator/Denominator);
     }
     cout << possible << endl;
