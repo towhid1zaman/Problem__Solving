@@ -4291,6 +4291,23 @@
     ],
     "timestamp": "Feb/04/2021 22:48"
   },
+  "CF106665933": {
+    "contest_id": 1165,
+    "language": "GNU C++14",
+    "path": "codeforces\\1165\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Almost All Divisors",
+    "problem_url": "https://codeforces.com/contest/1165/problem/D",
+    "submission_id": "CF106665933",
+    "submission_url": "https://codeforces.com/contest/1165/submission/106665933",
+    "tags": [
+      "math",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Feb/06/2021 16:17"
+  },
   "CF106667651": {
     "contest_id": 1459,
     "language": "GNU C++14",
