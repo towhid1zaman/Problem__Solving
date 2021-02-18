@@ -4521,6 +4521,26 @@
     ],
     "timestamp": "Feb/10/2021 00:03"
   },
+  "CF107882482": {
+    "contest_id": 1490,
+    "language": "GNU C++14",
+    "path": "codeforces\\1490\\F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Equalize the Array",
+    "problem_url": "https://codeforces.com/contest/1490/problem/F",
+    "submission_id": "CF107882482",
+    "submission_url": "https://codeforces.com/contest/1490/submission/107882482",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "math",
+      "sortings",
+      "*1500"
+    ],
+    "timestamp": "Feb/19/2021 01:47"
+  },
   "CF107939335": {
     "contest_id": 1487,
     "language": "GNU C++14",
