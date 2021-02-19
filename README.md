@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1435 | [K - Lonely Numbers](https://codeforces.com/contest/1423/problem/K) | [GNU C++14](./codeforces/1423/K.cpp) |  | Feb/24/2021 14:51 | 
+1436 | [K - Lonely Numbers](https://codeforces.com/contest/1423/problem/K) | [GNU C++14](./codeforces/1423/K.cpp) |  | Feb/24/2021 14:51 | 
+1435 | [D - Pythagorean Triples](https://codeforces.com/contest/1487/problem/D) | [GNU C++14](./codeforces/1487/D.cpp) | `binary search` `brute force` `math` `number theory` `*1500` | Feb/19/2021 18:05 | 
 1434 | [B - The Great Hero](https://codeforces.com/contest/1480/problem/B) | [GNU C++14](./codeforces/1480/B.cpp) | `greedy` `implementation` `sortings` | Feb/10/2021 00:03 | 
 1433 | [A - Yet Another String Game](https://codeforces.com/contest/1480/problem/A) | [GNU C++14](./codeforces/1480/A.cpp) | `games` `greedy` `strings` | Feb/09/2021 15:07 | 
 1432 | [C - Block Towers](https://codeforces.com/contest/626/problem/C) | [GNU C++14](./codeforces/626/C.cpp) | `brute force` `greedy` `math` `number theory` `*1600` | Feb/09/2021 15:02 | 
