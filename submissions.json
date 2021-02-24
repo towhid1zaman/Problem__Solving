@@ -4521,6 +4521,19 @@
     ],
     "timestamp": "Feb/10/2021 00:03"
   },
+  "CF108378540": {
+    "contest_id": 1423,
+    "language": "GNU C++14",
+    "path": "codeforces\\1423\\K.cpp",
+    "platform": "Codeforces",
+    "problem_index": "K",
+    "problem_name": "Lonely Numbers",
+    "problem_url": "https://codeforces.com/contest/1423/problem/K",
+    "submission_id": "CF108378540",
+    "submission_url": "https://codeforces.com/contest/1423/submission/108378540",
+    "tags": [],
+    "timestamp": "Feb/24/2021 14:51"
+  },
   "CF37028927": {
     "contest_id": 339,
     "language": "GNU C11",
