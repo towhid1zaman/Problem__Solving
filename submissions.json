@@ -4643,6 +4643,19 @@
     ],
     "timestamp": "Feb/28/2021 01:07"
   },
+  "CF109285158": {
+    "contest_id": 1493,
+    "language": "GNU C++14",
+    "path": "codeforces\\1493\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Anti-knapsack",
+    "problem_url": "https://codeforces.com/contest/1493/problem/A",
+    "submission_id": "CF109285158",
+    "submission_url": "https://codeforces.com/contest/1493/submission/109285158",
+    "tags": [],
+    "timestamp": "Mar/07/2021 00:00"
+  },
   "CF109313635": {
     "contest_id": 1493,
     "language": "GNU C++14",

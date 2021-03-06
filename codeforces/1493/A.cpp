@@ -14,10 +14,10 @@ void task(){
     int n, k; cin >> n >> k;
     std::vector<int>ans;
     for(int i = n; i>k; i--)ans.push_back(i);
-    for(int i = k-1; i>=(k+1)/2; i--){
+    for(int i = k-1; i>=0; i--){
+        if(i+i<k)break;
         ans.push_back(i);
     }
-    sort(all(ans));
     cout << ans.size() << endl;
     for(int i: ans)cout << i <<' ';
     cout << endl;
