@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1442 | [C - Alternative Thinking](https://codeforces.com/contest/604/problem/C) | [GNU C++14](./codeforces/604/C.cpp) | `constructive algorithms` `dp` `greedy` `math` `*1600` | Mar/09/2021 02:14 | 
 1441 | [E - Tetrahedron](https://codeforces.com/contest/166/problem/E) | [GNU C++14](./codeforces/166/E.cpp) | `dp` `math` `matrices` `*1500` | Feb/28/2021 01:07 | 
 1440 | [C - The World is a Theatre](https://codeforces.com/contest/131/problem/C) | [GNU C++14](./codeforces/131/C.cpp) | `combinatorics` `math` `*1400` | Feb/27/2021 14:45 | 
 1439 | [D - Minimum number of steps](https://codeforces.com/contest/805/problem/D) | [GNU C++14](./codeforces/805/D.cpp) | `combinatorics` `*1400` | Feb/26/2021 23:06 | 
