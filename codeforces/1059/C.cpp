@@ -18,17 +18,18 @@ ll lcm(ll a, ll b){
 }
 
 void go(ll n, ll g){
-    if(g == 0)return;
-    if(n==3){
-        cout << g << ' '<<g <<' ';
-        go(1, 3*g);
-    }else{
-        for(int i =1; i<=n; i+=2){
-            cout << g <<' ';
-        }
-        go(n/2, g*2);
+    if(n < 4){
+        if(n==1)cout << g << endl;
+        else if(n==2)cout << g <<' '<<g*2 << endl;
+        else cout << g <<' '<<g <<' '<<g*3 << endl;
+        return;
     }
 
+    for(int i = 1; i<=(n+1)/2; i++){
+        cout <<g <<' ';
+    }
+
+    go(n-((n+1)/2), g*2);
 }
 void task(){
     ll n; cin >> n;
