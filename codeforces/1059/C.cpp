@@ -17,23 +17,25 @@ ll lcm(ll a, ll b){
     return a/ gcd(a,b)*b;
 }
 
-void go(ll n, ll g){
-    if(n < 4){
-        if(n==1)cout << g << endl;
-        else if(n==2)cout << g <<' '<<g*2 << endl;
-        else cout << g <<' '<<g <<' '<<g*3 << endl;
-        return;
-    }
-
-    for(int i = 1; i<=(n+1)/2; i++){
-        cout <<g <<' ';
-    }
-
-    go(n-((n+1)/2), g*2);
-}
 void task(){
     ll n; cin >> n;
-    go(n, 1);
+    std::vector<ll>ans;
+    ll N = 1;
+    while(n > 3){
+        for(int i = 1; i<=(n+1)/2; i++){
+            ans.push_back(N);
+        }
+        N*=2;
+        n/=2;
+    }    
+
+    if(n==1)ans.push_back(N);
+    else if(n==2)ans.push_back(N), ans.push_back(2*N);
+    else ans.push_back(N), ans.push_back(N), ans.push_back(3*N);
+    for(auto x:ans){
+        cout << x <<' ';
+    }
+    cout << endl;
 }
 
 int main(){
