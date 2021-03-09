@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1452 | [D - Almost Identity Permutations](https://codeforces.com/contest/888/problem/D) | [GNU C++14](./codeforces/888/D.cpp) | `combinatorics` `dp` `math` `*1600` | Mar/09/2021 18:11 | 
+1453 | [D - Almost Identity Permutations](https://codeforces.com/contest/888/problem/D) | [GNU C++14](./codeforces/888/D.cpp) | `combinatorics` `dp` `math` `*1600` | Mar/09/2021 18:11 | 
+1452 | [C - Tennis Championship](https://codeforces.com/contest/735/problem/C) | [GNU C++14](./codeforces/735/C.cpp) | `combinatorics` `constructive algorithms` `greedy` `math` `*1600` | Mar/09/2021 17:21 | 
 1451 | [C - Alternative Thinking](https://codeforces.com/contest/604/problem/C) | [GNU C++14](./codeforces/604/C.cpp) | `constructive algorithms` `dp` `greedy` `math` `*1600` | Mar/09/2021 02:14 | 
 1450 | [D - Stas and the Queue at the Buffet](https://codeforces.com/contest/1151/problem/D) | [GNU C++14](./codeforces/1151/D.cpp) | `greedy` `math` `sortings` `*1600` | Mar/09/2021 01:37 | 
 1449 | [D - MEX maximizing](https://codeforces.com/contest/1294/problem/D) | [GNU C++14](./codeforces/1294/D.cpp) | `data structures` `greedy` `implementation` `math` `*1600` | Mar/08/2021 14:09 | 
