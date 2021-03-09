@@ -17,20 +17,22 @@ ll lcm(ll a, ll b){
     return a/ gcd(a,b)*b;
 }
 
+void go(ll n, ll g){
+    if(g == 0)return;
+    if(n==3){
+        cout << g << ' '<<g <<' ';
+        go(1, 3*g);
+    }else{
+        for(int i =1; i<=n; i+=2){
+            cout << g <<' ';
+        }
+        go(n/2, g*2);
+    }
 
+}
 void task(){
     ll n; cin >> n;
-    ll rest = n;
-    for(ll i = 1;i<=n; i*=2){
-        if(rest == 3){
-            cout <<i<<' '<<i <<' '<<i*3 << endl;
-            return; 
-        }
-        for(ll g = 1; g<=(rest+1)/2; g++){
-            cout <<i <<' ';
-        }
-        rest/=2;
-    }
+    go(n, 1);
 }
 
 int main(){
