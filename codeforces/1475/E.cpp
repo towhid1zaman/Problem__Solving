@@ -57,17 +57,20 @@ ll Choose(ll n , ll k){
 }
 void task(){
     int n, k; cin >> n >> k;
-    
+
     std::vector<int>a(n);
+    std::map<int, int> cnt;
+    std::vector<int>unq;
     for(int i = 0; i<n; i++){
         cin >> a[i];
+        if(cnt[ a[i] ] == 0)unq.push_back(a[i]);
+        cnt[ a[i] ]++;
     }
 
     ll N = 0, R = 0;
     combi.Build(n);
     sort(all(a));
     reverse(all(a));
-    
     for(int i = 0; i<n; i++){
         if(a[i] == a[k-1]){
             N++;
