@@ -17,7 +17,7 @@ void task(){
     ll a, b; cin >> a >> b;
     ll ans = 0;
     for(ll k = 1; k<=a; k++){
-        ans+=(( ((k*b+1)%mod) * ( ((b*(b-1))/2)%mod ) ) % mod);
+        ans+= mul((k*b+1)%mod , ((b*(b-1))/2)%mod);
         ans%=mod;
     }
 
