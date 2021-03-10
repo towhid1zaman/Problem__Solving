@@ -45,7 +45,16 @@ struct Combinatorics{
     }
 
 }combi;
-
+ll Choose(ll n , ll k){
+    if(k == 0)
+        return 1;
+    ll res = n;
+    for(int i = 1 ; i < k ; ++i)
+        res *= (n-i);
+    for(int i = 1 ; i <= k ; ++i)
+        res = res / i;
+    return res;
+}
 void task(){
     int n, k; cin >> n >> k;
     
@@ -58,7 +67,7 @@ void task(){
     combi.Build(n);
     sort(all(a));
     reverse(all(a));
-
+    
     for(int i = 0; i<n; i++){
         if(a[i] == a[k-1]){
             N++;
