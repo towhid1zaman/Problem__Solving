@@ -12,15 +12,16 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1463 | [C - Going Home](https://codeforces.com/contest/1501/problem/C) | [GNU C++14](./codeforces/1501/C.cpp) | `brute force` `implementation` `math` `*1800` | Mar/14/2021 23:37 | 
-1462 | [A - Alexey and Train](https://codeforces.com/contest/1501/problem/A) | [GNU C++14](./codeforces/1501/A.cpp) | `implementation` `*800` | Mar/13/2021 15:32 | 
-1461 | [D - Dima and Two Sequences](https://codeforces.com/contest/272/problem/D) | [GNU C++14](./codeforces/272/D.cpp) | `combinatorics` `math` `sortings` `*1600` | Mar/13/2021 13:45 | 
-1460 | [D - Count the Arrays](https://codeforces.com/contest/1312/problem/D) | [GNU C++14](./codeforces/1312/D.cpp) | `combinatorics` `math` `*1700` | Mar/11/2021 23:50 | 
-1459 | [B - Max and Mex](https://codeforces.com/contest/1496/problem/B) | [GNU C++14](./codeforces/1496/B.cpp) | `implementation` `math` `*1100` | Mar/11/2021 14:15 | 
-1458 | [A - Split it!](https://codeforces.com/contest/1496/problem/A) | [GNU C++14](./codeforces/1496/A.cpp) | `brute force` `constructive algorithms` `greedy` `strings` `*900` | Mar/11/2021 01:50 | 
-1457 | [E - Advertising Agency](https://codeforces.com/contest/1475/problem/E) | [GNU C++14](./codeforces/1475/E.cpp) | `combinatorics` `math` `sortings` `*1600` | Mar/10/2021 23:13 | 
-1456 | [E - Two Arrays and Sum of Functions](https://codeforces.com/contest/1165/problem/E) | [GNU C++14](./codeforces/1165/E.cpp) | `greedy` `math` `sortings` `*1600` | Mar/10/2021 12:40 | 
-1455 | [C - Really Big Numbers](https://codeforces.com/contest/817/problem/C) | [GNU C++14](./codeforces/817/C.cpp) | `binary search` `brute force` `dp` `math` `*1600` | Mar/10/2021 12:03 | 
+1464 | [C - Going Home](https://codeforces.com/contest/1501/problem/C) | [GNU C++14](./codeforces/1501/C.cpp) | `brute force` `implementation` `math` `*1800` | Mar/14/2021 23:37 | 
+1463 | [A - Alexey and Train](https://codeforces.com/contest/1501/problem/A) | [GNU C++14](./codeforces/1501/A.cpp) | `implementation` `*800` | Mar/13/2021 15:32 | 
+1462 | [D - Dima and Two Sequences](https://codeforces.com/contest/272/problem/D) | [GNU C++14](./codeforces/272/D.cpp) | `combinatorics` `math` `sortings` `*1600` | Mar/13/2021 13:45 | 
+1461 | [D - Count the Arrays](https://codeforces.com/contest/1312/problem/D) | [GNU C++14](./codeforces/1312/D.cpp) | `combinatorics` `math` `*1700` | Mar/11/2021 23:50 | 
+1460 | [B - Max and Mex](https://codeforces.com/contest/1496/problem/B) | [GNU C++14](./codeforces/1496/B.cpp) | `implementation` `math` `*1100` | Mar/11/2021 14:15 | 
+1459 | [A - Split it!](https://codeforces.com/contest/1496/problem/A) | [GNU C++14](./codeforces/1496/A.cpp) | `brute force` `constructive algorithms` `greedy` `strings` `*900` | Mar/11/2021 01:50 | 
+1458 | [E - Advertising Agency](https://codeforces.com/contest/1475/problem/E) | [GNU C++14](./codeforces/1475/E.cpp) | `combinatorics` `math` `sortings` `*1600` | Mar/10/2021 23:13 | 
+1457 | [E - Two Arrays and Sum of Functions](https://codeforces.com/contest/1165/problem/E) | [GNU C++14](./codeforces/1165/E.cpp) | `greedy` `math` `sortings` `*1600` | Mar/10/2021 12:40 | 
+1456 | [C - Really Big Numbers](https://codeforces.com/contest/817/problem/C) | [GNU C++14](./codeforces/817/C.cpp) | `binary search` `brute force` `dp` `math` `*1600` | Mar/10/2021 12:03 | 
+1455 | [C - Dreamoon and Sums](https://codeforces.com/contest/476/problem/C) | [GNU C++14](./codeforces/476/C.cpp) | `math` `*1600` | Mar/10/2021 10:57 | 
 1454 | [D - Almost Identity Permutations](https://codeforces.com/contest/888/problem/D) | [GNU C++14](./codeforces/888/D.cpp) | `combinatorics` `dp` `math` `*1600` | Mar/09/2021 18:11 | 
 1453 | [C - Tennis Championship](https://codeforces.com/contest/735/problem/C) | [GNU C++14](./codeforces/735/C.cpp) | `combinatorics` `constructive algorithms` `greedy` `math` `*1600` | Mar/09/2021 17:21 | 
 1452 | [C - Sequence Transformation](https://codeforces.com/contest/1059/problem/C) | [GNU C++14](./codeforces/1059/C.cpp) | `constructive algorithms` `math` `*1600` | Mar/09/2021 13:35 | 
