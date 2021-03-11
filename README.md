@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1457 | [C - Going Home](https://codeforces.com/contest/1501/problem/C) | [GNU C++14](./codeforces/1501/C.cpp) | `brute force` `implementation` `math` `*1800` | Mar/14/2021 23:37 | 
-1456 | [A - Alexey and Train](https://codeforces.com/contest/1501/problem/A) | [GNU C++14](./codeforces/1501/A.cpp) | `implementation` `*800` | Mar/13/2021 15:32 | 
-1455 | [D - Dima and Two Sequences](https://codeforces.com/contest/272/problem/D) | [GNU C++14](./codeforces/272/D.cpp) | `combinatorics` `math` `sortings` `*1600` | Mar/13/2021 13:45 | 
+1458 | [C - Going Home](https://codeforces.com/contest/1501/problem/C) | [GNU C++14](./codeforces/1501/C.cpp) | `brute force` `implementation` `math` `*1800` | Mar/14/2021 23:37 | 
+1457 | [A - Alexey and Train](https://codeforces.com/contest/1501/problem/A) | [GNU C++14](./codeforces/1501/A.cpp) | `implementation` `*800` | Mar/13/2021 15:32 | 
+1456 | [D - Dima and Two Sequences](https://codeforces.com/contest/272/problem/D) | [GNU C++14](./codeforces/272/D.cpp) | `combinatorics` `math` `sortings` `*1600` | Mar/13/2021 13:45 | 
+1455 | [D - Count the Arrays](https://codeforces.com/contest/1312/problem/D) | [GNU C++14](./codeforces/1312/D.cpp) | `combinatorics` `math` `*1700` | Mar/11/2021 23:50 | 
 1454 | [D - Almost Identity Permutations](https://codeforces.com/contest/888/problem/D) | [GNU C++14](./codeforces/888/D.cpp) | `combinatorics` `dp` `math` `*1600` | Mar/09/2021 18:11 | 
 1453 | [C - Tennis Championship](https://codeforces.com/contest/735/problem/C) | [GNU C++14](./codeforces/735/C.cpp) | `combinatorics` `constructive algorithms` `greedy` `math` `*1600` | Mar/09/2021 17:21 | 
 1452 | [C - Sequence Transformation](https://codeforces.com/contest/1059/problem/C) | [GNU C++14](./codeforces/1059/C.cpp) | `constructive algorithms` `math` `*1600` | Mar/09/2021 13:35 | 
