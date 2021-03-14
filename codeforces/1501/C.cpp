@@ -22,8 +22,7 @@ void task(){
             int tot = a[i] + a[j];
             if(!v[tot].size()){
                 v[tot].emplace_back(i, j);
-            }
-            else{
+            }else{
                 pair<int, int> p = v[tot][0];
                 if(p.first == i or p.second == i or p.first == j or p.second ==j){
                     continue;
