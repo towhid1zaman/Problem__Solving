@@ -26,7 +26,7 @@ void go(std::vector<int>&a){
         left[i] = now;
     }
 
-    for(int i = n-2; i>=0; i--){
+    for(int i = n-1; i>=0; i--){
         int now = i;
         while(now<n-1 and a[i] > a[now + 1]){
             now = right[now+1];
