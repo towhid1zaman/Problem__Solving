@@ -5316,6 +5316,25 @@
     ],
     "timestamp": "Mar/18/2021 02:00"
   },
+  "CF110393388": {
+    "contest_id": 1499,
+    "language": "GNU C++14",
+    "path": "codeforces\\1499\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Binary Removals",
+    "problem_url": "https://codeforces.com/contest/1499/problem/B",
+    "submission_id": "CF110393388",
+    "submission_url": "https://codeforces.com/contest/1499/submission/110393388",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Mar/19/2021 00:00"
+  },
   "CF110402250": {
     "contest_id": 1499,
     "language": "GNU C++14",
