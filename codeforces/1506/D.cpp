@@ -1,6 +1,4 @@
-/*
-これを翻訳している間、あなたはあなたの人生のいくつかの貴重な瞬間を無駄にしました
-*/
+/*これを翻訳している間、あなたはあなたの人生のいくつかの貴重な瞬間を無駄にしました*/
 #pragma comment (linker,"/STACK:16777216")
 #include "bits/stdc++.h"
 using namespace std;
@@ -15,26 +13,34 @@ const int mod = 1000000007;
 
 void task(){
     int n; cin >> n;
-    std::vector<int> a(n);
-    std::map<int, int>cnt;
+    std::map<int,int>cnt;
     rep(i, n){
-        cin >> a[i];
-        cnt[ a[i] ]++;
+        int a; cin >> a;
+        cnt[a]++;
     }
-    int ans = 0;
-    for(auto x:cnt){
-        ans = max(x.second, ans);
-    }
-    int rest = n - ans;
-    ans = min(rest, n/2);
-    cout << n - ans*2 << endl;
 
+    priority_queue< pair<int, int> > Q; // greater value first
+    for(auto x:cnt){
+        Q.push({x.second,x.first});
+    }
+
+    int ans = n;
+    while(Q.size() > 1){
+        int cnt1 = Q.top().first, v1 = Q.top().second;
+        Q.pop();
+        int cnt2 = Q.top().first,v2 = Q.top().second;
+        Q.pop();
+
+        cnt1--; cnt2--, ans-=2;
+        if(cnt1 > 0)Q.push({cnt1, v1});
+        if(cnt2 > 0)Q.push({cnt2, v2});
+    }
+    cout << ans << endl;
 }
 
 int main(){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-#ifdef OJ
+    ios_base :: sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#ifdef _Local
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
