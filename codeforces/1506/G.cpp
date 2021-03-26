@@ -14,37 +14,36 @@ const int mod = 1000000007;
 void task(){
     string s; cin >> s;
     int n = (int)s.size();
+    stack<char>stk;
+    std::map<char,int>tkn1, tkn2;
 
-    std::vector<vi>v(26);
+    for(char c: s){
+        tkn1[ c ]++; 
+    }
+
     rep(i, n){
-        v[s[i]-'a'].push_back(i);
-    }
-    int tot = 0;
-    rep(i, 26) tot+=!v[i].empty();
-
-    string ans="";
-    int cur = 0;
-    rep(i, tot){
-        for(char c = 'z'; c>='a'; c--){
-            if(v[c-'a'].size() > 0){
-                int indx = *lower_bound(all(v[c-'a']), cur);
-                bool ok = true;
-                for(char c2 = 'a'; c2 <='z'; c2++){
-                    if(v[c2-'a'].size() > 0 and v[c2-'a'].back() < indx){
-                        ok = false;
-                        break;
-                    }
-                }
-
-                if(ok){
-                    ans+=c;
-                    v[c-'a'].clear();
-                    cur = indx;
-                    break;
-                }
-            }
+        if(tkn2[ s[i] ] > 0){
+            tkn1[ s[i] ]--;
+            continue;
         }
+
+        while(stk.size() > 0 and stk.top() <= s[i] and tkn1[ stk.top() ] > 0){
+            tkn2[ stk.top() ]--;
+            stk.pop();
+        }
+
+        stk.push(s[i]);
+        tkn1[ s[i] ]--;
+        tkn2[ s[i] ]++;
     }
+
+    string ans = "";
+    while(!stk.empty()){
+        ans+=stk.top();
+        stk.pop();
+    }
+
+    reverse(all(ans));
 
     cout << ans << endl;
 }
