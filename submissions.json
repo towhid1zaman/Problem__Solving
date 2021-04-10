@@ -5657,6 +5657,24 @@
     ],
     "timestamp": "Apr/03/2021 22:04"
   },
+  "CF112580906": {
+    "contest_id": 1512,
+    "language": "GNU C++14",
+    "path": "codeforces\\1512\\G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Short Task",
+    "problem_url": "https://codeforces.com/contest/1512/problem/G",
+    "submission_id": "CF112580906",
+    "submission_url": "https://codeforces.com/contest/1512/submission/112580906",
+    "tags": [
+      "brute force",
+      "dp",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Apr/11/2021 02:06"
+  },
   "CF112667744": {
     "contest_id": 1513,
     "language": "GNU C++14",
