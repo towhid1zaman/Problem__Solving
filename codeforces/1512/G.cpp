@@ -2,7 +2,7 @@
 #pragma comment (linker,"/STACK:16777216")
 #include "bits/stdc++.h"
 using namespace std;
-typedef long long ll;
+typedef int ll;
 typedef std::vector<int> vi;
 typedef std::vector<ll> vll;
 #define endl "\n"
