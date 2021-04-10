@@ -22,7 +22,6 @@ void task(){
         cin >> A;
         mp[A]++, id[A] = i+1;
     }
-    
     for(auto x: mp)if(x.second==1){
         cout << id[x.first] << endl;
         return;
