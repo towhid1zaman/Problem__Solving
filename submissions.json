@@ -5777,6 +5777,22 @@
     ],
     "timestamp": "Apr/12/2021 00:15"
   },
+  "CF113428087": {
+    "contest_id": 1512,
+    "language": "GNU C++14",
+    "path": "codeforces\\1512\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Almost Rectangle",
+    "problem_url": "https://codeforces.com/contest/1512/problem/B",
+    "submission_id": "CF113428087",
+    "submission_url": "https://codeforces.com/contest/1512/submission/113428087",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Apr/18/2021 21:55"
+  },
   "CF113459833": {
     "contest_id": 1512,
     "language": "GNU C++14",
