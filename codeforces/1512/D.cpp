@@ -11,54 +11,39 @@ typedef std::vector<ll> vll;
 #define rep(i,a) for(int i=0;i<a;i++)
 #define rep1(i,a,b) for(int i=(a);i<=(b);++i)
 #define all(v) (v).begin(),(v).end()
-
-template<typename F,typename S>ostream&operator<<(ostream&os,const pair<F,S>&p){return os<<"("<<p.first<<", "<<p.second<<")";}
-template<typename T>ostream&operator<<(ostream&os,const vector<T>&v){os<<"{";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<", ";os<<*it;}return os<<"}";}
-template<typename T>ostream&operator<<(ostream&os,const set<T>&v){os<<"[";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<",";os<<*it;}return os<<"]";}
-template<typename T>ostream&operator<<(ostream&os,const multiset<T>&v) {os<<"[";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<", ";os<<*it;}return os<<"]";}
-template<typename F,typename S>ostream&operator<<(ostream&os,const map<F,S>&v){os<<"[";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<", ";os<<it->first<<" = "<<it->second;}return os<<"]";}
-#define dbug(args...) do {cerr << #args << " : "; faltu(args); } while(0)
-void faltu(){cerr << endl;}
-template<typename T>void faltu(T a[],int n){for(int i=0;i<n;++i)cerr<<a[i]<<' ';cerr<<endl;}
-template<typename T,typename...hello>void faltu(T arg,const hello&...rest){cerr<<arg<<' ';faltu(rest...);}
-
-
 const int maxn = 200005;
 const int mod = 1000000007;
 
 void task(){
     int n; cin >> n;
-    multiset<int>s;
-    set<int>unq;
+
+    std::vector<int>b(n+2);
+
+    rep(i, n+2){
+        cin >> b[i];
+    }
+    sort(all(b));
 
     ll sum = 0;
-    rep(i, n+2){
-        int a; cin >> a;
-        sum+=a;
-        s.emplace(a);
-        unq.emplace(a);
+
+    rep(i, n)sum+=b[i];
+    if(sum == b[n]){
+        rep(i, n)cout << b[i]<<' ';
+        cout << endl;
+        return;
     }
 
-    for(int a:unq){
-        sum-=a;
-        s.erase(s.find(a));
+    sum+=b[n];
 
-        int mx = *s.rbegin();
-
-        if(mx*2 == sum){
-            int N = 0;
-            for(int I: s){
-                if(N==n)break;
-                cout << I<<' ';
-                N++;    
-            }cout << endl;
+    rep(i, n+1){
+        if(sum - b[i] == b[n+1]){
+            rep(j, n+1){
+                if(i!=j)cout <<b[j]<<' ';
+            }
+            cout << endl;
             return;
         }
-
-        sum+=a;
-        s.emplace(a);
     }
-
     cout << -1 << endl;
 }
 
