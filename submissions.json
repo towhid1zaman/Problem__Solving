@@ -5777,6 +5777,22 @@
     ],
     "timestamp": "Apr/12/2021 00:15"
   },
+  "CF113515790": {
+    "contest_id": 1514,
+    "language": "GNU C++14",
+    "path": "codeforces\\1514\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Perfectly Imperfect Array",
+    "problem_url": "https://codeforces.com/contest/1514/problem/A",
+    "submission_id": "CF113515790",
+    "submission_url": "https://codeforces.com/contest/1514/submission/113515790",
+    "tags": [
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Apr/19/2021 20:29"
+  },
   "CF113537354": {
     "contest_id": 1514,
     "language": "GNU C++14",
