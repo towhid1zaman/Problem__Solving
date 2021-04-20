@@ -35,17 +35,18 @@ ll lcm(ll a, ll b){
 
 void task(){
     ll n; cin >> n;
-    vll a;
 
+    vll a;
     ll p = 1;
-    rep(i, n-2){
+    rep(i, n){
         if(gcd(n, i+1)==1){
             p*=i+1;
             p%=n;
             a.push_back(i+1);
         }
     }
-    if(p==n-1)a.push_back(n-1);
+
+    if(p!=1)a.pop_back();
     cout << a.size() << endl;
     rep(i, a.size())cout << a[i] <<' ';cout << endl;
 }
