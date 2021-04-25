@@ -15,13 +15,24 @@ typedef std::vector<ll> vll;
 const double pi = acos(-1.0);
 const int maxn = 200005;
 const int mod = 1000000007;
-
+ll gcd(ll a,ll b){
+    return b ? gcd(b,a%b) : a;
+}
+ll lcm(ll a, ll b){
+    return a/ gcd(a,b)*b;
+}
+ll digit(int n){
+    ll cnt = 1;
+    for(int i = 1; i<=n; i++){
+        cnt*=10;
+    }
+    return cnt;
+}
 void task(){
-    int a, b, c; cin >> a >> b >>c;
-    string x(a, '0'); x[0] = '1';
-    string y(b, '0'); y[0] = '1', y[b-c] = '1';
-    cout <<x  <<' '<<y << endl;
-
+    int a, b, c; cin >> a >> b >> c;
+    ll x = digit(a-1);
+    ll y = digit(c-1) * (digit(b-c) + 1);
+    cout << x <<' '<<y << endl;
 }
 
 int main(){
