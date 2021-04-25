@@ -18,20 +18,18 @@ const int mod = 1000000007;
 
 void task(){
     int n, q; cin >> n >> q;
-    std::map<int, int> mark;
+    std::vector<int>a(n);
     rep(i, n){
-        int a; cin >> a; 
-        if(!mark[a])mark[a] = i+1;
+        cin >> a[i];
     }
 
     while(q--){
         int t; cin >> t;
-        cout << mark[t]<<' ';
-        rep1(i,1,53){
-            if(mark[i] < mark[t])mark[i]++;
-        }
-        mark[t] = 1;
+        int pos = find(all(a), t) - a.begin();
+        cout << pos+1 <<' ';
+        rotate(a.begin(), a.begin() + pos, a.begin() + pos + 1);
     }
+    cout << endl;
 }
 
 int main(){
