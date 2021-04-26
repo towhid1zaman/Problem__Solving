@@ -6159,6 +6159,24 @@
     ],
     "timestamp": "Apr/25/2021 14:45"
   },
+  "CF114303836": {
+    "contest_id": 1374,
+    "language": "GNU C++14",
+    "path": "codeforces\\1374\\E1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E1",
+    "problem_name": "Reading Books (easy version)",
+    "problem_url": "https://codeforces.com/contest/1374/problem/E1",
+    "submission_id": "CF114303836",
+    "submission_url": "https://codeforces.com/contest/1374/submission/114303836",
+    "tags": [
+      "data structures",
+      "greedy",
+      "sortings",
+      "*1600"
+    ],
+    "timestamp": "Apr/26/2021 23:53"
+  },
   "CF114675023": {
     "contest_id": 1519,
     "language": "GNU C++14",
