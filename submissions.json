@@ -6318,6 +6318,22 @@
     ],
     "timestamp": "May/03/2021 09:47"
   },
+  "CF115331316": {
+    "contest_id": 1520,
+    "language": "GNU C++14",
+    "path": "codeforces\\1520\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Do Not Be Distracted!",
+    "problem_url": "https://codeforces.com/contest/1520/problem/A",
+    "submission_id": "CF115331316",
+    "submission_url": "https://codeforces.com/contest/1520/submission/115331316",
+    "tags": [
+      "brute force",
+      "implementation"
+    ],
+    "timestamp": "May/05/2021 22:55"
+  },
   "CF115336224": {
     "contest_id": 1520,
     "language": "GNU C++14",
