@@ -6501,6 +6501,23 @@
     ],
     "timestamp": "May/17/2021 00:25"
   },
+  "CF117020796": {
+    "contest_id": 1527,
+    "language": "GNU C++14",
+    "path": "codeforces\\1527\\B1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B1",
+    "problem_name": "Palindrome Game (easy version)",
+    "problem_url": "https://codeforces.com/contest/1527/problem/B1",
+    "submission_id": "CF117020796",
+    "submission_url": "https://codeforces.com/contest/1527/submission/117020796",
+    "tags": [
+      "constructive algorithms",
+      "games",
+      "*1200"
+    ],
+    "timestamp": "May/22/2021 19:59"
+  },
   "CF117021128": {
     "contest_id": 1527,
     "language": "GNU C++14",
