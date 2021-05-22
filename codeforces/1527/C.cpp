@@ -22,7 +22,7 @@ void task(){
     ll ans = 0;
     for(int i = 0; i<n; i++){
         ll a; cin >> a;
-        ans += mp[a] * (n-i);
+        if(mp[a]!=0)ans += mp[a] * (n-i);
         mp[a] += (i+1);
     }
     cout << ans << endl;
