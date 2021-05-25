@@ -18,12 +18,20 @@ const int mod = 1000000007;
 
 void task(){
     ll n, k; cin >> n >> k;
-    ll ans;
-    if(n > k){
-        if(n%k==0)ans = 1;
-        else ans = 2;
+
+    //case 1: n%k = 0
+    if(n%k==0){
+        cout << 1 << endl;
+        return;
     }
-    else ans = (k+n-1)/n;
+    //case 2: n == 1
+    if(n==1){
+        cout << k << endl;
+        return;
+    }
+    ll last = (n+k-1)/k; // ceil
+    last*=k;
+    ll ans = (last+n-1)/n; // ceil
     cout << ans << endl;
 }
 
