@@ -18,8 +18,12 @@ const int mod = 1000000007;
 
 void task(){
     ll n, k; cin >> n >> k;
-    ll mult = ((n+k-1)/k) * k;
-    ll ans = (mult+n-1)/n;
+    ll ans;
+    if(n > k){
+        if(n%k==0)ans = 1;
+        else ans = 2;
+    }
+    else ans = (k+n-1)/n;
     cout << ans << endl;
 }
 
