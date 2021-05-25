@@ -17,7 +17,7 @@ const int maxn = 200005;
 const int mod = 1000000007;
 
 void task(){
-    int n, q; cin >> n >> q;
+    ll n, q; cin >> n >> q;
     std::vector<ll>a(n);
     for(int i = 0; i<n; i++){
         cin >> a[i];
@@ -31,23 +31,13 @@ void task(){
     ll tot_damage = 0;
     while(q--){
         ll k; cin >> k;
+        int dead_pos = upper_bound(all(pref_sum), tot_damage+k) - pref_sum.begin() - 1;
         tot_damage+=k;
-
-        ll low = 1, high = n+1, mid;
-        while(low < high){
-            mid = (low + high) / 2;
-            if(pref_sum[ mid ] > tot_damage){
-                high = mid;
-            }
-            else low = mid + 1;
-        }
-
-        ll ans = n - (low - 1);
-        if(ans == 0){
-            ans = n;
+        if(dead_pos == n){
+            dead_pos = 0;
             tot_damage = 0;
         }
-        cout << ans << endl;
+        cout << n - dead_pos << endl;
     }
 
 }
