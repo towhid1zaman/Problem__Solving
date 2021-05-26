@@ -18,10 +18,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 1544 | [C2 - Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | [GNU C++14](./codeforces/1526/C2.cpp) | `data structures` `greedy` | May/28/2021 23:20 | 
 1543 | [B - I Hate 1111](https://codeforces.com/contest/1526/problem/B) | [GNU C++14](./codeforces/1526/B.cpp) | `dp` `math` `number theory` | May/28/2021 21:08 | 
 1542 | [A - Mean Inequality](https://codeforces.com/contest/1526/problem/A) | [GNU C++14](./codeforces/1526/A.cpp) | `constructive algorithms` `sortings` | May/28/2021 20:13 | 
-1541 | [C - Valhalla Siege](https://codeforces.com/contest/975/problem/C) | [GNU C++14](./codeforces/975/C.cpp) | `binary search` `*1400` | May/25/2021 13:15 | 
-1540 | [D - Permutation Transformation](https://codeforces.com/contest/1490/problem/D) | [GNU C++14](./codeforces/1490/D.cpp) | `dfs and similar` `divide and conquer` `implementation` `*1200` | May/25/2021 12:07 | 
-1539 | [A - K-divisible Sum](https://codeforces.com/contest/1476/problem/A) | [GNU C++14](./codeforces/1476/A.cpp) | `binary search` `constructive algorithms` `greedy` `math` `*1000` | May/25/2021 10:51 | 
-1538 | [B - Array Stabilization](https://codeforces.com/contest/1095/problem/B) | [GNU C++14](./codeforces/1095/B.cpp) | `implementation` `*900` | May/25/2021 10:21 | 
+1541 | [B - Array Stabilization](https://codeforces.com/contest/1095/problem/B) | [GNU C++14](./codeforces/1095/B.cpp) | `implementation` `*900` | May/26/2021 15:31 | 
+1540 | [C - Valhalla Siege](https://codeforces.com/contest/975/problem/C) | [GNU C++14](./codeforces/975/C.cpp) | `binary search` `*1400` | May/25/2021 13:15 | 
+1539 | [D - Permutation Transformation](https://codeforces.com/contest/1490/problem/D) | [GNU C++14](./codeforces/1490/D.cpp) | `dfs and similar` `divide and conquer` `implementation` `*1200` | May/25/2021 12:07 | 
+1538 | [A - K-divisible Sum](https://codeforces.com/contest/1476/problem/A) | [GNU C++14](./codeforces/1476/A.cpp) | `binary search` `constructive algorithms` `greedy` `math` `*1000` | May/25/2021 10:51 | 
 1537 | [D - Kavi on Pairing Duty](https://codeforces.com/contest/1529/problem/D) | [GNU C++14](./codeforces/1529/D.cpp) | `combinatorics` `dp` | May/24/2021 22:03 | 
 1536 | [B - Sifid and Strange Subsequences](https://codeforces.com/contest/1529/problem/B) | [GNU C++14](./codeforces/1529/B.cpp) | `greedy` `number theory` `sortings` | May/24/2021 21:34 | 
 1535 | [A - Eshag Loves Big Arrays](https://codeforces.com/contest/1529/problem/A) | [GNU C++14](./codeforces/1529/A.cpp) | `constructive algorithms` `greedy` | May/24/2021 20:39 | 

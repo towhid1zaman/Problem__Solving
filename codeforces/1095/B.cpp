@@ -23,7 +23,7 @@ void task(){
         cin >> a[i];
     }
     sort(all(a));
-    cout << min({a[n-2] - a[0], a[n-1] - a[0], a[n-1] - a[1]}) << endl;
+    cout << min({a[n-2] - a[0],a[n-1] - a[1]}) << endl;
 }
 
 int main(){
