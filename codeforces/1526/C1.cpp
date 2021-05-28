@@ -8,7 +8,7 @@ typedef std::vector<ll> vll;
 #define endl "\n"
 #define pb push_back
 #define sp(k) cout<<setprecision(k)<<fixed;
-#define rep(i,a) for(int i=0;i<a;i++)
+#define rep(i,a) for(ll i=0;i<a;i++)
 #define rep1(i,a,b) for(int i=(a);i<=(b);++i)
 #define all(v) (v).begin(),(v).end()
 
@@ -18,19 +18,28 @@ const int mod = 1000000007;
 
 void task(){
     int n; cin >> n;
-
-    priority_queue<int, std::vector<int> , greater<int> > Q; // small value first
+    vll a(n), cur;
+    ll ans = 0;
+    rep(i, n) cin >> a[i];
     ll sum = 0;
-    int ans = 0;
     rep(i, n){
-        int a; cin >> a;
-        sum+=a;
-        Q.push(a);
-        ans++;
-        while(sum < 0){
-            sum-=Q.top();
-            Q.pop();
-            ans--;
+        sum+=a[i]; ans++;
+        if(a[i] >= 0)continue;
+        if(cur.size() < 1) cur.push_back(a[i]);
+        else{
+            rep(j, cur.size()){
+                if( cur[j] < a[i] ){
+                    cur.insert(cur.begin()+j, a[i]); break;
+                }
+                if( j == cur.size()-1 ){
+                    cur.push_back(a[i]);break;
+                }
+            }
+        }
+        while( sum < 0 ){
+            //if(sum >= 0 )break;
+            sum-=cur.back();ans--;
+            cur.pop_back();
         }
     }
     cout << ans << endl;
