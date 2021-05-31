@@ -12,10 +12,11 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1548 | [B - Modulo Sum](https://codeforces.com/contest/577/problem/B) | [GNU C++14](./codeforces/577/B.cpp) | `combinatorics` `data structures` `dp` `two pointers` `*1900` | Jun/01/2021 00:39 | 
 1547 | [D - Flowers](https://codeforces.com/contest/474/problem/D) | [GNU C++14](./codeforces/474/D.cpp) | `dp` `*1700` | May/29/2021 13:33 | 
 1546 | [F - Consecutive Subsequence](https://codeforces.com/contest/977/problem/F) | [GNU C++14](./codeforces/977/F.cpp) | `dp` `*1700` | May/29/2021 12:32 | 
-1545 | [C1 - Potions (Easy Version)](https://codeforces.com/contest/1526/problem/C1) | [GNU C++14](./codeforces/1526/C1.cpp) | `brute force` `data structures` `dp` `greedy` | May/28/2021 23:20 | 
-1544 | [C2 - Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | [GNU C++14](./codeforces/1526/C2.cpp) | `data structures` `greedy` | May/28/2021 23:20 | 
+1545 | [C2 - Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | [GNU C++14](./codeforces/1526/C2.cpp) | `data structures` `greedy` | May/28/2021 23:20 | 
+1544 | [C1 - Potions (Easy Version)](https://codeforces.com/contest/1526/problem/C1) | [GNU C++14](./codeforces/1526/C1.cpp) | `brute force` `data structures` `dp` `greedy` | May/28/2021 23:20 | 
 1543 | [B - I Hate 1111](https://codeforces.com/contest/1526/problem/B) | [GNU C++14](./codeforces/1526/B.cpp) | `dp` `math` `number theory` | May/28/2021 21:08 | 
 1542 | [A - Mean Inequality](https://codeforces.com/contest/1526/problem/A) | [GNU C++14](./codeforces/1526/A.cpp) | `constructive algorithms` `sortings` | May/28/2021 20:13 | 
 1541 | [B - Array Stabilization](https://codeforces.com/contest/1095/problem/B) | [GNU C++14](./codeforces/1095/B.cpp) | `implementation` `*900` | May/26/2021 15:31 | 
