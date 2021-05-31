@@ -13,43 +13,37 @@ typedef std::vector<ll> vll;
 #define all(v) (v).begin(),(v).end()
 
 const double pi = acos(-1.0);
-const int maxn = 200005;
+const int maxn = 1000005;
 const int mod = 1000000007;
 
-int n, m;
-std::vector<vector<int>>dp(1003, vector<int>(1003, -1));
-std::vector<int> v;
+std::vector<int>dp(1003, 0), v;
 
-int go(int idx, int rem){
-    if(idx == n) return 0;
-    if(rem > 0 and rem%m == 0) return 1;
-    int &ans = dp[idx][rem];
-    if(ans != -1)return dp[idx][rem];
-    ans = 0;
-
-    if((rem+v[idx]) % m == 0) ans = 1;
-    if( go(idx+1, rem) > 0) ans = 1;
-    if( go(idx+1, (rem+v[idx]) % m) > 0) ans = 1;
-
-    return ans;
-
+void chek(int a){
+    if(!dp[a]){
+        dp[a] = 1;
+        v.push_back(a);
+    }
 }
+
 void task(){
-    cin >> n >> m;
-    v.resize(n);
-    for(int i = 0; i<n; i++){
-        cin >> v[i];
-        v[i]%=m;
+    int n, m; cin >> n >> m;
+    for (int i = 0; i < n; i++){
+        int a; cin >> a;
+        a%=m;
+        int len = v.size();
+        for(int j = 0; j<len; j++){
+            chek( (v[j]+a)%m );
+        }
+        if(!dp[a]){
+            dp[a] = 1;
+            v.push_back(a);
+        }
+        if(dp[0]){
+            cout << "YES" << endl;
+            return;
+        }
     }
-    if(n >= m){
-        cout << "YES" << endl;
-        return;
-    }
-    
-    if(go(0, 0)){
-        cout << "YES"<< endl;
-    }
-    else cout <<"NO"<< endl;
+    cout << "NO" << endl;
 }
 
 int main(){
