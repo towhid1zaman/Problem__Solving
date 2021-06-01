@@ -12,11 +12,12 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1557 | [A - Infinite Sequence](https://codeforces.com/contest/622/problem/A) | [GNU C++14](./codeforces/622/A.cpp) | `implementation` `math` `*1000` | Jun/01/2021 23:09 | 
-1556 | [B - z-sort](https://codeforces.com/contest/652/problem/B) | [GNU C++14](./codeforces/652/B.cpp) | `sortings` `*1000` | Jun/01/2021 21:22 | 
-1555 | [B - Vlad and Cafes](https://codeforces.com/contest/886/problem/B) | [GNU C++14](./codeforces/886/B.cpp) | `*1000` | Jun/01/2021 21:02 | 
-1554 | [A - Saitama Destroys Hotel](https://codeforces.com/contest/608/problem/A) | [GNU C++14](./codeforces/608/A.cpp) | `implementation` `math` `*1000` | Jun/01/2021 20:25 | 
-1553 | [A - Diversity](https://codeforces.com/contest/844/problem/A) | [GNU C++14](./codeforces/844/A.cpp) | `greedy` `implementation` `strings` `*1000` | Jun/01/2021 19:51 | 
+1558 | [A - Infinite Sequence](https://codeforces.com/contest/622/problem/A) | [GNU C++14](./codeforces/622/A.cpp) | `implementation` `math` `*1000` | Jun/01/2021 23:09 | 
+1557 | [B - z-sort](https://codeforces.com/contest/652/problem/B) | [GNU C++14](./codeforces/652/B.cpp) | `sortings` `*1000` | Jun/01/2021 21:22 | 
+1556 | [B - Vlad and Cafes](https://codeforces.com/contest/886/problem/B) | [GNU C++14](./codeforces/886/B.cpp) | `*1000` | Jun/01/2021 21:02 | 
+1555 | [A - Saitama Destroys Hotel](https://codeforces.com/contest/608/problem/A) | [GNU C++14](./codeforces/608/A.cpp) | `implementation` `math` `*1000` | Jun/01/2021 20:25 | 
+1554 | [A - Diversity](https://codeforces.com/contest/844/problem/A) | [GNU C++14](./codeforces/844/A.cpp) | `greedy` `implementation` `strings` `*1000` | Jun/01/2021 19:51 | 
+1553 | [A - Transformation: from A to B](https://codeforces.com/contest/727/problem/A) | [GNU C++14](./codeforces/727/A.cpp) | `brute force` `dfs and similar` `math` `*1000` | Jun/01/2021 12:42 | 
 1552 | [B - Modulo Sum](https://codeforces.com/contest/577/problem/B) | [GNU C++14](./codeforces/577/B.cpp) | `combinatorics` `data structures` `dp` `two pointers` `*1900` | Jun/01/2021 00:39 | 
 1551 | [A - King Escape](https://codeforces.com/contest/1033/problem/A) | [GNU C++14](./codeforces/1033/A.cpp) | `dfs and similar` `graphs` `implementation` `*1000` | May/31/2021 13:06 | 
 1550 | [A - Shortest path of the king](https://codeforces.com/contest/3/problem/A) | [GNU C++14](./codeforces/3/A.cpp) | `greedy` `shortest paths` `*1000` | May/31/2021 12:15 | 
