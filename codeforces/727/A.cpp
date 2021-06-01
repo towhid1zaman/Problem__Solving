@@ -16,32 +16,28 @@ const double pi = acos(-1.0);
 const int maxn = 200005;
 const int mod = 1000000007;
 
-std::vector<ll>ans;
-ll a, b;
-void dfs(ll x){
-    if(x==b){
-        cout << "YES"<<endl;
-        cout <<ans.size() << endl;
-        for(auto c:ans)cout << c<<' ';
-        cout << endl;
-        exit(0);
-    }
-    else{
-        if(x>b)return;
-        ans.push_back(x*10+1);
-        dfs(x*10 + 1);
-        ans.pop_back();
-
-        ans.push_back(x*2);
-        dfs(x*2);
-        ans.pop_back();
-    }
-}
 void task(){
-    cin >> a >> b;
-    ans.push_back(a);
-    dfs(a);
-    cout << "NO" << endl;
+    ll a, b; cin >> a >> b;
+    std::vector<ll>ans;
+    ans.push_back(b);
+    while(b > a){
+        if(b%2 > 0 and b%10 > 1){
+            cout << "NO" << endl;
+            return;
+        }
+        if(b%2==0)b/=2;
+        else if(b%2)b/=10;
+        ans.push_back(b);
+    }
+    if(b != a){
+        cout << "NO" << endl;
+        return;
+    }
+    reverse(all(ans));
+    cout << "YES" << endl;
+    cout << ans.size() << endl;
+    for(auto x:ans)cout << x  <<' ';
+    cout << endl;
 }
 
 int main(){

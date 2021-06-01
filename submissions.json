@@ -7002,6 +7002,24 @@
     ],
     "timestamp": "Jun/01/2021 00:39"
   },
+  "CF118043883": {
+    "contest_id": 727,
+    "language": "GNU C++14",
+    "path": "codeforces\\727\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Transformation: from A to B",
+    "problem_url": "https://codeforces.com/contest/727/problem/A",
+    "submission_id": "CF118043883",
+    "submission_url": "https://codeforces.com/contest/727/submission/118043883",
+    "tags": [
+      "brute force",
+      "dfs and similar",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Jun/01/2021 12:35"
+  },
   "CF118047438": {
     "contest_id": 727,
     "language": "GNU C++14",
