@@ -17,13 +17,11 @@ const int maxn = 200005;
 const int mod = 1000000007;
 
 void task(){
-    ll n; cin >> n;
-    ll cntr = 1;
-    while( n > cntr ){
-        n -= cntr;
-        cntr++;
+    ll n; cin >> n; n--;
+    for(int i = 1; i<=n; i++){
+        n-=i;
     }
-    cout << n << endl;
+    cout << n + 1<< endl;
 }
 
 int main(){
