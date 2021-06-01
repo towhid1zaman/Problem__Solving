@@ -19,11 +19,19 @@ const int mod = 1000000007;
 void task(){
     ll n; cin >> n;
     int x; cin >> x;
-    if(n%2==1){
-        if(x==0)x=1;
-        else if(x==1)x=0;
+    while(n%6 != 0){
+        if(n%2==0){
+            n++;
+            if(x==0)x = 1;
+            else if(x==1) x = 0;
+        }
+        else{
+            n++;
+            if(x==1)x = 2;
+            else if(x==2)x = 1;
+        }
     }
-    cout << (x+(n/2))%3<<endl;
+    cout <<x << endl;
 }
 
 int main(){
