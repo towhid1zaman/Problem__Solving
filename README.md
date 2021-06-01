@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1553 | [A - Infinite Sequence](https://codeforces.com/contest/622/problem/A) | [GNU C++14](./codeforces/622/A.cpp) | `implementation` `math` `*1000` | Jun/01/2021 23:09 | 
 1552 | [B - Modulo Sum](https://codeforces.com/contest/577/problem/B) | [GNU C++14](./codeforces/577/B.cpp) | `combinatorics` `data structures` `dp` `two pointers` `*1900` | Jun/01/2021 00:39 | 
 1551 | [A - King Escape](https://codeforces.com/contest/1033/problem/A) | [GNU C++14](./codeforces/1033/A.cpp) | `dfs and similar` `graphs` `implementation` `*1000` | May/31/2021 13:06 | 
 1550 | [A - Shortest path of the king](https://codeforces.com/contest/3/problem/A) | [GNU C++14](./codeforces/3/A.cpp) | `greedy` `shortest paths` `*1000` | May/31/2021 12:15 | 
