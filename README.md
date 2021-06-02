@@ -12,11 +12,12 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1564 | [C - Longest Regular Bracket Sequence](https://codeforces.com/contest/5/problem/C) | [GNU C++14](./codeforces/5/C.cpp) | `constructive algorithms` `data structures` `dp` `greedy` `sortings` `strings` `*1900` | Jun/04/2021 00:00 | 
-1563 | [B - Center Alignment](https://codeforces.com/contest/5/problem/B) | [GNU C++14](./codeforces/5/B.cpp) | `implementation` `strings` `*1200` | Jun/03/2021 16:49 | 
-1562 | [A - Chat Servers Outgoing Traffic](https://codeforces.com/contest/5/problem/A) | [GNU C++14](./codeforces/5/A.cpp) | `implementation` `*1000` | Jun/03/2021 16:28 | 
-1561 | [A - Winner](https://codeforces.com/contest/2/problem/A) | [GNU C++14](./codeforces/2/A.cpp) | `hashing` `implementation` `*1500` | Jun/03/2021 11:31 | 
-1560 | [C - The Intriguing Obsession](https://codeforces.com/contest/869/problem/C) | [GNU C++14](./codeforces/869/C.cpp) | `combinatorics` `dp` `math` `*1800` | Jun/02/2021 23:51 | 
+1565 | [C - Longest Regular Bracket Sequence](https://codeforces.com/contest/5/problem/C) | [GNU C++14](./codeforces/5/C.cpp) | `constructive algorithms` `data structures` `dp` `greedy` `sortings` `strings` `*1900` | Jun/04/2021 00:00 | 
+1564 | [B - Center Alignment](https://codeforces.com/contest/5/problem/B) | [GNU C++14](./codeforces/5/B.cpp) | `implementation` `strings` `*1200` | Jun/03/2021 16:49 | 
+1563 | [A - Chat Servers Outgoing Traffic](https://codeforces.com/contest/5/problem/A) | [GNU C++14](./codeforces/5/A.cpp) | `implementation` `*1000` | Jun/03/2021 16:28 | 
+1562 | [A - Winner](https://codeforces.com/contest/2/problem/A) | [GNU C++14](./codeforces/2/A.cpp) | `hashing` `implementation` `*1500` | Jun/03/2021 11:31 | 
+1561 | [C - The Intriguing Obsession](https://codeforces.com/contest/869/problem/C) | [GNU C++14](./codeforces/869/C.cpp) | `combinatorics` `dp` `math` `*1800` | Jun/02/2021 23:51 | 
+1560 | [B - Card Deck](https://codeforces.com/contest/1492/problem/B) | [GNU C++14](./codeforces/1492/B.cpp) | `data structures` `greedy` `math` `*1100` | Jun/02/2021 12:37 | 
 1559 | [A - Infinite Sequence](https://codeforces.com/contest/622/problem/A) | [GNU C++14](./codeforces/622/A.cpp) | `implementation` `math` `*1000` | Jun/01/2021 23:09 | 
 1558 | [B - z-sort](https://codeforces.com/contest/652/problem/B) | [GNU C++14](./codeforces/652/B.cpp) | `sortings` `*1000` | Jun/01/2021 21:22 | 
 1557 | [B - Vlad and Cafes](https://codeforces.com/contest/886/problem/B) | [GNU C++14](./codeforces/886/B.cpp) | `*1000` | Jun/01/2021 21:02 | 
