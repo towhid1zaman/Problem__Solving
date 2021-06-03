@@ -13,42 +13,40 @@ typedef std::vector<ll> vll;
 #define all(v) (v).begin(),(v).end()
 
 const double pi = acos(-1.0);
-const int maxn = 200005;
+const int maxn = 1000006;
 const int mod = 1000000007;
 
 void task(){
     string s; cin >> s;
+    std::vector<int>dp_pos(maxn, 0), dp_last(maxn, 0), dp_freq(maxn, 0);
     int n = (int)s.size();
-    std::vector<int> dp(n, 0);
     stack<int>stk;
-    int mx_len = 0, mx_cnt = 0;
-
+    int mx_len = 0;
+    dp_freq[0] = 1;
     for(int i = 0; i<n; i++){
         if(s[i] == '('){
             stk.push(i);
         }
         else{
-            if(stk.empty())continue;
-
-            int j = stk.top();
-            stk.pop();
-            int len = i-j+1;
-            if(j >= 1){
-                dp[i] = len + dp[j-1];
+            if(stk.empty()){
+                dp_pos[i] = -1;
+                dp_last[i] = -1;
             }
             else{
-                dp[i] = len;
+                int open = stk.top();
+                stk.pop();
+                dp_pos[i] = open;
+                dp_last[i] = open;
+                if(open > 0 and dp_pos[open - 1] >= 0 and s[open-1]==')'){
+                    dp_last[i] = dp_last[open-1];
+                }
+                int len = i - dp_last[i] + 1;
+                dp_freq[len]++;
+                mx_len = max(mx_len, len);
             }
-            if(dp[i] > mx_len){
-                mx_len = dp[i];
-                mx_cnt = 1;
-            }
-            else if(dp[i] == mx_len)mx_cnt++;
         }
     }
-    if(mx_len == 0) mx_cnt = 1;
-
-    cout << mx_len <<' '<<mx_cnt << endl;
+    cout << mx_len <<' '<< dp_freq[mx_len] << endl;
 }
 
 int main(){
