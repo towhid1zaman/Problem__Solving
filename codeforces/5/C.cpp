@@ -33,7 +33,7 @@ void task(){
             int j = stk.top();
             stk.pop();
             int len = i-j+1;
-            if(j > 1){
+            if(j >= 1){
                 dp[i] = len + dp[j-1];
             }
             else{
