@@ -7192,6 +7192,23 @@
     ],
     "timestamp": "Jun/01/2021 23:09"
   },
+  "CF118269328": {
+    "contest_id": 5,
+    "language": "GNU C++14",
+    "path": "codeforces\\5\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Center Alignment",
+    "problem_url": "https://codeforces.com/contest/5/problem/B",
+    "submission_id": "CF118269328",
+    "submission_url": "https://codeforces.com/contest/5/submission/118269328",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1200"
+    ],
+    "timestamp": "Jun/03/2021 16:49"
+  },
   "CF118300150": {
     "contest_id": 5,
     "language": "GNU C++14",
