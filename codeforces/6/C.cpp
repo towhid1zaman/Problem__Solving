@@ -22,22 +22,24 @@ void task(){
     for(int i = 0; i<n; i++){
         cin >> a[i];
     }
-    int alice = 0, bob = 0;
-    int sumA = 0, sumB = 0;
-    int l = 0, r = n-1;
-    while(l<=r){
-        if(sumA<=sumB){
-            alice++;
-            sumA+=a[l];
-            l++;
+    int al = 0, bo = n-1;
+    int cura = a[al], curb = a[bo];
+    for(; al<=bo; al++, bo--){
+        if(cura == curb){
+            cura = a[al + 1], curb = a[bo - 1];
+        }
+        else if(cura > curb){
+            al--;
+            cura-=curb;
+            curb = a[bo - 1];
         }
         else{
-            bob++;
-            sumB+=a[r];
-            r--;
+            bo++;
+            curb-=cura;
+            cura = a[al + 1];
         }
     }
-    cout << alice <<' '<< bob <<endl;
+    cout << al <<' '<<n-al<<endl;
 }
 
 int main(){
