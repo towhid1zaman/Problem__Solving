@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1569 | [C - Alice, Bob and Chocolate](https://codeforces.com/contest/6/problem/C) | [GNU C++14](./codeforces/6/C.cpp) | `greedy` `two pointers` `*1200` | Jun/05/2021 11:54 | 
 1568 | [C - Longest Regular Bracket Sequence](https://codeforces.com/contest/5/problem/C) | [GNU C++14](./codeforces/5/C.cpp) | `constructive algorithms` `data structures` `dp` `greedy` `sortings` `strings` `*1900` | Jun/04/2021 00:00 | 
 1567 | [B - Center Alignment](https://codeforces.com/contest/5/problem/B) | [GNU C++14](./codeforces/5/B.cpp) | `implementation` `strings` `*1200` | Jun/03/2021 16:49 | 
 1566 | [A - Chat Servers Outgoing Traffic](https://codeforces.com/contest/5/problem/A) | [GNU C++14](./codeforces/5/A.cpp) | `implementation` `*1000` | Jun/03/2021 16:28 | 
