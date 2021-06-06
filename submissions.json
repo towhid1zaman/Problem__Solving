@@ -7538,6 +7538,23 @@
     ],
     "timestamp": "Jun/05/2021 11:54"
   },
+  "CF118665407": {
+    "contest_id": 7,
+    "language": "GNU C++14",
+    "path": "codeforces\\7\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Palindrome Degree",
+    "problem_url": "https://codeforces.com/contest/7/problem/D",
+    "submission_id": "CF118665407",
+    "submission_url": "https://codeforces.com/contest/7/submission/118665407",
+    "tags": [
+      "hashing",
+      "strings",
+      "*2200"
+    ],
+    "timestamp": "Jun/07/2021 01:18"
+  },
   "CF118690403": {
     "contest_id": 514,
     "language": "GNU C++14",
