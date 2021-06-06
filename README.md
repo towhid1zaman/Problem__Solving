@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1577 | [C - Watto and Mechanism](https://codeforces.com/contest/514/problem/C) | [GNU C++14](./codeforces/514/C.cpp) | `binary search` `data structures` `hashing` `string suffix structures` `strings` `*2000` | Jun/07/2021 12:21 | 
-1576 | [D - Palindrome Degree](https://codeforces.com/contest/7/problem/D) | [GNU C++14](./codeforces/7/D.cpp) | `hashing` `strings` `*2200` | Jun/07/2021 01:18 | 
-1575 | [C - Line](https://codeforces.com/contest/7/problem/C) | [GNU C++14](./codeforces/7/C.cpp) | `math` `number theory` `*1800` | Jun/06/2021 12:00 | 
+1578 | [C - Watto and Mechanism](https://codeforces.com/contest/514/problem/C) | [GNU C++14](./codeforces/514/C.cpp) | `binary search` `data structures` `hashing` `string suffix structures` `strings` `*2000` | Jun/07/2021 12:21 | 
+1577 | [D - Palindrome Degree](https://codeforces.com/contest/7/problem/D) | [GNU C++14](./codeforces/7/D.cpp) | `hashing` `strings` `*2200` | Jun/07/2021 01:18 | 
+1576 | [C - Line](https://codeforces.com/contest/7/problem/C) | [GNU C++14](./codeforces/7/C.cpp) | `math` `number theory` `*1800` | Jun/06/2021 12:00 | 
+1575 | [A - Kalevitch and Chess](https://codeforces.com/contest/7/problem/A) | [GNU C++14](./codeforces/7/A.cpp) | `brute force` `constructive algorithms` `*1100` | Jun/06/2021 11:09 | 
 1574 | [C - Alice, Bob and Chocolate](https://codeforces.com/contest/6/problem/C) | [GNU C++14](./codeforces/6/C.cpp) | `greedy` `two pointers` `*1200` | Jun/05/2021 11:54 | 
 1573 | [B - President's Office](https://codeforces.com/contest/6/problem/B) | [GNU C++14](./codeforces/6/B.cpp) | `implementation` `*1100` | Jun/05/2021 10:58 | 
 1572 | [A - Triangle](https://codeforces.com/contest/6/problem/A) | [GNU C++14](./codeforces/6/A.cpp) | `brute force` `geometry` `*900` | Jun/05/2021 01:47 | 
