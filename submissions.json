@@ -7538,6 +7538,23 @@
     ],
     "timestamp": "Jun/05/2021 11:54"
   },
+  "CF118556560": {
+    "contest_id": 7,
+    "language": "GNU C++14",
+    "path": "codeforces\\7\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Line",
+    "problem_url": "https://codeforces.com/contest/7/problem/C",
+    "submission_id": "CF118556560",
+    "submission_url": "https://codeforces.com/contest/7/submission/118556560",
+    "tags": [
+      "math",
+      "number theory",
+      "*1800"
+    ],
+    "timestamp": "Jun/06/2021 12:00"
+  },
   "CF118665407": {
     "contest_id": 7,
     "language": "GNU C++14",
