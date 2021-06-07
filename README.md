@@ -12,10 +12,11 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1582 | [B - Prinzessin der Verurteilung](https://codeforces.com/contest/1536/problem/B) | [GNU C++14](./codeforces/1536/B.cpp) | `brute force` `constructive algorithms` `strings` `*1200` | Jun/07/2021 23:58 | 
-1581 | [D - Omkar and Medians](https://codeforces.com/contest/1536/problem/D) | [GNU C++14](./codeforces/1536/D.cpp) | `data structures` `greedy` `implementation` `*2000` | Jun/07/2021 23:04 | 
-1580 | [C - Diluc and Kaeya](https://codeforces.com/contest/1536/problem/C) | [GNU C++14](./codeforces/1536/C.cpp) | `dp` `hashing` `number theory` `*1500` | Jun/07/2021 22:48 | 
-1579 | [E - Omkar and Forest](https://codeforces.com/contest/1536/problem/E) | [GNU C++14](./codeforces/1536/E.cpp) | `combinatorics` `graphs` `math` `shortest paths` `*2300` | Jun/07/2021 15:11 | 
+1583 | [B - Prinzessin der Verurteilung](https://codeforces.com/contest/1536/problem/B) | [GNU C++14](./codeforces/1536/B.cpp) | `brute force` `constructive algorithms` `strings` `*1200` | Jun/07/2021 23:58 | 
+1582 | [D - Omkar and Medians](https://codeforces.com/contest/1536/problem/D) | [GNU C++14](./codeforces/1536/D.cpp) | `data structures` `greedy` `implementation` `*2000` | Jun/07/2021 23:04 | 
+1581 | [C - Diluc and Kaeya](https://codeforces.com/contest/1536/problem/C) | [GNU C++14](./codeforces/1536/C.cpp) | `dp` `hashing` `number theory` `*1500` | Jun/07/2021 22:48 | 
+1580 | [E - Omkar and Forest](https://codeforces.com/contest/1536/problem/E) | [GNU C++14](./codeforces/1536/E.cpp) | `combinatorics` `graphs` `math` `shortest paths` `*2300` | Jun/07/2021 15:11 | 
+1579 | [F - Omkar and Akmar](https://codeforces.com/contest/1536/problem/F) | [GNU C++14](./codeforces/1536/F.cpp) | `combinatorics` `games` `math` `*2600` | Jun/07/2021 15:02 | 
 1578 | [C - Watto and Mechanism](https://codeforces.com/contest/514/problem/C) | [GNU C++14](./codeforces/514/C.cpp) | `binary search` `data structures` `hashing` `string suffix structures` `strings` `*2000` | Jun/07/2021 12:21 | 
 1577 | [D - Palindrome Degree](https://codeforces.com/contest/7/problem/D) | [GNU C++14](./codeforces/7/D.cpp) | `hashing` `strings` `*2200` | Jun/07/2021 01:18 | 
 1576 | [C - Line](https://codeforces.com/contest/7/problem/C) | [GNU C++14](./codeforces/7/C.cpp) | `math` `number theory` `*1800` | Jun/06/2021 12:00 | 
