@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1579 | [B - Prinzessin der Verurteilung](https://codeforces.com/contest/1536/problem/B) | [GNU C++14](./codeforces/1536/B.cpp) | `brute force` `constructive algorithms` `strings` `*1200` | Jun/07/2021 23:58 | 
 1578 | [C - Watto and Mechanism](https://codeforces.com/contest/514/problem/C) | [GNU C++14](./codeforces/514/C.cpp) | `binary search` `data structures` `hashing` `string suffix structures` `strings` `*2000` | Jun/07/2021 12:21 | 
 1577 | [D - Palindrome Degree](https://codeforces.com/contest/7/problem/D) | [GNU C++14](./codeforces/7/D.cpp) | `hashing` `strings` `*2200` | Jun/07/2021 01:18 | 
 1576 | [C - Line](https://codeforces.com/contest/7/problem/C) | [GNU C++14](./codeforces/7/C.cpp) | `math` `number theory` `*1800` | Jun/06/2021 12:00 | 
