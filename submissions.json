@@ -7538,6 +7538,26 @@
     ],
     "timestamp": "Jun/05/2021 11:54"
   },
+  "CF118690403": {
+    "contest_id": 514,
+    "language": "GNU C++14",
+    "path": "codeforces\\514\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Watto and Mechanism",
+    "problem_url": "https://codeforces.com/contest/514/problem/C",
+    "submission_id": "CF118690403",
+    "submission_url": "https://codeforces.com/contest/514/submission/118690403",
+    "tags": [
+      "binary search",
+      "data structures",
+      "hashing",
+      "string suffix structures",
+      "strings",
+      "*2000"
+    ],
+    "timestamp": "Jun/07/2021 12:21"
+  },
   "CF37028927": {
     "contest_id": 339,
     "language": "GNU C11",
