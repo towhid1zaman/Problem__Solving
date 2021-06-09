@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1587 | [C - Sequence](https://codeforces.com/contest/13/problem/C) | [GNU C++14](./codeforces/13/C.cpp) | `dp` `sortings` `*2200` | Jun/09/2021 18:32 | 
 1586 | [D - Ball](https://codeforces.com/contest/12/problem/D) | [GNU C++14](./codeforces/12/D.cpp) | `data structures` `sortings` `*2400` | Jun/09/2021 00:35 | 
 1585 | [B - Correct Solution?](https://codeforces.com/contest/12/problem/B) | [GNU C++14](./codeforces/12/B.cpp) | `implementation` `sortings` `*1100` | Jun/08/2021 14:04 | 
 1584 | [A - Super Agent](https://codeforces.com/contest/12/problem/A) | [GNU C++14](./codeforces/12/A.cpp) | `implementation` `*800` | Jun/08/2021 13:34 | 

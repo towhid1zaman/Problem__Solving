@@ -7750,6 +7750,23 @@
     ],
     "timestamp": "Jun/09/2021 00:35"
   },
+  "CF118884636": {
+    "contest_id": 13,
+    "language": "GNU C++14",
+    "path": "codeforces\\13\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Sequence",
+    "problem_url": "https://codeforces.com/contest/13/problem/C",
+    "submission_id": "CF118884636",
+    "submission_url": "https://codeforces.com/contest/13/submission/118884636",
+    "tags": [
+      "dp",
+      "sortings",
+      "*2200"
+    ],
+    "timestamp": "Jun/09/2021 18:32"
+  },
   "CF37028927": {
     "contest_id": 339,
     "language": "GNU C11",
