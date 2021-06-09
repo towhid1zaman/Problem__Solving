@@ -16,7 +16,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 1589 | [A - Numbers](https://codeforces.com/contest/13/problem/A) | [GNU C++14](./codeforces/13/A.cpp) | `implementation` `math` `*1000` | Jun/09/2021 18:02 | 
 1588 | [E - Start of the session](https://codeforces.com/contest/12/problem/E) | [GNU C++14](./codeforces/12/E.cpp) | `constructive algorithms` `*2100` | Jun/09/2021 17:33 | 
 1587 | [C - Fruits](https://codeforces.com/contest/12/problem/C) | [GNU C++14](./codeforces/12/C.cpp) | `greedy` `implementation` `sortings` `*1100` | Jun/09/2021 17:10 | 
-1586 | [D - Ball](https://codeforces.com/contest/12/problem/D) | [GNU C++14](./codeforces/12/D.cpp) | `data structures` `sortings` `*2400` | Jun/09/2021 00:35 | 
+1586 | [D - Ball](https://codeforces.com/contest/12/problem/D) | [GNU C++14](./codeforces/12/D.cpp) | `data structures` `sortings` `*2400` | Jun/09/2021 14:48 | 
 1585 | [B - Correct Solution?](https://codeforces.com/contest/12/problem/B) | [GNU C++14](./codeforces/12/B.cpp) | `implementation` `sortings` `*1100` | Jun/08/2021 14:04 | 
 1584 | [A - Super Agent](https://codeforces.com/contest/12/problem/A) | [GNU C++14](./codeforces/12/A.cpp) | `implementation` `*800` | Jun/08/2021 13:34 | 
 1583 | [B - Prinzessin der Verurteilung](https://codeforces.com/contest/1536/problem/B) | [GNU C++14](./codeforces/1536/B.cpp) | `brute force` `constructive algorithms` `strings` `*1200` | Jun/07/2021 23:58 | 

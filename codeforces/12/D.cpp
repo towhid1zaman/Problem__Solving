@@ -13,41 +13,86 @@ typedef std::vector<ll> vll;
 #define all(v) (v).begin(),(v).end()
 
 const double pi = acos(-1.0);
-const int maxn = 1001000036;
+const int maxn = 5e5 + 5;
 const int mod = 1000000007;
+
 
 struct Lady{
     int B, I, R;
 }L[500037];
+std::vector<int>v;
 
-bool comp(Lady a, Lady b){
-    return (a.B == b.B) ? (a.I == b.I) ? (a.R < b.R) : (a.I > b.I) : (a.B < b.B);
-}
+struct FenwickTree{
+    int N;
+    std::vector<int>tree;
+    void build(int n){
+        N = n;
+        tree.assign(n + 1, 0);
+    }
+    void update(int idx, int val){
+        while (idx <= N){
+            tree[idx] += val;
+            idx += idx & -idx;
+        }
+    }
+    void updateMax(int idx, int val){
+        while (idx > 0){
+            tree[idx] = max(tree[idx], val);
+            idx -= idx & -idx;
+        }
+    }
+    //mainly Query
+    int pref(int idx){
+        int ans = 0;
+        while (idx > 0){
+            ans += tree[idx];
+            idx -= idx & -idx;
+        }
+        return ans;
+    }
+    //range sum
+    int rsum(int l, int r){
+        return pref(r) - pref(l - 1);
+    }
+    int prefMax(int idx){
+        int ans = -2e9;
+        while (idx < N){
+            ans = max(ans, tree[idx]);
+            idx += idx & -idx;
+        }
+        return ans;
+    }
+};
+
+
+
 
 void task(){
     int n; cin >> n;
     std::map<int, int> mp;
     for(int i = 0; i<n; i++) cin >> L[i].B;
-    for(int i = 0; i<n; i++) cin >> L[i].I;
+    for(int i = 0; i<n; i++) cin >> L[i].I, v.push_back(L[i].I);
     for(int i = 0; i<n; i++) cin >> L[i].R;
     
-    int ans = 0;
-
-    sort(L, L+n, comp);
-    mp[maxn] = -maxn;
-    mp[-maxn] = maxn;
-
-    for(int i = n-1; i >= 0; i--){
-        auto it = mp.upper_bound(L[i].I);
-        if(it->second > L[i].R) ans++;
-        else if(mp[ L[i].I ] < L[i].R){
-            mp[ L[i].I ] = L[i].R;
-            for(it = --mp.lower_bound( L[i].I ) ; it->second < L[i].R ; ){
-                mp.erase(it--);
-            } 
-        }
+    sort(all(v)), v.resize(unique(v.begin(), v.end()) - v.begin());
+    for(int i = 0; i<n; i++){
+        int cur = lower_bound(all(v), L[i].I) - v.begin() + 1;
+        L[i].I = cur;
     }
+    
+    int ans = 0;
+    sort(L, L+n, [](Lady x, Lady y){
+        return (x.B ^ y.B ? (x.B < y.B) : (x.I > y.I));
+    });
+    
 
+    FenwickTree bit;
+    bit.build(maxn);
+    for(int i = n-1; ~i; i--){
+        int cur = bit.prefMax(L[i].I + 1);
+        if(cur > L[i].R) ans++;
+        bit.updateMax(L[i].I, L[i].R);
+    }
     cout << ans << endl;
 }
 
