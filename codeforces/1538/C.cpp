@@ -12,33 +12,20 @@ typedef std::vector<ll> vll;
 #define rep1(i,a,b) for(int i=(a);i<=(b);++i)
 #define all(v) (v).begin(),(v).end()
 
-#include <ext/pb_ds/assoc_container.hpp> 
-#include <ext/pb_ds/tree_policy.hpp> 
-using namespace __gnu_pbds; 
-template <typename num_t>
-using ordered_set = tree<num_t, null_type, less_equal<num_t>, rb_tree_tag, tree_order_statistics_node_update>;
-// ordered_set<type>os
-// os.order_of_key(k) the number of elements in the os less than k
-// *os.find_by_order(k) print the k-th smallest number in os(0-based)
-
 const double pi = acos(-1.0);
 const int maxn = 2000006;
 const int mod = 1000000007;
 
 void task(){
     int n; cin >> n;
-    ll l,r; cin >> l >> r;
-    std::vector<ll>a(n);
-    for(int i = 0; i<n; i++){
-        cin >> a[i];
-    }
-    ordered_set<ll>os;
+    ll l, r; cin >> l >> r;
+    std::vector<ll> a(n);
+    for(int i = 0; i<n; i++) cin >> a[i];
+    sort(a.begin(), a.end());
     ll ans = 0;
-
-    sort(all(a));
-    for(int i = 0; i<n;i++){
-        ans += os.order_of_key(r - a[i] + 1) - os.order_of_key(l-a[i]);
-        os.insert(a[i]);
+    for(int i = 0; i<n; i++){
+        ans+=upper_bound(a.begin()+i+1,a.end(), r-a[i])
+            - lower_bound(a.begin()+i+1,a.end(),l-a[i]);
     }
     cout << ans << endl;
 }
