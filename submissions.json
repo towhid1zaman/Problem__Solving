@@ -7835,6 +7835,21 @@
     ],
     "timestamp": "Jun/09/2021 18:32"
   },
+  "CF119084134": {
+    "contest_id": 1538,
+    "language": "GNU C++14",
+    "path": "codeforces\\1538\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Stone Game",
+    "problem_url": "https://codeforces.com/contest/1538/problem/A",
+    "submission_id": "CF119084134",
+    "submission_url": "https://codeforces.com/contest/1538/submission/119084134",
+    "tags": [
+      "greedy"
+    ],
+    "timestamp": "Jun/10/2021 23:46"
+  },
   "CF119084181": {
     "contest_id": 1538,
     "language": "GNU C++14",
