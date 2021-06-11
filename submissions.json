@@ -7919,6 +7919,26 @@
     ],
     "timestamp": "Jun/11/2021 00:22"
   },
+  "CF119167353": {
+    "contest_id": 14,
+    "language": "GNU C++14",
+    "path": "codeforces\\14\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Four Segments",
+    "problem_url": "https://codeforces.com/contest/14/problem/C",
+    "submission_id": "CF119167353",
+    "submission_url": "https://codeforces.com/contest/14/submission/119167353",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "geometry",
+      "implementation",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Jun/11/2021 20:26"
+  },
   "CF119268877": {
     "contest_id": 1154,
     "language": "GNU C++14",
