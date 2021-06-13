@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1595 | [C - Monitor](https://codeforces.com/contest/16/problem/C) | [GNU C++14](./codeforces/16/C.cpp) | `binary search` `number theory` `*1800` | Jun/13/2021 16:05 | 
 1594 | [C - Number of Pairs](https://codeforces.com/contest/1538/problem/C) | [GNU C++14](./codeforces/1538/C.cpp) | `binary search` `data structures` `math` `two pointers` | Jun/11/2021 00:22 | 
-1593 | [B - Friends and Candies](https://codeforces.com/contest/1538/problem/B) | [GNU C++14](./codeforces/1538/B.cpp) | `math` | Jun/10/2021 23:46 | 
-1592 | [A - Stone Game](https://codeforces.com/contest/1538/problem/A) | [GNU C++14](./codeforces/1538/A.cpp) | `greedy` | Jun/10/2021 23:46 | 
+1593 | [A - Stone Game](https://codeforces.com/contest/1538/problem/A) | [GNU C++14](./codeforces/1538/A.cpp) | `greedy` | Jun/10/2021 23:46 | 
+1592 | [B - Friends and Candies](https://codeforces.com/contest/1538/problem/B) | [GNU C++14](./codeforces/1538/B.cpp) | `math` | Jun/10/2021 23:46 | 
 1591 | [F - Interesting Function](https://codeforces.com/contest/1538/problem/F) | [GNU C++14](./codeforces/1538/F.cpp) | `binary search` `constructive algorithms` `dp` `math` | Jun/10/2021 23:08 | 
 1590 | [C - Sequence](https://codeforces.com/contest/13/problem/C) | [GNU C++14](./codeforces/13/C.cpp) | `dp` `sortings` `*2200` | Jun/09/2021 18:32 | 
 1589 | [A - Numbers](https://codeforces.com/contest/13/problem/A) | [GNU C++14](./codeforces/13/A.cpp) | `implementation` `math` `*1000` | Jun/09/2021 18:02 | 
