@@ -17,34 +17,38 @@ const int maxn = 100006;
 const int mod = 1000000007;
 
 namespace Dijkstra_Path{
-    const int range = 100005;
-    const long long inf = 1e14;
-    typedef std::pair<long long, long long> pll;
-    long long dist[range];
-    int par[range];
-    std::vector< std::pair<int,int> > adj[range];
+    #define int long long
+    const int range = 1000006;
+    const long long inf = 1000000000000000000ll;
+    typedef std::pair<int, int> pii;
+    int dist[maxn];
+    int par[maxn];
+    std::vector<pii> adj[maxn];
     
     void clear(int n){
-        for(int i = 0; i <= n; i++){
+        for(int i = 0; i<=n; i++){
             dist[i] = inf;
             par[i] = 0;
-            adj[i].clear();
         }
     }
     
     void dijkstra(int s, int n){
-        priority_queue<pll> Q; // greater value first, (we passed -ve value) 
+        priority_queue< pii, std::vector<pii> , greater< pii > > Q; // small value first
         dist[s] = 0;
         Q.push({0, s});
 
         while(!Q.empty()){
-            long long u = Q.top().second;
+            int u = Q.top().second;
+            int cur_d = Q.top().first;
             Q.pop();
+
+            if(dist[u] < cur_d)continue;
+            
             for(auto v : adj[u]){
-                if(v.second + dist[u] < dist[v.first]){
-                    dist[v.first] = dist[u] + v.second;
-                    Q.push( { -dist[v.first], v.first } );
+                if(cur_d + v.second < dist[v.first]){
+                    dist[v.first] = cur_d + v.second;
                     par[v.first] = u;
+                    Q.push( {dist[v.first], v.first} );
                 }
             }
         }
@@ -58,31 +62,33 @@ namespace Dijkstra_Path{
         int u = n;
         std::vector<int> path;
         path.push_back(n);
-        while ( n != s ) {
-            n = par[n];
-            path.push_back (n);
+        while ( par[u] != 0 ) {
+            path.push_back ( par[u] );
+            u = par[u];
         }
         reverse(path.begin(), path.end());
         return path;
     }
-    //check range,clear
+    //check range
 }using namespace Dijkstra_Path;
 
 void task(){
     int n, m; cin >> n >> m;
-    clear(n);
     for(int i = 1; i<=m; i++){
         int u, v, w; cin >> u >> v >> w;
         adj[u].push_back( {v, w} );
         adj[v].push_back( {u, w} );
     }
+    clear(n);
     dijkstra(1, n);
+
     if(is_reached(n)){
         cout << -1 << endl;
         return;
     }
-    std::vector<int>path = path_print(1, n);
-    for(auto u:path)cout << u <<' ';
+
+    std::vector<int> ans = path_print(1, n);
+    for (auto u : ans ) cout << u <<' ';
     cout << endl;
 }
 
