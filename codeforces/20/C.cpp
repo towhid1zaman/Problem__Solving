@@ -86,7 +86,7 @@ void task(){
     cout << endl;
 }
 
-int main(){
+main(){
     ios_base :: sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #ifdef _Local
     freopen("input.txt", "r", stdin);
