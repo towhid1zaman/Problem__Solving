@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1606 | [A - Spit Problem](https://codeforces.com/contest/29/problem/A) | [GNU C++14](./codeforces/29/A.cpp) | `brute force` `*1000` | Jun/15/2021 16:39 | 
-1605 | [C - Unordered Subsequence](https://codeforces.com/contest/27/problem/C) | [GNU C++14](./codeforces/27/C.cpp) | `constructive algorithms` `greedy` `*1900` | Jun/15/2021 15:57 | 
-1604 | [E - Number With The Given Amount Of Divisors](https://codeforces.com/contest/27/problem/E) | [GNU C++14](./codeforces/27/E.cpp) | `brute force` `dp` `number theory` `*2000` | Jun/15/2021 14:42 | 
+1607 | [A - Spit Problem](https://codeforces.com/contest/29/problem/A) | [GNU C++14](./codeforces/29/A.cpp) | `brute force` `*1000` | Jun/15/2021 16:39 | 
+1606 | [C - Unordered Subsequence](https://codeforces.com/contest/27/problem/C) | [GNU C++14](./codeforces/27/C.cpp) | `constructive algorithms` `greedy` `*1900` | Jun/15/2021 15:57 | 
+1605 | [E - Number With The Given Amount Of Divisors](https://codeforces.com/contest/27/problem/E) | [GNU C++14](./codeforces/27/E.cpp) | `brute force` `dp` `number theory` `*2000` | Jun/15/2021 14:42 | 
+1604 | [C - Dijkstra?](https://codeforces.com/contest/20/problem/C) | [GNU C++14](./codeforces/20/C.cpp) | `graphs` `shortest paths` `*1900` | Jun/14/2021 15:53 | 
 1603 | [C - Monitor](https://codeforces.com/contest/16/problem/C) | [GNU C++14](./codeforces/16/C.cpp) | `binary search` `number theory` `*1800` | Jun/13/2021 16:05 | 
 1602 | [B - Burglar and Matches](https://codeforces.com/contest/16/problem/B) | [GNU C++14](./codeforces/16/B.cpp) | `greedy` `implementation` `sortings` `*900` | Jun/13/2021 15:51 | 
 1601 | [A - Flag](https://codeforces.com/contest/16/problem/A) | [GNU C++14](./codeforces/16/A.cpp) | `implementation` `*800` | Jun/13/2021 15:38 | 
