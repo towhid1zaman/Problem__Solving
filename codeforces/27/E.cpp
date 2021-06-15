@@ -17,9 +17,9 @@ const ll maxn = 1e18;
 const int mod = 1000000007;
 
 int n;
-std::vector<int> primes = {2,3,5,7,11,13,17,19,23,29,31,37,41};
+std::vector<ll> primes = {2,3,5,7,11,13,17,19,23,29,31,37,41};
 
-ll go(int nod, ll cur_n, int pos){
+ll go(ll nod, ll cur_n, ll pos){
     if(nod == n)return cur_n;
 
     ll ans = maxn;
