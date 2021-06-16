@@ -8231,6 +8231,22 @@
     ],
     "timestamp": "Jun/15/2021 16:39"
   },
+  "CF119583413": {
+    "contest_id": 628,
+    "language": "GNU C++14",
+    "path": "codeforces\\628\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "New Skateboard",
+    "problem_url": "https://codeforces.com/contest/628/problem/B",
+    "submission_id": "CF119583413",
+    "submission_url": "https://codeforces.com/contest/628/submission/119583413",
+    "tags": [
+      "dp",
+      "*1300"
+    ],
+    "timestamp": "Jun/16/2021 12:24"
+  },
   "CF119712294": {
     "contest_id": 29,
     "language": "GNU C++14",

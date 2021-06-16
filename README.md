@@ -12,12 +12,13 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1615 | [D - PriceFixed](https://codeforces.com/contest/1539/problem/D) | [GNU C++14](./codeforces/1539/D.cpp) | `binary search` `greedy` `sortings` `ternary search` `two pointers` | Jun/20/2021 17:59 | 
-1614 | [C - Stable Groups](https://codeforces.com/contest/1539/problem/C) | [GNU C++14](./codeforces/1539/C.cpp) | `greedy` `math` `sortings` | Jun/20/2021 16:55 | 
-1613 | [A - Contest Start](https://codeforces.com/contest/1539/problem/A) | [GNU C++14](./codeforces/1539/A.cpp) | `combinatorics` `math` | Jun/20/2021 16:37 | 
-1612 | [B - Love Song](https://codeforces.com/contest/1539/problem/B) | [GNU C++14](./codeforces/1539/B.cpp) | `dp` `implementation` `strings` | Jun/20/2021 16:26 | 
-1611 | [C - Basketball Exercise](https://codeforces.com/contest/1195/problem/C) | [GNU C++14](./codeforces/1195/C.cpp) | `dp` `*1400` | Jun/20/2021 13:39 | 
-1610 | [D - Ant on the Tree](https://codeforces.com/contest/29/problem/D) | [GNU C++14](./codeforces/29/D.cpp) | `constructive algorithms` `dfs and similar` `trees` `*2000` | Jun/17/2021 18:32 | 
+1616 | [D - PriceFixed](https://codeforces.com/contest/1539/problem/D) | [GNU C++14](./codeforces/1539/D.cpp) | `binary search` `greedy` `sortings` `ternary search` `two pointers` | Jun/20/2021 17:59 | 
+1615 | [C - Stable Groups](https://codeforces.com/contest/1539/problem/C) | [GNU C++14](./codeforces/1539/C.cpp) | `greedy` `math` `sortings` | Jun/20/2021 16:55 | 
+1614 | [A - Contest Start](https://codeforces.com/contest/1539/problem/A) | [GNU C++14](./codeforces/1539/A.cpp) | `combinatorics` `math` | Jun/20/2021 16:37 | 
+1613 | [B - Love Song](https://codeforces.com/contest/1539/problem/B) | [GNU C++14](./codeforces/1539/B.cpp) | `dp` `implementation` `strings` | Jun/20/2021 16:26 | 
+1612 | [C - Basketball Exercise](https://codeforces.com/contest/1195/problem/C) | [GNU C++14](./codeforces/1195/C.cpp) | `dp` `*1400` | Jun/20/2021 13:39 | 
+1611 | [D - Ant on the Tree](https://codeforces.com/contest/29/problem/D) | [GNU C++14](./codeforces/29/D.cpp) | `constructive algorithms` `dfs and similar` `trees` `*2000` | Jun/17/2021 18:32 | 
+1610 | [B - New Skateboard](https://codeforces.com/contest/628/problem/B) | [GNU C++14](./codeforces/628/B.cpp) | `dp` `*1300` | Jun/16/2021 12:24 | 
 1609 | [A - Spit Problem](https://codeforces.com/contest/29/problem/A) | [GNU C++14](./codeforces/29/A.cpp) | `brute force` `*1000` | Jun/15/2021 16:39 | 
 1608 | [C - Unordered Subsequence](https://codeforces.com/contest/27/problem/C) | [GNU C++14](./codeforces/27/C.cpp) | `constructive algorithms` `greedy` `*1900` | Jun/15/2021 15:57 | 
 1607 | [E - Number With The Given Amount Of Divisors](https://codeforces.com/contest/27/problem/E) | [GNU C++14](./codeforces/27/E.cpp) | `brute force` `dp` `number theory` `*2000` | Jun/15/2021 14:42 | 
