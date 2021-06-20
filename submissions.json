@@ -8231,6 +8231,22 @@
     ],
     "timestamp": "Jun/15/2021 16:39"
   },
+  "CF120076691": {
+    "contest_id": 1539,
+    "language": "GNU C++14",
+    "path": "codeforces\\1539\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Contest Start",
+    "problem_url": "https://codeforces.com/contest/1539/problem/A",
+    "submission_id": "CF120076691",
+    "submission_url": "https://codeforces.com/contest/1539/submission/120076691",
+    "tags": [
+      "combinatorics",
+      "math"
+    ],
+    "timestamp": "Jun/20/2021 16:37"
+  },
   "CF120088442": {
     "contest_id": 1539,
     "language": "GNU C++14",
