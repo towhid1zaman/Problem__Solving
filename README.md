@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1610 | [D - PriceFixed](https://codeforces.com/contest/1539/problem/D) | [GNU C++14](./codeforces/1539/D.cpp) | `binary search` `greedy` `sortings` `ternary search` `two pointers` | Jun/20/2021 17:59 | 
+1611 | [D - PriceFixed](https://codeforces.com/contest/1539/problem/D) | [GNU C++14](./codeforces/1539/D.cpp) | `binary search` `greedy` `sortings` `ternary search` `two pointers` | Jun/20/2021 17:59 | 
+1610 | [C - Stable Groups](https://codeforces.com/contest/1539/problem/C) | [GNU C++14](./codeforces/1539/C.cpp) | `greedy` `math` `sortings` | Jun/20/2021 16:55 | 
 1609 | [A - Spit Problem](https://codeforces.com/contest/29/problem/A) | [GNU C++14](./codeforces/29/A.cpp) | `brute force` `*1000` | Jun/15/2021 16:39 | 
 1608 | [C - Unordered Subsequence](https://codeforces.com/contest/27/problem/C) | [GNU C++14](./codeforces/27/C.cpp) | `constructive algorithms` `greedy` `*1900` | Jun/15/2021 15:57 | 
 1607 | [E - Number With The Given Amount Of Divisors](https://codeforces.com/contest/27/problem/E) | [GNU C++14](./codeforces/27/E.cpp) | `brute force` `dp` `number theory` `*2000` | Jun/15/2021 14:42 | 
