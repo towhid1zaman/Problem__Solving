@@ -17,7 +17,7 @@ const int maxn = 2000006;
 const int mod = 1000000007;
 
 
-namespace Bipartite{
+namespace Bipartie{
     std::vector<int> adj[maxn];
     std::vector<int> vis, col;
     void Clear(int n){
@@ -28,12 +28,12 @@ namespace Bipartite{
         col.assign(n, -1);
     }
 
-    void dfs(int x, int curcol, int& bi_tie){
+    void dfs(int x, int curcol, int& not_bipartite){
         vis[x] = 1;
         col[x] = curcol;
         for(auto v : adj[x]){
-            if(col[v] == -1)dfs(v,curcol ^ 1, bi_tie);
-            else if(col[v] == curcol)bi_tie = 0;
+            if(col[v] == -1)dfs(v,curcol ^ 1, not_bipartite);
+            else if(col[v] == curcol)not_bipartite = 0;
         }
     }
     int is_bipartie(int v){
@@ -43,8 +43,7 @@ namespace Bipartite{
     }
 
     //check range
-}using namespace Bipartite;
-
+}using namespace Bipartie;
 
 void task(){
     int n, m; cin >> n >> m;
