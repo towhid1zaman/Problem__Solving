@@ -90,38 +90,27 @@ namespace String_Matching{
     //check range, 0 indexed
 }using namespace String_Matching;
 
-namespace debugging{
-    template<typename F,typename S>ostream&operator<<(ostream&os,const pair<F,S>&p){return os<<"("<<p.first<<", "<<p.second<<")";}
-    template<typename T>ostream&operator<<(ostream&os,const vector<T>&v){os<<"{";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<", ";os<<*it;}return os<<"}";}
-    template<typename T>ostream&operator<<(ostream&os,const set<T>&v){os<<"[";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<",";os<<*it;}return os<<"]";}
-    template<typename T>ostream&operator<<(ostream&os,const multiset<T>&v) {os<<"[";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<", ";os<<*it;}return os<<"]";}
-    template<typename F,typename S>ostream&operator<<(ostream&os,const map<F,S>&v){os<<"[";for(auto it=v.begin();it!=v.end();++it){if(it!=v.begin())os<<", ";os<<it->first<<" = "<<it->second;}return os<<"]";}
-    #define dbug(args...) do {cerr << #args << " : "; Hooo(args); } while(0)
-    void Hooo(){cerr << endl;}
-    template<typename T>void Hooo(T a[],int n){for(int i=0;i<n;++i)cerr<<a[i]<<' ';cerr<<endl;}
-    template<typename T,typename...hello>void Hooo(T arg,const hello&...rest){cerr<<arg<<' ';Hooo(rest...);}
-}using namespace debugging;
-
-
 void task(){
     int n, k; cin >> n >> k;
     string s; cin >> s;
     std::vector<int> z = z_function(s);
-    for(int p = 1; p < n; p++){
+
+    int p = 1;
+    while(p < n){
+        if(s[p] > s[0])break;
+        else if(s[p] < s[0]){
+            p++;
+            continue;
+        }
+
         int common = z[p];
-        if(common + p < n){
-            if(s[common] < s[common + p]){
-                while(n > p)s.pop_back(), --n;
-            }
-        }
-        else{
-            while(n > p)s.pop_back(), --n;
-        }
+        if(common + p >= n)break;
+        if(s[common] > s[p + common])p++;
+        else break;
     }
-    //dbug(z, s);
-    string ans = "";
-    while((int)ans.size() < k)ans += s;
-    cout << ans.substr(0, k) << endl;
+    for(int i = 0; i<k; i++){
+        cout << s[i%p];
+    }
 }
 
 int main(){
